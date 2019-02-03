@@ -1,22 +1,22 @@
-* [Arrays & Strings](#arrays-&-strings)
+* [Arrays and Strings](#arrays-and-strings)
 * [Linked Lists](#linked-lists)
-* [Stacks & Queues](#stacks-&-queues)
-* [Trees & Graphs](#trees-&-graphs)
+* [Stacks and Queues](#stacks-and-queues)
+* [Trees and Graphs](#trees-and-graphs)
 * [Bit Manipulation](#bit-manipulation)
-* [Recursion & Dynamic Programming](#recursion-&-dynamic-programming)
-* [System Design & Scalability](#system-design-&-scalability)
-* [Sorting & Searching](#sorting-&-searching)
+* [Recursion and Dynamic Programming](#recursion-and-dynamic-programming)
+* [System Design and Scalability](#system-design-and-scalability)
+* [Sorting and Searching](#sorting-and-searching)
 * [More Questions](#more-questions)
 
-# Arrays & Strings
+# Arrays and Strings
 
-|        Question        |  Answer  | Difficulty |
-|:----------------------:|:--------:|:----------:|
-|        Is Unique       | Solution |    Easy    |
-| Palindrome Permutation | Solution |      -     |
-|        One Away        | Solution |      -     |
-|      Rotate Matrix     | Solution |    Hard    |
-|     String Rotation    | Solution |      -     |
+|                                               Question                                              |                                               Answer                                               | Difficulty |
+|:---------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|:----------:|
+| [Is Unique](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Is%20Unique.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Is%20Unique.md) |    Easy    |
+|                                        Palindrome Permutation                                       |                                              Solution                                              |      -     |
+|                                               One Away                                              |                                              Solution                                              |      -     |
+|                                            Rotate Matrix                                            |                                              Solution                                              |    Hard    |
+|                                           String Rotation                                           |                                              Solution                                              |      -     |
 
 # Linked Lists
 
@@ -30,7 +30,7 @@
 |                 Intersection                 | Solution |      -     |
 |                Loop Detection                | Solution |    Hard    |
 
-# Stacks & Queues
+# Stacks and Queues
 
 |     Question     |  Answer  | Difficulty |
 |:----------------:|:--------:|:----------:|
@@ -40,7 +40,7 @@
 | Queue via Stacks | Solution |   Medium   |
 |    Sort Stack    | Solution |   Medium   |
 
-# Trees & Graphs
+# Trees and Graphs
 
 |           Question           |  Answer  | Difficulty |
 |:----------------------------:|:--------:|:----------:|
@@ -72,7 +72,7 @@
 |       Next Number      | Solution |    Hard    |
 |      Pairwise Swap     | Solution |   Medium   |
 
-# Recursion & Dynamic Programming
+# Recursion and Dynamic Programming
 
 |           Question          |  Answer  | Difficulty |
 |:---------------------------:|:--------:|:----------:|
@@ -91,7 +91,7 @@
 |         Eight Queens        | Solution |    Hard    |
 |        Stack of Boxes       | Solution |    Hard    |
 
-# System Design & Scalability
+# System Design and Scalability
 
 | Question       | Answer   | Difficulty |
 |----------------|----------|------------|
@@ -99,7 +99,7 @@
 | Duplicate URLs | Solution | Medium     |
 | Cache          | Solution | Medium     |
 
-# Sorting & Searching
+# Sorting and Searching
 
 |         Question        |  Answer  | Difficulty |
 |:-----------------------:|:--------:|:----------:|
