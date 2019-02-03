@@ -10,152 +10,153 @@
 
 # Arrays and Strings
 
-|                                               Question                                              |                                               Answer                                               | Difficulty |
-|:---------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|:----------:|
-| [Is Unique](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Is%20Unique.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Is%20Unique.md) |    Easy    |
-|                                        Palindrome Permutation                                       |                                              Solution                                              |      -     |
-|                                               One Away                                              |                                              Solution                                              |      -     |
-|                                            Rotate Matrix                                            |                                              Solution                                              |    Hard    |
-|                                           String Rotation                                           |                                              Solution                                              |      -     |
+|                                                            Question                                                           |                                                      Answer                                                     | Difficulty |
+|:-----------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|:----------:|
+|              [Is Unique](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Is%20Unique.md)              |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Is%20Unique.md)       |    Easy    |
+| [Palindrome Permutation](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Palindrome%20Permutation.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Palindrome%20Permutation.md) |    Easy    |
+|               [One Away](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/One%20Away.md)               |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/One%20Away.md)        |      -     |
+|          [Rotate Matrix](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Rotate%20Matrix.md)          |      [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Rotate%20Matrix.md)     |    Hard    |
+|        [String Rotation](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/String%20Rotation.md)        |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/String%20Rotation.md)    |      -     |
 
 # Linked Lists
 
-|                   Question                   |  Answer  | Difficulty |
-|:--------------------------------------------:|:--------:|:----------:|
-|       Singly Linked List: Implement It       | Solution |    Easy    |
-| Singly Linked List: Reverse it (Iteratively) | Solution |   Medium   |
-|                  Remove Dups                 | Solution |    Easy    |
-|                   Partition                  | Solution |   Medium   |
-|                  Palindrome                  | Solution |   Medium   |
-|                 Intersection                 | Solution |      -     |
-|                Loop Detection                | Solution |    Hard    |
+|                                                                           Question                                                                          |                                                               Answer                                                               | Difficulty |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+| [Singly Linked List - Implement It](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Singly%20Linked%20List%20-%20Implement%20It.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Singly%20Linked%20List%20-%20Implement%20It.md) |    Easy    |
+|   [Singly Linked List - Reverse it](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Singly%20Linked%20List%20-%20Reverse%20It.md)   |  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Singly%20Linked%20List%20-%20Reverse%20It.md)  |   Medium   |
+|                           [Remove Dups](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Remove%20Dups.md)                           |                [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Remove%20Dups.md)                |    Easy    |
+|                              [Partition](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Partition.md)                              |                  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Partition.md)                  |   Medium   |
+|                             [Palindrome](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Palindrome.md)                             |                  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Palindrome.md)                 |   Medium   |
+|                           [Intersection](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Intersection.md)                           |                 [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Intersection.md)                |      -     |
+|                        [Loop Detection](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Loop%20Detection.md)                        |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Loop%20Detection.md)              |    Hard    |
 
 # Stacks and Queues
 
-|     Question     |  Answer  | Difficulty |
-|:----------------:|:--------:|:----------:|
-|       Stack      | Solution |    Easy    |
-|       Queue      | Solution |    Easy    |
-|     Stack Min    | Solution |   Medium   |
-| Queue via Stacks | Solution |   Medium   |
-|    Sort Stack    | Solution |   Medium   |
+|                                                        Question                                                       |                                                    Answer                                                    | Difficulty |
+|:---------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:|:----------:|
+| [Implement a Stack](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Implement%20a%20Stack.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20Stack.md) |    Easy    |
+| [Implement a Queue](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Implement%20a%20Queue.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20Queue.md) |    Easy    |
+|          [Stack Min](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Stack%20Min.md)          |      [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Stack%20Min.md)      |   Medium   |
+|  [Queue via Stacks](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Queue%20via%20Stacks.md)  |  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Queue%20via%20Stacks.md) |   Medium   |
+|         [Sort Stack](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sort%20Stack.md)         |      [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sort%20Stack.md)     |   Medium   |
+|                                                                                                                       |                                                                                                              |            |
 
 # Trees and Graphs
 
-|           Question           |  Answer  | Difficulty |
-|:----------------------------:|:--------:|:----------:|
-|      Implement: TreeNode     | Solution |    Easy    |
-|  Breadth-First Search (BFS)  | Solution |   Medium   |
-|   Depth-First Search (DFS)   | Solution |   Medium   |
-|     Implement: GraphNode     | Solution |    Easy    |
-| Pre/In/Post order Traversals | Solution |    Easy    |
-|     Level-Order Traversal    | Solution |   Medium   |
-|      Route Between Nodes     | Solution |    Easy    |
-|         Minimal Tree         | Solution |   Medium   |
-|        List of Depths        | Solution |   Medium   |
-|        Check Balanced        | Solution |   Medium   |
-|         Validate BST         | Solution |   Medium   |
-|           Successor          | Solution |   Medium   |
-|          Build Order         | Solution |    Hard    |
-|     First Common Ancestor    | Solution |    Hard    |
-|          Random Node         | Solution |    Hard    |
-|        Paths with Sum        | Solution |    Hard    |
+|                                                                  Question                                                                 |                                                         Answer                                                        | Difficulty |
+|:-----------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------:|:----------:|
+|        [Implement a TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Implement%20a%20TreeNode.md)        |    [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)    |    Easy    |
+|  [Breadth-First Search (BFS)](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Breadth-First%20Search%20(BFS).md)  | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Breadth-First%20Search%20(BFS).md) |   Medium   |
+|    [Depth-First Search (DFS)](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Depth-First%20Search%20(DFS).md)    |  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Depth-First%20Search%20(DFS).md)  |   Medium   |
+|       [Implement a GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Implement%20a%20GraphNode.md)       |    [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20GraphNode.md)   |    Easy    |
+| [Pre-In-Post order Traversals](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Pre-In-Post-order%20Traversals.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Pre-In-Post-order%20Traversals.md) |    Easy    |
+|        [Level-Order Traversal](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Level-order%20Traversal.md)        |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Level-order%20Traversal.md)    |   Medium   |
+|         [Route Between Nodes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Route%20Between%20Nodes.md)         |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Route%20Between%20Nodes.md)    |    Easy    |
+|                 [Minimal Tree](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Minimal%20Tree.md)                 |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Minimal%20Tree.md)         |   Medium   |
+|              [List of Depths](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/List%20of%20Depths.md)              |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/List%20of%20Depths.md)       |   Medium   |
+|               [Check Balanced](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Check%20Balanced.md)               |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Check%20Balanced.md)        |   Medium   |
+|                 [Validate BST](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Validate%20BST.md)                 |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Validate%20BST.md)         |   Medium   |
+|                     [Successor](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Successor.md)                     |            [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Successor.md)           |   Medium   |
+|                  [Build Order](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Build%20Order.md)                  |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Build%20Order.md)         |    Hard    |
+|       [First Common Ancestor](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/First%20Common%20Ancestor.md)       |    [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/First%20Common%20Ancestor.md)   |    Hard    |
+|                  [Random Node](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Random%20Node.md)                  |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Random%20Node.md)         |    Hard    |
+|              [Paths with Sum](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Paths%20with%20Sum.md)              |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Paths%20with%20Sum.md)       |    Hard    |
 
 # Bit Manipulation
 
-|        Question        |  Answer  | Difficulty |
-|:----------------------:|:--------:|:----------:|
-|  BitFunctions: getbit  | Solution |    Easy    |
-|  BitFunctions: setbit  | Solution |    Easy    |
-| BitFunctions: clearbit | Solution |    Easy    |
-|    Binary to String    | Solution |   Medium   |
-|       Next Number      | Solution |    Hard    |
-|      Pairwise Swap     | Solution |   Medium   |
+|                                                             Question                                                             |                                                       Answer                                                       | Difficulty |
+|:--------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|:----------:|
+|   [BitFunctions: getBit](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/BitFunctions%20-%20getBit.md)   |  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/BitFunctions%20-%20getBit.md)  |    Easy    |
+|   [BitFunctions: setBit](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/BitFunctions%20-%20setBit.md)   |  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/BitFunctions%20-%20setBit.md)  |    Easy    |
+| [BitFunctions: clearBit](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/BitFunctions%20-%20clearBit.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/BitFunctions%20-%20clearBit.md) |    Easy    |
+|        [Binary to String](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Binary%20to%20String.md)       |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Binary%20to%20String.md)    |   Medium   |
+|              [Next Number](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Next%20Number.md)             |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Next%20Number.md)        |    Hard    |
+|            [Pairwise Swap](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Pairwise%20Swap.md)           |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Pairwise%20Swap.md)       |   Medium   |
 
 # Recursion and Dynamic Programming
 
-|           Question          |  Answer  | Difficulty |
-|:---------------------------:|:--------:|:----------:|
-|          Fibonacci          | Solution |    Easy    |
-|         Triple Step         | Solution |    Easy    |
-|       Robot in a Grid       | Solution |   Medium   |
-|         Magic Index         | Solution |   Medium   |
-| Magic Index Distinct Values | Solution |   Medium   |
-|          Power Set          | Solution |    Hard    |
-|      Recursive Multiply     | Solution |      -     |
-|       Towers of Hanoi       | Solution |    Hard    |
-|  Permutations without Dups  | Solution |    Hard    |
-|    Permutations with Dups   | Solution |      -     |
-|            Parens           | Solution |   Medium   |
-|            Coins            | Solution |    Hard    |
-|         Eight Queens        | Solution |    Hard    |
-|        Stack of Boxes       | Solution |    Hard    |
+|                                                                   Question                                                                  |                                                          Answer                                                          | Difficulty |
+|:-------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------:|:----------:|
+|                      [Fibonacci](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Fibonacci.md)                      |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Fibonacci.md))            |    Easy    |
+|                   [Triple Step](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Triple%20Step.md)                   |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Triple%20Step.md)           |    Easy    |
+|             [Robot in a Grid](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Robot%20in%20a%20Grid.md)             |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Robot%20in%20a%20Grid.md)       |   Medium   |
+|                   [Magic Index](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Magic%20Index.md)                   |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Magic%20Index.md)           |   Medium   |
+| [Magic Index Distinct Values](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Magic%20Index%20Distinct%20Values.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Magic%20Index%20Distinct%20Values.md) |   Medium   |
+|                     [Power Set](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Power%20Set.md)                     |            [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Power%20Set.md)            |    Hard    |
+|            [Recursive Multiply](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Recursive%20Multiply.md)            |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Recursive%20Multiply.md)       |      -     |
+|              [Towers of Hanoi](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Towers%20of%20Hanoi.md)              |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Towers%20of%20Hanoi.md)        |    Hard    |
+|    [Permutations without Dups](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Permutations%20without%20Dups.md)    |   [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Permutations%20without%20Dups.md)   |    Hard    |
+|       [Permutations with Dups](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Permutations%20with%20Dups.md)       |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Permutations%20with%20Dups.md)    |      -     |
+|                         [Parens](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Parens.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Parens.md)              |   Medium   |
+|                          [Coins](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Coins.md)                          |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Coins.md)               |    Hard    |
+|                  [Eight Queens](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Eight%20Queens.md)                  |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Eight%20Queens.md)          |    Hard    |
+|               [Stack of Boxes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Stack%20of%20Boxes.md)               |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Stack%20of%20Boxes.md)        |    Hard    |
 
 # System Design and Scalability
 
-| Question       | Answer   | Difficulty |
-|----------------|----------|------------|
-| Notes          | Solution | Easy       |
-| Duplicate URLs | Solution | Medium     |
-| Cache          | Solution | Medium     |
+|                                                    Question                                                   |                                                  Answer                                                 | Difficulty |
+|:-------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|:----------:|
+|           [Notes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Notes.md)           |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Notes.md)      |    Easy    |
+| [Duplicate URLs](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Duplicate%20URLs.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Duplicate%20URLs.md) |   Medium   |
+|           [Cache](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Cache.md)           |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cache.md)      |   Medium   |
 
 # Sorting and Searching
 
-|         Question        |  Answer  | Difficulty |
-|:-----------------------:|:--------:|:----------:|
-|      Binary Search      | Solution |    Easy    |
-|   Sorts -> Merge Sort   | Solution |    Hard    |
-|   Sorts -> Quick Sort   | Solution |    Hard    |
-|      Group Anagrams     | Solution |   Medium   |
-| Search in Rotated Array | Solution |   Medium   |
-|  Sorted Search No Size  | Solution |      -     |
-|      Sort Big File      | Solution |   Medium   |
-|       Missing Int       | Solution |    Hard    |
-|     Find Duplicates     | Solution |    Easy    |
-|   Sorted Matrix Search  | Solution |   Medium   |
-|     Rank from Stream    | Solution |    Hard    |
-|    Peaks and Valleys    | Solution |      -     |
+|                                                               Question                                                              |                                                        Answer                                                        | Difficulty |
+|:-----------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|:----------:|
+|             [Binary Search](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Binary%20Search.md)             |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Binary%20Search.md)        |    Easy    |
+|                [Merge Sort](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Merge%20Sort.md)                |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Merge%20Sort.md)         |    Hard    |
+|                [Quick Sort](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Quick%20Sort.md)                |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Quick%20Sort.md)         |    Hard    |
+|            [Group Anagrams](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Group%20Anagrams.md)            |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Group%20Anagrams.md)       |   Medium   |
+| [Search in Rotated Array](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Search%20in%20Rotated%20Array.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Search%20in%20Rotated%20Array.md) |   Medium   |
+|   [Sorted Search No Size](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sorted%20Search%20No%20Size.md)   |  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sorted%20Search%20No%20Size.md)  |      -     |
+|            [Sort Big File](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sort%20Big%20File.md)            |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sort%20Big%20File.md)       |   Medium   |
+|               [Missing Int](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Missing%20Int.md)               |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Missing%20Int.md)         |    Hard    |
+|           [Find Duplicates](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Find%20Duplicates.md)           |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Find%20Duplicates.md)       |    Easy    |
+|     [Sorted Matrix Search](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sorted%20Matrix%20Search.md)     |    [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sorted%20Matrix%20Search.md)   |   Medium   |
+|         [Rank from Stream](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Rank%20from%20Stream.md)         |      [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Rank%20from%20Stream.md)     |    Hard    |
+|        [Peaks and Valleys](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Peaks%20and%20Valleys.md)        |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Peaks%20and%20Valleys.md)     |      -     |
 
 # More Questions
 
-|             Question            |  Answer  | Difficulty |
-|:-------------------------------:|:--------:|:----------:|
-|            Math cubes           | Solution |      -     |
-|          Circular Array         | Solution |   Medium   |
-| TreeMap, HashMap, LinkedHashMap | Solution |    Easy    |
-|           Tic Tac Win           | Solution |   Medium   |
-|         Factorial Zeros         | Solution |   Medium   |
-|       Smallest Difference       | Solution |      -     |
-|           English Int           | Solution |   Medium   |
-|          Living People          | Solution |      -     |
-|           Diving Board          | Solution |      -     |
-|            Best Line            | Solution |    Hard    |
-|             Sub Sort            | Solution |   Medium   |
-|       Contiguous Sequence       | Solution |   Medium   |
-|         Pattern Matching        | Solution |      -     |
-|            Pond Sizes           | Solution |   Medium   |
-|      T9 - HashMap Solution      | Solution |      -     |
-|             Sum Swap            | Solution |      -     |
-|           Langtons Ant          | Solution |    Easy    |
-|         Rand7 from Rand5        | Solution |   Medium   |
-|          Pairs with Sum         | Solution |   Medium   |
-|            LRU Cache            | Solution |    Hard    |
-|         Add Without Plus        | Solution |   Medium   |
-|             Shuffle             | Solution |    Hard    |
-|            Random Set           | Solution |    Hard    |
-|       Letters and Numbers       | Solution |      -     |
-|            Baby Names           | Solution |      -     |
-|           Kth Multiple          | Solution |    Hard    |
-|         Majority Element        | Solution |      -     |
-|          Word Distance          | Solution |   Medium   |
-|              BiNode             | Solution |    Hard    |
-|            Smallest K           | Solution |   Medium   |
-|           Longest Word          | Solution |    Hard    |
-|           The Masseuse          | Solution |      -     |
-|      Shortest Supersequence     | Solution |      -     |
-|           Missing Two           | Solution |      -     |
-|         Continous Median        | Solution |    Hard    |
-|       Volume of Histogram       | Solution |      -     |
-|         Word Transformer        | Solution |    Hard    |
-|         Max Black Square        | Solution |    Hard    |
-|          Max Submatrix          | Solution |    Hard    |
+|                                                                        Question                                                                       |                                                             Answer                                                             | Difficulty |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+|                         [Math cubes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Math%20cubes.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Math%20cubes.md)              |      -     |
+|                     [Circular Array](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Circular%20Array.md)                     |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Circular%20Array.md)            |   Medium   |
+| [TreeMap, HashMap, LinkedHashMap](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/TreeMap%2C%20HashMap%2C%20LinkedHashMap.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/TreeMap%2C%20HashMap%2C%20LinkedHashMap.md) |    Easy    |
+|                       [Tic Tac Win](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Tic%20Tac%20Win.md)                       |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Tic%20Tac%20Win.md)             |   Medium   |
+|                    [Factorial Zeros](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Factorial%20Zeros.md)                    |            [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Factorial%20Zeros.md)            |   Medium   |
+|                [Smallest Difference](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Smallest%20Difference.md)                |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Smallest%20Difference.md)          |      -     |
+|                        [English Int](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/English%20Int.md)                        |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/English%20Int.md)              |   Medium   |
+|                      [Living People](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Living%20People.md)                      |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Living%20People.md)             |      -     |
+|                       [Diving Board](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Diving%20Board.md)                       |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Diving%20Board.md)             |      -     |
+|                          [Best Line](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Best%20Line.md)                          |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Best%20Line.md)               |    Hard    |
+|                           [Sub Sort](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sub%20Sort.md)                           |                [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sub%20Sort.md)               |   Medium   |
+|                [Contiguous Sequence](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Contiguous%20Sequence.md)                |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Contiguous%20Sequence.md)          |   Medium   |
+|                   [Pattern Matching](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Pattern%20Matching.md)                   |            [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Pattern%20Matching.md)           |      -     |
+|                         [Pond Sizes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Pond%20Sizes.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Pond%20Sizes.md)              |   Medium   |
+|                                  [T9](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/T9.md)                                  |                    [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/T9.md)                   |      -     |
+|                           [Sum Swap](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sum%20Swap.md)                           |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutionss/Sum%20Swap.md)               |      -     |
+|                       [Langtons Ant](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Langtons%20Ant.md)                       |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Langtons%20Ant.md)             |    Easy    |
+|                  [Rand7 from Rand5](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Rand7%20from%20Rand5.md)                  |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Rand7%20from%20Rand5.md)          |   Medium   |
+|                    [Pairs with Sum](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Pairs%20with%20Sum.md)                    |            [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Pairs%20with%20Sum.md)           |   Medium   |
+|                          [LRU Cache](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/LRU%20Cache.md)                          |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LRU%20Cache.md)               |    Hard    |
+|                  [Add Without Plus](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Add%20Without%20Plus.md)                  |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Add%20Without%20Plus.md)          |   Medium   |
+|                             [Shuffle](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Shuffle.md)                             |                 [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Shuffle.md)                 |    Hard    |
+|                         [Random Set](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Random%20Set.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Random%20Set.md)              |    Hard    |
+|               [Letters and Numbers](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Letters%20and%20Numbers.md)               |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Letters%20and%20Numbers.md)         |      -     |
+|                         [Baby Names](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Baby%20Names.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Baby%20Names.md)              |      -     |
+|                       [Kth Multiple](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Kth%20Multiple.md)                       |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Kth%20Multiple.md)             |    Hard    |
+|                   [Majority Element](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Majority%20Element.md)                   |            [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Majority%20Element.md)           |      -     |
+|                      [Word Distance](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Word%20Distance.md)                      |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Word%20Distance.md)             |   Medium   |
+|                              [BiNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/BiNode.md)                              |                  [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/BiNode.md)                 |    Hard    |
+|                         [Smallest K](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Smallest%20K.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Smallest%20K.md)              |   Medium   |
+|                       [Longest Word](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Longest%20Word.md)                       |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Longest%20Word.md)             |    Hard    |
+|                       [The Masseuse](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/The%20Masseuse.md)                       |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/The%20Masseuse.md)             |      -     |
+|             [Shortest Supersequence](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Shortest%20Supersequence.md)             |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Shortest%20Supersequence.md)        |      -     |
+|                        [Missing Two](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Missing%20Two.md)                        |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Missing%20Two.md)              |      -     |
+|                   [Continous Median](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Continuous%20Median.md)                  |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Continuous%20Median.md)           |    Hard    |
+|               [Volume of Histogram](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Volume%20of%20Histogram.md)               |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Volume%20of%20Histogram.md)         |      -     |
+|                   [Word Transformer](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Word%20Transformer.md)                   |            [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Word%20Transformer.md)           |    Hard    |
+|                  [Max Black Square](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Max%20Black%20Square.md)                  |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Max%20Black%20Square.md)          |    Hard    |
+|                      [Max Submatrix](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Max%20Submatrix.md)                      |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Max%20Submatrix.md)             |    Hard    |
