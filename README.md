@@ -1,3 +1,5 @@
+# REPO IS A WORK IN PROGRESS - Solutions not available yet
+
 * [Arrays and Strings](#arrays-and-strings)
 * [Linked Lists](#linked-lists)
 * [Stacks and Queues](#stacks-and-queues)
