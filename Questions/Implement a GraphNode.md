@@ -1,3 +1,3 @@
 #### Question
 
-Implement a GraphNode.
+Implement a `GraphNode`.

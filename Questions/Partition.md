@@ -4,5 +4,5 @@ Write code to partition a linked list around a value x, such that all nodes less
 
 #### Example
 
-- Input: 3 -> 5 -> 8 -> 5 - > 10 -> 2 -> 1 [partition = 5]
+- Input: 3 -> 5 -> 8 -> 5 -> 10 -> 2 -> 1 [partition = 5]
 - Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
