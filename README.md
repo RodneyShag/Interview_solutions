@@ -117,26 +117,25 @@ REPO IS A WORK IN PROGRESS - Solutions not available yet
 
 ### Medium Priority
 
-|         Topic        |  Section  |         Question        |  Solution  | Difficulty |
-|:--------------------:|:---------:|:-----------------------:|:----------:|:----------:|
-|   Arrays & Strings   |    1.2    |    Check Permutations   | [Solution] |    Easy    |
-|   Arrays & Strings   |    1.3    |          URLify         | [Solution] |    Easy    |
-|   Arrays & Strings   |    1.8    |       Zero Matrix       | [Solution] |    Easy    |
-|     Linked Lists     |    2.2    |    Return Kth to Last   | [Solution] |    Easy    |
-|     Linked Lists     |    2.3    |    Delete Middle Node   | [Solution] |    Easy    |
-|     Linked Lists     |    2.5    |        Sum Lists        | [Solution] |   Medium   |
-|    Stacks & Queues   |    3.1    |       Three in One      | [Solution] |   Medium   |
-|    Trees & Graphs    |    4.09   |      BST Sequences      | [Solution] |    Hard    |
-|    Trees & Graphs    |    4.10   |      Check Subtree      | [Solution] |   Medium   |
-|   Bit Manipulation   |    5.3    |     Flip Bit to Win     | [Solution] |      -     |
-|   Bit Manipulation   |    5.6    |        Conversion       | [Solution] |    Easy    |
-| Math & Logic Puzzles | 6 - Intro |     Prime - isPrime     | [Solution] |    Easy    |
-| Math & Logic Puzzles | 6 - Intro | Prime - generate Primes | [Solution] |   Medium   |
-|   implement BitSet   | 9 - Intro |     implement BitSet    | [Solution] |   Medium   |
-|     Sorted Merge     |   10.01   |       Sorted Merge      | [Solution] |    Easy    |
-|    Threads & Locks   |    15.1   |    Thread vs. Process   | [Solution] |   Medium   |
-|    Threads & Locks   |    15.4   |   Deadlock-Free Class   | [Solution] |   Medium   |
-|    Threads & Locks   |    15.5   |      Call in Order      | [Solution] |   Medium   |
-|    Threads & Locks   |    15.6   |   Synchronized Methods  | [Solution] |    Easy    |
-|    More Questions    |   16.01   |      Number Swapper     | [Solution] |   Medium   |
-|    More Questions    |   16.15   |       Master Mind       | [Solution] |   Medium   |
+|         Topic        |  Section  |                                                               Question                                                              |                                                       Solution                                                       | Difficulty |
+|:--------------------:|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|:----------:|
+|   Arrays & Strings   |    1.2    |        [Check Permutations](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Check%20Permutations.md)        |      [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Check%20Permutations.md)     |    Easy    |
+|   Arrays & Strings   |    1.3    |                     [URLify](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/URLify.md)                     |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/URLify.md)            |    Easy    |
+|   Arrays & Strings   |    1.8    |               [Zero Matrix](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Zero%20Matrix.md)               |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Zero%20Matrix.md)         |    Easy    |
+|     Linked Lists     |    2.2    |      [Return Kth to Last](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Return%20Kth%20to%20Last.md)      |    [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Return%20Kth%20to%20Last.md)   |    Easy    |
+|     Linked Lists     |    2.3    |       [Delete Middle Node](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Delete%20Middle%20Node.md)       |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Delete%20Middle%20Node.md)    |    Easy    |
+|     Linked Lists     |    2.5    |                 [Sum Lists](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sum%20Lists.md)                 |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sum%20Lists.md)          |   Medium   |
+|    Stacks & Queues   |    3.1    |             [Three in One](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Three%20In%20One.md)             |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Three%20In%20One.md)       |   Medium   |
+|    Trees & Graphs    |    4.09   |             [BST Sequences](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/BST%20Sequences.md)             |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/BST%20Sequences.md)        |    Hard    |
+|    Trees & Graphs    |    4.10   |             [Check Subtree](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Check%20Subtree.md)             |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Check%20Subtree.md)        |   Medium   |
+|   Bit Manipulation   |    5.3    |         [Flip Bit to Win](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Flip%20Bit%20to%20Win.md)         |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Flip%20Bit%20to%20Win.md)     |      -     |
+|   Bit Manipulation   |    5.6    |                 [Conversion](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Conversion.md)                 |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Conversion.md)          |    Easy    |
+| Math & Logic Puzzles | 6 - Intro |          [Prime - isPrime](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Prime%20-%20isPrime.md)          |      [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Prime%20-%20isPrime.md)      |    Easy    |
+| Math & Logic Puzzles | 6 - Intro | [Prime - generate Primes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Prime%20-%20generate%20Primes.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Prime%20-%20generate%20Primes.md) |   Medium   |
+|     Sorted Merge     |   10.01   |              [Sorted Merge](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sorted%20Merge.md)              |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sorted%20Merge.md)        |    Easy    |
+|    Threads & Locks   |    15.1   |       [Thread vs. Process](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Thread%20vs.%20Process.md)       |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Thread%20vs.%20Process.md)    |   Medium   |
+|    Threads & Locks   |    15.4   |       [Deadlock-Free Class](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Deadlock-Free%20Class.md)       |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Deadlock-Free%20Class.md)     |   Medium   |
+|    Threads & Locks   |    15.5   |            [Call in Order](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Call%20in%20Order.md)            |       [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Call%20in%20Order.md)       |   Medium   |
+|    Threads & Locks   |    15.6   |      [Synchronized Methods](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Synchronized%20Methods.md)      |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Synchronized%20Methods.md)    |    Easy    |
+|    More Questions    |   16.01   |            [Number Swapper](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Number%20Swapper.md)            |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Number%20Swapper.md)       |   Medium   |
+|    More Questions    |   16.15   |               [Master Mind](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Master%20Mind.md)               |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Master%20Mind.md)         |   Medium   |
