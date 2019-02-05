@@ -1,6 +1,6 @@
 REPO IS A WORK IN PROGRESS - Solutions not available yet
 
-# Cracking the Coding Interview
+# [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
 * [High Priority](#high-priority)
 * [Medium Priority](#medium-priority)
@@ -46,6 +46,7 @@ REPO IS A WORK IN PROGRESS - Solutions not available yet
 |         Bit Manipulation        |     5.2    |                  [Binary to String](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Binary%20to%20String.md)                  |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Binary%20to%20String.md)          |   Medium   |
 |         Bit Manipulation        |     5.4    |                        [Next Number](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Next%20Number.md)                        |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Next%20Number.md)              |    Hard    |
 |         Bit Manipulation        |     5.7    |                      [Pairwise Swap](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Pairwise%20Swap.md)                      |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Pairwise%20Swap.md)             |   Medium   |
+|      Object-Oriented Design     |    7.12    |                         [Hash Table](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Hash%20Table.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Hash%20Table.md)              |    Hard    |
 | Recursion & Dynamic Programming |  8 - Intro |                           [Fibonacci](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Fibonacci.md)                           |                [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Fibonacci.md)                |    Easy    |
 | Recursion & Dynamic Programming |    8.01    |                        [Triple Step](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Triple%20Step.md)                        |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Triple%20Step.md)              |    Easy    |
 | Recursion & Dynamic Programming |    8.02    |                  [Robot in a Grid](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Robot%20in%20a%20Grid.md)                  |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Robot%20in%20a%20Grid.md)          |   Medium   |
@@ -73,7 +74,7 @@ REPO IS A WORK IN PROGRESS - Solutions not available yet
 |       Sorting & Searching       |    10.09   |              [Sorted Matrix Search](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Sorted%20Matrix%20Search.md)              |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Sorted%20Matrix%20Search.md)        |   Medium   |
 |       Sorting & Searching       |    10.10   |                  [Rank from Stream](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Rank%20from%20Stream.md)                  |           [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Rank%20from%20Stream.md)          |    Hard    |
 |       Sorting & Searching       |    10.11   |                 [Peaks and Valleys](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Peaks%20and%20Valleys.md)                 |          [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Peaks%20and%20Valleys.md)          |      -     |
-|          More Questions         | Book Intro |                         [Math cubes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Math%20cubes.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Math%20cubes.md)              |      -     |
+|          More Questions         | Book Intro |                         [Math cubes](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Math%20cubes.md)                         |               [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Math%20cubes.md)              |   Medium   |
 |          More Questions         |    7.09    |                     [Circular Array](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Circular%20Array.md)                     |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Circular%20Array.md)            |   Medium   |
 |          More Questions         |    13.5    | [TreeMap, HashMap, LinkedHashMap](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/TreeMap%2C%20HashMap%2C%20LinkedHashMap.md) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/TreeMap%2C%20HashMap%2C%20LinkedHashMap.md) |    Easy    |
 |          More Questions         |    16.04   |                       [Tic Tac Win](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Tic%20Tac%20Win.md)                       |             [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Tic%20Tac%20Win.md)             |   Medium   |
@@ -116,4 +117,26 @@ REPO IS A WORK IN PROGRESS - Solutions not available yet
 
 ### Medium Priority
 
-TBA
+|         Topic        |  Section  |         Question        |  Solution  | Difficulty |
+|:--------------------:|:---------:|:-----------------------:|:----------:|:----------:|
+|   Arrays & Strings   |    1.2    |    Check Permutations   | [Solution] |    Easy    |
+|   Arrays & Strings   |    1.3    |          URLify         | [Solution] |    Easy    |
+|   Arrays & Strings   |    1.8    |       Zero Matrix       | [Solution] |    Easy    |
+|     Linked Lists     |    2.2    |    Return Kth to Last   | [Solution] |    Easy    |
+|     Linked Lists     |    2.3    |    Delete Middle Node   | [Solution] |    Easy    |
+|     Linked Lists     |    2.5    |        Sum Lists        | [Solution] |   Medium   |
+|    Stacks & Queues   |    3.1    |       Three in One      | [Solution] |   Medium   |
+|    Trees & Graphs    |    4.09   |      BST Sequences      | [Solution] |    Hard    |
+|    Trees & Graphs    |    4.10   |      Check Subtree      | [Solution] |   Medium   |
+|   Bit Manipulation   |    5.3    |     Flip Bit to Win     | [Solution] |      -     |
+|   Bit Manipulation   |    5.6    |        Conversion       | [Solution] |    Easy    |
+| Math & Logic Puzzles | 6 - Intro |     Prime - isPrime     | [Solution] |    Easy    |
+| Math & Logic Puzzles | 6 - Intro | Prime - generate Primes | [Solution] |   Medium   |
+|   implement BitSet   | 9 - Intro |     implement BitSet    | [Solution] |   Medium   |
+|     Sorted Merge     |   10.01   |       Sorted Merge      | [Solution] |    Easy    |
+|    Threads & Locks   |    15.1   |    Thread vs. Process   | [Solution] |   Medium   |
+|    Threads & Locks   |    15.4   |   Deadlock-Free Class   | [Solution] |   Medium   |
+|    Threads & Locks   |    15.5   |      Call in Order      | [Solution] |   Medium   |
+|    Threads & Locks   |    15.6   |   Synchronized Methods  | [Solution] |    Easy    |
+|    More Questions    |   16.01   |      Number Swapper     | [Solution] |   Medium   |
+|    More Questions    |   16.15   |       Master Mind       | [Solution] |   Medium   |

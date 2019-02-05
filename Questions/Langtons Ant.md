@@ -1,3 +1,5 @@
+#### Question
+
 An ant is sitting on an infinite grid of white and black squares. It initially faces right. At each step, it does the following:
 1. At a white square, flip the color of the square, turn 90 degrees right (clockwise), and move forward one unit.
 1. At a black square, flip the color of the square, turn 90 degrees left (counter-clockwise). and move forward one unit.
