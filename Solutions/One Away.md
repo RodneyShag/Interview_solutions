@@ -1,7 +1,7 @@
 #### Solution
 
 ```java
-public static boolean oneAway(String s1, String s2) {
+boolean oneAway(String s1, String s2) {
     if (s1.length() == s2.length()) {
         return oneEditReplace(s1, s2);
     } else if (s1.length() == s2.length() + 1) {
@@ -12,7 +12,7 @@ public static boolean oneAway(String s1, String s2) {
     return false;
 }
 
-private static boolean oneEditReplace(String s1, String s2) {
+private boolean oneEditReplace(String s1, String s2) {
     int mismatches = 0;
     for (int i = 0; i < s1.length(); i++) {
         if (s1.charAt(i) != s2.charAt(i)) {
@@ -27,7 +27,7 @@ private static boolean oneEditReplace(String s1, String s2) {
 
 // Function assumes s1.length() == s2.length() + 1,
 // meaning s1 is longer than s2 by 1 character
-private static Boolean oneEditInsert(String s1, String s2) {
+private Boolean oneEditInsert(String s1, String s2) {
     if (s1.length() != s2.length() + 1) {
         return null;
     }

@@ -5,23 +5,20 @@
 #### Solution
 
 ```java
-public class IsUnique {
-    private static final int NUM_CHARS = 256; // number of ASCII characters
-
-    public static boolean uniqueCharacters(String str) {
-        if (str.length() > NUM_CHARS) {
-            return false;
-        }
-        HashSet<Character> mySet = new HashSet<>(NUM_CHARS);
-        for (int i = 0; i < str.length(); i++) {
-            if (mySet.contains(str.charAt(i))) {
-                return false;
-            } else {
-                mySet.add(str.charAt(i));
-            }
-        }
-        return true;
+boolean uniqueCharacters(String str) {
+    final int NUM_ASCII_CHARS = 256;
+    if (str.length() > NUM_ASCII_CHARS) {
+        return false;
     }
+    HashSet<Character> mySet = new HashSet<>(NUM_ASCII_CHARS);
+    for (int i = 0; i < str.length(); i++) {
+        if (mySet.contains(str.charAt(i))) {
+            return false;
+        } else {
+            mySet.add(str.charAt(i));
+        }
+    }
+    return true;
 }
 ```
 

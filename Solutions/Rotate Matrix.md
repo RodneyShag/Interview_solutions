@@ -1,7 +1,7 @@
 #### Solution
 
 ```java
-public static void rotate90clockwise(int[][] image) {
+void rotate90clockwise(int[][] image) {
     int n = image.length;
     for (int layer = 0; layer < n/2; layer++) {
         int first = layer;

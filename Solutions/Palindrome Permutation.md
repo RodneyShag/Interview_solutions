@@ -1,7 +1,7 @@
 #### Solution
 
 ```java
-public static boolean palPerm(String str) {
+boolean palPerm(String str) {
     str = str.toLowerCase().replaceAll("\\s", "");
     HashMap<Character, Integer> map = new HashMap<>(26);
     for (int i = 0; i < str.length(); i++) {
