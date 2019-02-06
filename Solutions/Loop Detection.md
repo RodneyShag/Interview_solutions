@@ -1,3 +1,13 @@
+#### Provided code
+
+Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
+```java
+class Node {
+    public Node next = null;
+    public int data = 0;
+}
+```
+
 #### Algorithm
 
 1. `k` = # of nodes from beginning of list to beginning of loop
