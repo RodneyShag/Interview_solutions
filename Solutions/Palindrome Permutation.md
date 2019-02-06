@@ -1,9 +1,9 @@
+#### Solution
 ```java
 import java.util.HashMap;
 
 public class PalindromePermutation {
     public static boolean palPerm(String str) {
-        /* Create HashMap to count characters in String */
         str = str.toLowerCase().replaceAll("\\s", "");
         HashMap<Character, Integer> map = new HashMap<>(26);
         for (int i = 0; i < str.length(); i++) {
@@ -27,5 +27,9 @@ public class PalindromePermutation {
         return true;
     }
 }
-
 ```
+
+#### Time/Space Complexity
+
+- &nbsp; sTime Complexity: O(n)
+- Space Complexity: O(1)

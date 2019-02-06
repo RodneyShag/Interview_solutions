@@ -27,7 +27,7 @@ public class IsUnique {
 ```
 
 #### Time/Space Complexity
--  Time Complexity: O(1)
+- Time Complexity: O(1)
 - Space Complexity: O(1)
 - Checking `str.length() > 256` lowered our time/space complexity from O(n) to O(1)
 
