@@ -27,7 +27,7 @@ void rotate90clockwise(int[][] image) {
 #### Solution to Follow-up Question
 
 ```java
-public static int[][] rotate180(int[][] image) {
+int[][] rotate180(int[][] image) {
     int n = image.length;
     for (int row = 0; row < n/2; row++) {
         for (int col = 0; col < n; col++) {
@@ -45,7 +45,7 @@ public static int[][] rotate180(int[][] image) {
 }
 
 /* Swaps 2 elements in a 2-D array */
-private static void swap(int[][] image, int r1, int c1, int r2, int c2) {
+private void swap(int[][] image, int r1, int c1, int r2, int c2) {
     int temp      = image[r1][c1];
     image[r1][c1] = image[r2][c2];
     image[r2][c2] = temp;

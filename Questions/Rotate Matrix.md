@@ -4,4 +4,4 @@ Given an image represented by an `NxN` matrix, where each pixel in the image is 
 
 #### Follow-up Question
 
-Rotate the `NxN` matrix 180 degrees.
+Rotate an `NxN` matrix by 180 degrees.
