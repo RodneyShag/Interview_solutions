@@ -31,5 +31,5 @@ public class PalindromePermutation {
 
 #### Time/Space Complexity
 
-- &nbsp; sTime Complexity: O(n)
+- &nbsp; Time Complexity: O(n)
 - Space Complexity: O(1)
