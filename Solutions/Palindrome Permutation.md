@@ -2,8 +2,9 @@
 
 ```java
 boolean palPerm(String str) {
+    final int NUM_LOWERCASE_LETTERS = 26;
     str = str.toLowerCase().replaceAll("\\s", "");
-    HashMap<Character, Integer> map = new HashMap<>(26);
+    HashMap<Character, Integer> map = new HashMap<>(NUM_LOWERCASE_LETTERS);
     for (int i = 0; i < str.length(); i++) {
         Character ch = str.charAt(i);
         if (Character.isLetter(ch)) {
