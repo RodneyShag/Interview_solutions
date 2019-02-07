@@ -29,7 +29,7 @@ void BFS(GraphNode node, int data) {
 
         for (GraphNode neighbor : curr.getNeighbors()) {
             if (!neighbor.visited) {
-                neighbor.visit(); // visit node BEFORE adding it to deque instead of when we take it off (to avoid duplicates on queue)
+                neighbor.visit();
                 deque.addLast(neighbor);
             }
         }
