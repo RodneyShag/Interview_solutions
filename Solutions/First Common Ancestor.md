@@ -16,9 +16,11 @@
 
 If tree is a Binary Search Tree, can go down the tree from the root to see where we need to diverge paths.
 
+
 #### Solution 1
 
 If we have links to parents, we can save all of node1's parents (ancestors) in a HashSet and then see if node2's parents (ancestors) match any of those.
+
 
 #### Solution 2
 
