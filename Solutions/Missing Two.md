@@ -1,3 +1,5 @@
+#### Solution
+
 Let's label the 2 missing numbers as `a` and `b`.
 
 Formula 1: Sum of 1 to n is (n)(n+1)/2

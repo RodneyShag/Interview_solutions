@@ -1,4 +1,4 @@
-####Solution
+#### Solution
 
 - We basically design an LRU cache
 - Main idea: Use linked list to keep track of popular pages. Use a HashMap<String, Node> (in parallel w/ the LinkedList) for fast access to LinkedList nodes (key = the url string, value = node in LinkedList)
