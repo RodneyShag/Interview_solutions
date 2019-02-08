@@ -1,9 +1,7 @@
-# [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
-* [High Priority](#high-priority)
-* [Medium Priority](#medium-priority)
+# High Priority
 
-### High Priority
+#### [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
 |              Topic              |   Section  |                                                                             Question                                                                            |                                                           Solution  (Java)                                                           | Difficulty |
 |:-------------------------------:|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
@@ -105,7 +103,9 @@
 |          More Questions         |    17.24   |                           [Max Submatrix](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Max%20Submatrix.md)                           |                [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Max%20Submatrix.md)                |    Hard    |
 
 
-### Medium Priority
+# Medium Priority
+
+#### [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
 |              Topic              |  Section  |                                                               Question                                                              |                                                    Solution (Java)                                                   | Difficulty |
 |:-------------------------------:|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|:----------:|
