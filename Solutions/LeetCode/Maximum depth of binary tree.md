@@ -1,3 +1,7 @@
+#### Notes
+
+- This problem defines a 1-Node tree to have height of 1
+
 #### Solution
 
 ```java

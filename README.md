@@ -104,9 +104,9 @@ From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Inte
 
 From [LeetCode](https://www.leetcode.com)
 
-|  #  |                                                   Question                                                  |                                                            Solution                                                            | Difficulty |
-|:---:|:-----------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|:----------:|
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/java) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Maximum%20depth%of%binary%tree.md) |    Easy    |
+|  #  |                                           Question                                          |                                                               Solution                                                               | Difficulty |
+|:---:|:-------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Maximum%20depth%20of%20binary%20tree.md) |    Easy    |
 
 
 # Medium Priority
