@@ -1,7 +1,7 @@
 
 # High Priority
 
-#### [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
+From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
 |              Topic              |   Section  |                                                                             Question                                                                            |                                                           Solution  (Java)                                                           | Difficulty |
 |:-------------------------------:|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
@@ -102,10 +102,16 @@
 |          More Questions         |    17.23   |                       [Max Black Square](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Max%20Black%20Square.md)                       |              [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Max%20Black%20Square.md)             |    Hard    |
 |          More Questions         |    17.24   |                           [Max Submatrix](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Max%20Submatrix.md)                           |                [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Max%20Submatrix.md)                |    Hard    |
 
+From [LeetCode](https://www.leetcode.com)
+
+|  #  |                                                   Question                                                  |                                                            Solution                                                            | Difficulty |
+|:---:|:-----------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/java) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Maximum%20depth%of%binary%tree.md) |    Easy    |
+
 
 # Medium Priority
 
-#### [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
+From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
 |              Topic              |  Section  |                                                               Question                                                              |                                                    Solution (Java)                                                   | Difficulty |
 |:-------------------------------:|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|:----------:|

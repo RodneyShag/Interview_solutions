@@ -1,3 +1,7 @@
+#### Notes
+
+This question can be similarly phrased as "Find a path from one node in a binary tree to another"
+
 #### Provided Code
 
 - [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)
