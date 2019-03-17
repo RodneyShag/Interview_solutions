@@ -108,6 +108,12 @@ From [LeetCode](https://www.leetcode.com)
 |:---:|:-------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Maximum%20depth%20of%20binary%20tree.md) |    Easy    |
 
+From [HackerRank](https://www.hackerrank.com)
+
+|                                     Question                                     |                                                          Solution                                                         | Difficulty |
+|:--------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|:----------:|
+| [Divisible Sum Pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Divisible%20Sum%20Pairs.md) |   Medium   |
+
 
 # Medium Priority
 
