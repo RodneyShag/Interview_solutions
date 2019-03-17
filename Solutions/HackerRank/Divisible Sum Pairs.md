@@ -1,4 +1,4 @@
-#### Notes
+#### Algorithm
 
 We keep track of the mod values in buckets for each number we read. We can do this
 by creating `k` buckets where bucket `i` counts each number `n` where `n % k = i`.
@@ -30,8 +30,8 @@ int divisibleSumPairs(int n, int k, int[] ar) {
     int count = 0;
     for (int value : ar) {
         int modValue = value % k;
-        count += bucket[(k - modValue) % k]; // adds # of elements in complement bucket
-        bucket[modValue]++;                  // saves in bucket
+        count += bucket[(k - modValue) % k]; // adds # of elements in complement bucket.
+        bucket[modValue]++;                  // saves in bucket.
     }
     return count;
 }

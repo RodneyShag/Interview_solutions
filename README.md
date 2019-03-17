@@ -150,3 +150,9 @@ From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Inte
 |         Threads & Locks         |    15.6   |      [Synchronized Methods](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Synchronized%20Methods.md)      |     [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Synchronized%20Methods.md)    |    Easy    |
 |          More Questions         |   16.01   |            [Number Swapper](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Number%20Swapper.md)            |        [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Number%20Swapper.md)       |   Medium   |
 |          More Questions         |   16.15   |               [Master Mind](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Master%20Mind.md)               |         [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Master%20Mind.md)         |   Medium   |
+
+From [HackerRank](https://www.hackerrank.com)
+
+|                                    ﻿Question                                   |                                                       Solution                                                       | Difficulty |
+|:-----------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|:----------:|
+| [Divisible Sum Pairs](https://www.hackerrank.com/challenges/electronics-shop) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Electronics%20Shop.md) |    Easy    |
