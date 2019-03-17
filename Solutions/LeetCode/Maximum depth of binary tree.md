@@ -13,3 +13,8 @@ int maxDepth(TreeNode root) {
     }
 }
 ```
+
+#### Time/Space Complexity
+
+- Time Complexity: O(n) since we must touch all nodes
+- Space Complexity: O(n) due to recursion (on a tree that may not be balanced)

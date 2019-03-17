@@ -2,8 +2,8 @@
 
 1. Sort both arrays.
 1. Linearly walk through both arrays (at the same time).
-  - If the combined price is unaffordable, find a cheaper harddrive `j--`
-  - If the combined price is too low, update "max", and find a more expensive keyboard `i++`
+    - If the combined price is unaffordable, find a cheaper harddrive `j--`
+    - If the combined price is too low, update "max", and find a more expensive keyboard `i++`
 
 #### Solution
 
