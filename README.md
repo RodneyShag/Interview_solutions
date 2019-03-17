@@ -154,6 +154,10 @@ From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Inte
 
 From [HackerRank](https://www.hackerrank.com)
 
-|                                    ﻿Question                                   |                                                       Solution                                                       | Difficulty |
-|:-----------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|:----------:|
-| [Divisible Sum Pairs](https://www.hackerrank.com/challenges/electronics-shop) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Electronics%20Shop.md) |    Easy    |
+|                                   Question                                   |                                                    Solution (Java)                                                    | Difficulty |
+|:----------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------:|:----------:|
+| [Electronics Shop](https://www.hackerrank.com/challenges/electronics-shop)   | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Electronics%20Shop.md)  |    Easy    |
+| [Minimum Distances](https://www.hackerrank.com/challenges/minimum-distances) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Minimum%20Distances.md) |    Easy    |
+| [Repeated String](https://www.hackerrank.com/challenges/repeated-string)     | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Repeated%20String.md)   |   Medium   |
+| [Find Digits](https://www.hackerrank.com/challenges/find-digits)             | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Find%20Digits.md)       |    Easy    |
+| [Picking Numbers](https://www.hackerrank.com/challenges/picking-numbers)     | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Picking%20Numbers.md)   |    Easy    |
