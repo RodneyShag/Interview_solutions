@@ -16,6 +16,9 @@ Create a pointer that iterates through a list. When it's at the end of the list,
 
 ```java
 Integer findMergeNode(Node headA, Node headB) {
+    if (headA == null || headB == null) {
+        return null;
+    }
     Node currA = headA;
     Node currB = headB;
 
