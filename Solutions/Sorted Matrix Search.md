@@ -1,8 +1,8 @@
-#### Solution 0
+### Solution 0
 
 - Binary search every row for O(m log n) runtime. Not coding this solution since Solution 1 (below) is more efficient.
 
-#### Solution 1
+### Solution 1
 
 - On every step, eliminate a row or a column.
   - Start in top right corner

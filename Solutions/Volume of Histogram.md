@@ -1,8 +1,8 @@
-#### Main idea
+### Main idea
 
 For each index, the tallest wall anywhere to the left, and to the right, determine the amount of water the index will hold. We can calculate this iteratively.
 
-#### Solution
+### Solution
 
 ```java
 int computeHistogramVolume(int[] histo) {

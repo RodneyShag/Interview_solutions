@@ -1,9 +1,9 @@
-#### Tips
+### Tips
 
 - 4 KB = 4096 Bytes = (4096 * 8) Bits > 32000, so 4 KB bit vector should be enough to hold 32,000 bits.
 - Using BitSet instead of HashMap since we have limited memory.
 
-#### Solution
+### Solution
 
 ```java
 void checkDuplicates(int[] array) {

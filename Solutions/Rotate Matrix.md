@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 void rotate90clockwise(int[][] image) {
@@ -19,12 +19,12 @@ void rotate90clockwise(int[][] image) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n<sup>2</sup>). Impossible to do better since must touch all n<sup>2</sup> elements.
 - Space Complexity: O(1)
 
-#### Solution to Follow-up Question
+### Solution to Follow-up Question
 
 ```java
 int[][] rotate180(int[][] image) {

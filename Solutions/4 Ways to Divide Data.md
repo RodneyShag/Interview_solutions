@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 - 4 ways to divide data (Read book's explanation for great tips)
     - by order of appearance (Benefit: won't ever need more machines than necessary)

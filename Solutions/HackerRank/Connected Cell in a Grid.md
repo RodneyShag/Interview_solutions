@@ -1,9 +1,9 @@
-#### Tips
+### Tips
 
 - Instead of using a `boolean[][] visited` array, we alter our original grid
 - Dont create a 2-D `Point` or `Cell` class. It's not necessary.
 
-#### Provided Code
+### Provided Code
 
 ```java
 int maxRegion(int[][] grid) {

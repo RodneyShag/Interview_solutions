@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 int maxSum(int[] array) {

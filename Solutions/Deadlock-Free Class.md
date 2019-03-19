@@ -1,10 +1,10 @@
-#### Solution
+### Solution
 
 Implement a directed graph and use DFS/BFS to detect a cycle.
 
 A deadlock can occur if and only if we find a cycle.
 
-#### Similar Solution
+### Similar Solution
 
 From MIT's "Hacking a Google Interview"
 

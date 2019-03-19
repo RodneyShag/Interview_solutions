@@ -1,10 +1,10 @@
-#### Tricks
+### Tricks
 
 - Use arrays as data structure for the words
 - Split at the commas of a long number (into groups of 3), using a function called "numToStringl00"
 - Don't forget to consider negative numbers
 
-#### Solution
+### Solution
 
 ```java
 class EnglishInt {

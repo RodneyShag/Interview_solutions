@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
 ```java
@@ -8,11 +8,11 @@ class Node {
 }
 ```
 
-#### Algorithm
+### Algorithm
 
 Create a pointer that iterates through a list. When it's at the end of the list, have it jump to the beginning of the other list. Create 2 of these pointers, pointing to 2 different list heads. The pointers will collide at the merge point after 1 or 2 passes. If they don't, then there is no merge point.
 
-#### Solution
+### Solution
 
 ```java
 Integer findMergeNode(Node headA, Node headB) {
@@ -45,7 +45,7 @@ Integer findMergeNode(Node headA, Node headB) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

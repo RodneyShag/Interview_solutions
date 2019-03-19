@@ -1,11 +1,11 @@
-#### Algorithm
+### Algorithm
 
 - We use 2 Heaps to keep track of median
 - We make sure that 1 of the following conditions is always true:
   1. `maxHeap.size() == minHeap.size()`
   1. `maxHeap.size() - 1 = minHeap.size()`
 
-#### Solution
+### Solution
 
 ```java
 class ContinuousMedian {

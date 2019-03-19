@@ -1,9 +1,9 @@
-#### Hints
+### Hints
 
 - Create Cell<K,V> generic class
 - Represent everything as ArrayList of LinkedLists of Cells
 
-#### Solution
+### Solution
 
 ```java
 @Getter

@@ -1,8 +1,8 @@
-#### Algorithm
+### Algorithm
 
 Just calculate the size of the SLL, then walk `size - k` elements into the list
 
-#### Solution
+### Solution
 
 ```java
 Node kthLast(Node n, int k) {
@@ -17,7 +17,7 @@ Node kthLast(Node n, int k) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

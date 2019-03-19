@@ -1,10 +1,10 @@
-#### Algorithm
+### Algorithm
 
 1. Sort Array in order by string length.
 1. Save original `String[]` in a `HashMap<String, Boolean>` to save words for fast lookup. Also use this to cache results.
 1. A word must be built of OTHER words. `isOriginalWord` flag helps us do this.
 
-#### Solution
+### Solution
 
 ```java
 class LengthComparator implements Comparator<String> {

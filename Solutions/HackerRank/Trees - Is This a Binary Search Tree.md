@@ -1,4 +1,4 @@
-#### Provided Code
+### Provided Code
 
 ```java
 class Node {
@@ -8,7 +8,7 @@ class Node {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 boolean checkBST(Node root) {

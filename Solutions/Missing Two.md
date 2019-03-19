@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 Let's label the 2 missing numbers as `a` and `b`.
 

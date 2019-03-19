@@ -1,4 +1,4 @@
-#### Question
+### Question
 
 Consider a simple data structure called `BiNode`, which has pointers to two other nodes.
 

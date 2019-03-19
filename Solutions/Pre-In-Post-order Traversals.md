@@ -1,8 +1,8 @@
-#### Provided Code
+### Provided Code
 
 - [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)
 
-#### Solution
+### Solution
 
 ```java
 void printPreOrder(TreeNode node) {

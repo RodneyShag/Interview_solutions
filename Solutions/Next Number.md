@@ -1,9 +1,9 @@
-#### Tips
+### Tips
 
 - The algorithm is from Cracking the Coding Interview, but my code is completely different. I like my version better.
 - Memorize the algorithm, not the code.
 
-#### Solution
+### Solution
 
 ```java
 getNext(int num) {

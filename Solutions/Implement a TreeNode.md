@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 This represents a binary Tree. If we wanted an n-ary tree, we would use an array of `TreeNode`s as children
 

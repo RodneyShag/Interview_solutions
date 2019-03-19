@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
 ```java
@@ -8,7 +8,7 @@ class Node {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 void removeDuplicates(Node head) {
@@ -27,12 +27,12 @@ void removeDuplicates(Node head) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity O(n)
 
-#### Alternate Solution
+### Alternate Solution
 
 - Brute-force compare all pairs (Advantage is low space complexity). Use 1 pointer to walk list, and another pointer to check all remaining nodes each time.
 - Time Complexity: O(n<sup>2</sup>)

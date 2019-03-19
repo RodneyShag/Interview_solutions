@@ -1,10 +1,10 @@
-#### Tips
+### Tips
 
 - Trick: Endpoints of array give us valuable information. We apply a modified binary search to this problem.
 - Pitfall: We want to break up the cases by comparing midValue to leftValue. DO NOT break it up by comparing midValue to the value we are searching for like in binary search
 - Array can only have 1 inflection point, therefore it is either to the left or right of midIndex. That means 1/2 of the array is ordered normally (in increasing order) and the other half has the inflection point.
 
-#### Solution
+### Solution
 
 ```java
 Integer search(int[] rotatedArray, int x) {

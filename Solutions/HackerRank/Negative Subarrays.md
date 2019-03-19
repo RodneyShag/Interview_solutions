@@ -1,8 +1,8 @@
-#### Notes
+### Notes
 
 A subarray must be contiguous. There are O(n^2) contiguous subarrays.
 
-#### Solution
+### Solution
 
 ```java
 int negativeSubarrays(int[] array) {
@@ -20,7 +20,7 @@ int negativeSubarrays(int[] array) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n^2)
 - Space Complexity: O(1)

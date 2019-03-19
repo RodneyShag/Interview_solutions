@@ -1,8 +1,8 @@
-#### Tip
+### Tip
 
 - Kind of like a "2 sum" problem. Can call this a "Closest 2 sum" problem.
 
-#### Solution
+### Solution
 
 ```java
 int smallestDifference(int[] array1, int[] array2) {
@@ -27,6 +27,6 @@ int smallestDifference(int[] array1, int[] array2) {
 }
 ```
 
-#### Time Complexity
+### Time Complexity
 
 - Time Complexity: O(a log a + b log b) where a, b are lengths of the 2 arrays

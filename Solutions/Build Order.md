@@ -1,8 +1,8 @@
-#### Tips
+### Tips
 
 - Solution is from Jeff Erickson's Algorithms.pdf, Section 19.5 Topological Sort
 
-#### Solution
+### Solution
 
 ```java
 enum Visited {

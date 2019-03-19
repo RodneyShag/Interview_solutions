@@ -1,6 +1,6 @@
 I found this code somewhere online.
 
-#### Solution
+### Solution
 
 ```java
 class MyThread extends Thread {

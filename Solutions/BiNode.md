@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 We are using `public` variables for simplicity.
 

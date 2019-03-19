@@ -1,4 +1,4 @@
-#### Provided Code
+### Provided Code
 
 ```java
 class Node {
@@ -7,7 +7,7 @@ class Node {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 // If "slow" and "fast" collide, we must have a cycle

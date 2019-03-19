@@ -1,8 +1,8 @@
-#### Tips
+### Tips
 
 - Ask if it's a "Singly-Linked List" or "Doubly-Linked List" (We implement a SLL below)
 
-#### Solution
+### Solution
 
 ```java
 class Node {

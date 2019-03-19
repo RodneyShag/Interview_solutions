@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 public class test {
@@ -42,13 +42,13 @@ public class test {
 }
 ```
 
-#### Notes
+### Notes
 
 Why not use just a HashMap instead of both a HashMap and an ArrayDeque?
 
 Well, an ArrayDeque helps keep the ordering of elements. Although the elements are also in our HashMap, they is no ordering to the elements in the HashMap since it's just a set.
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)

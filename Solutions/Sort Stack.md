@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 Stack<Integer> sort(Stack<Integer> stack) {
@@ -14,7 +14,7 @@ Stack<Integer> sort(Stack<Integer> stack) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n<sup>2</sup>)
 - Space Complexity: O(n)

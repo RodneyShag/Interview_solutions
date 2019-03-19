@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 void mergeSort(int[] array) {
@@ -41,7 +41,7 @@ private void merge(int[] array, int[] helper, int start, int mid, int end) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 -  Time Complexity: O(n log n)
 - Space Complexity: O(n)

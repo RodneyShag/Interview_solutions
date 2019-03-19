@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
 ```java
@@ -8,7 +8,7 @@ class Node {
 }
 ```
 
-#### Solution 1
+### Solution 1
 
 Same idea as Quicksort's partition() function
 
@@ -34,7 +34,7 @@ Node partition(Node head, int x) {
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 
-#### Solution 2
+### Solution 2
 
 If swapping data is not allowed, we can Create 2 SLLs from a SLL, and connect them.
 

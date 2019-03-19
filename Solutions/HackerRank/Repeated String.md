@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 long repeatedString(String str, long n) {

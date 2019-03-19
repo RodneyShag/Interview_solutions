@@ -1,10 +1,10 @@
-#### Algorithm
+### Algorithm
 
 1. Count the "running" differences (between letters and numbers) at each spot in array. Save in int[]
 1. If 2 indices in our int[] have the same difference, that means there's an equal subarray between them
 1. To find the max subarray, we find the largest distance between 2 indices with equal differences
 
-#### Solution
+### Solution
 
 ```java
 char[] maxSubarray(char[] array) {

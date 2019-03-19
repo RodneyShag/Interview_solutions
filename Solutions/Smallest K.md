@@ -1,4 +1,4 @@
-#### List of Solutions
+### List of Solutions
 
 - Let `m` be the million numbers and `n` be the billion numbers.
 
@@ -9,11 +9,11 @@
 | 2 | QuickSelect | O(n) average case, O(n^2) worst case (bad pivot) |     Favorite     |
 
 
-#### Solution 0
+### Solution 0
 
 Sort.
 
-#### Solution 1
+### Solution 1
 
 Max Heap (Using PriorityQueue in Java, which has O(log m) for add() and remove())
 
@@ -21,7 +21,7 @@ Max Heap (Using PriorityQueue in Java, which has O(log m) for add() and remove()
   1. O(m) to build a MAX heap of first 1 million elements (using algo from CS 225), largest element at the top.
   1. For each of the remaining "n" entries, if it's smaller than the heap's max element, we insert it into our heap by replacing the largest element (top of heap) with it. remove(), add() are O(log m), so total runtime O(n log m)
 
-#### Solution 2
+### Solution 2
 
 - `Quickselect`
   - Finds "nth" smallest element in an array. Returns its value (Code from Wikipedia).

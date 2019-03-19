@@ -1,4 +1,4 @@
-#### Provided Code
+### Provided Code
 
 ```java
 class SinglyLinkedListNode {
@@ -7,7 +7,7 @@ class SinglyLinkedListNode {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 int getNode(SinglyLinkedListNode head, int positionFromTail) {
@@ -29,7 +29,7 @@ int getNode(SinglyLinkedListNode head, int positionFromTail) {
 }
 ```
 
-#### Time/Space complexity
+### Time/Space complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

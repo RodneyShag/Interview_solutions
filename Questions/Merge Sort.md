@@ -1,3 +1,3 @@
-#### Question
+### Question
 
 Implement Merge Sort.

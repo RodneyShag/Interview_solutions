@@ -1,4 +1,4 @@
-#### Optionally implement your own BitSet
+### Optionally implement your own BitSet
 
 ```java
 
@@ -51,7 +51,7 @@ public class MyBitSet {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 void findNumber(int[] input) {
@@ -76,7 +76,7 @@ void findNumber(int[] input) {
 }
 ```
 
-#### Follow-up Solution
+### Follow-up Solution
 
 ```java
 void findNumber2(int[] input) {

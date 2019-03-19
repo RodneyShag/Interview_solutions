@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 void checkMagazine(String[] magazine, String[] note) {

@@ -1,4 +1,4 @@
-#### Provided Code
+### Provided Code
 
 ```java
 class Node {
@@ -8,7 +8,7 @@ class Node {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 void LevelOrder(Node root) {
@@ -29,7 +29,7 @@ void LevelOrder(Node root) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)

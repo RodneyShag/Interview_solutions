@@ -1,9 +1,9 @@
-#### Tips
+### Tips
 
 - The first 1/2 page of "Cracking the Coding Interview" is a great thing to explain during an interview.
 - This is a dynamic programming question. Solve it recursively using a cache.
 
-#### Solution
+### Solution
 
 ```java
 public class Coins {

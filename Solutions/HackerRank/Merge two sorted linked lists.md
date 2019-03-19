@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 ```java
 class Node {
@@ -7,7 +7,7 @@ class Node {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 SinglyLinkedListNode mergeLists(SinglyLinkedListNode currA, SinglyLinkedListNode currB) {
@@ -51,7 +51,7 @@ SinglyLinkedListNode mergeLists(SinglyLinkedListNode currA, SinglyLinkedListNode
 }
 ```
 
-#### Time/Space complexity
+### Time/Space complexity
 
 - Time Complexity: O(n + m)
 - Space Complexity: O(1)

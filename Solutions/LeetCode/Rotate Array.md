@@ -1,8 +1,8 @@
-#### Algorithm
+### Algorithm
 
 Rotate array (in place) using 3 reverse operations
 
-#### Solution
+### Solution
 
 ```java
 class Solution {
@@ -34,7 +34,7 @@ class Solution {
 
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1) by doing an "in place" rotation

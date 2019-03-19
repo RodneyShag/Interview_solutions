@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 ArrayList<LinkedList<TreeNode>> createLists(TreeNode root) {
@@ -27,7 +27,7 @@ private void createListsHelper(TreeNode node, ArrayList<LinkedList<TreeNode>> li
 }
 ```
 
-#### Tricky Implementation Details
+### Tricky Implementation Details
 1. Knowing to return an "ArrayList<LinkedList<Node>>".
 1. Knowing that, to alter the "ArrayList<LinkedList<Node>>", we should pass it as a parameter so it can be altered.
 1. Know to also pass the "level" down the tree.

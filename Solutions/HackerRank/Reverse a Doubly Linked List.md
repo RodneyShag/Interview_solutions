@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 ```java
 class DoublyLinkedListNode {
@@ -8,7 +8,7 @@ class DoublyLinkedListNode {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
@@ -29,7 +29,7 @@ DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
 }
 ```
 
-#### Time/Complexity
+### Time/Complexity
 
 -  Time Complexity: O(n)
 - Space Complexity: O(1)

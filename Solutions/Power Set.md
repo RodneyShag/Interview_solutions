@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 ArrayList<ArrayList<Integer>> getSubsets(ArrayList<Integer> set) {

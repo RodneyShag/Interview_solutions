@@ -1,8 +1,8 @@
-#### Tips
+### Tips
 
 - Should ask interviewer if String is ASCII or Unicode (We assume ASCII)
 
-#### Solution
+### Solution
 
 ```java
 boolean uniqueCharacters(String str) {
@@ -22,13 +22,13 @@ boolean uniqueCharacters(String str) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 - Checking `str.length() > 256` lowered our time/space complexity from O(n) to O(1)
 
-#### Solution to Follow-up Question
+### Solution to Follow-up Question
 
 - Can do brute-force solution by comparing all pairs
 - Time Complexity: O(n^2), but since strings above NUM_ASCII_CHARS=256 immediately return false, time complexity becomes O(1)

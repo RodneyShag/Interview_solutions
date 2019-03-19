@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
 ```java
@@ -8,7 +8,7 @@ class Node {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 class Stack {

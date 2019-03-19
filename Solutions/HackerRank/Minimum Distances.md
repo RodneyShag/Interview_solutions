@@ -1,9 +1,9 @@
-#### Main trick
+### Main trick
 
 Use a `HashMap<Integer, Integer>` that maps from "value" to "index" to keep track
 of the largest index for each value we've seen so far as we loop through array
 
-#### Solution
+### Solution
 
 ```java
 int minimumDistances(int[] array) {
@@ -21,7 +21,7 @@ int minimumDistances(int[] array) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)

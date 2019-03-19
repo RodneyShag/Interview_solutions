@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 Integer Iterative(int[] sortedArray, int value) {
@@ -19,7 +19,7 @@ Integer Iterative(int[] sortedArray, int value) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(log n)
 - Space Complexity: O(1)

@@ -1,4 +1,4 @@
-#### Algorithm
+### Algorithm
 
 1. If pattern is all the same letter (aaaaa... or bbbbb...), treat it as a special case.
 1. Invert pattern (if necessary) to have it start with "a" instead of "b"
@@ -7,7 +7,7 @@
   - for each maxLengthA, calculate maxLengthB
   - use a helper function: checkMatch(String value, String pattern, int aLength, int bLength)
 
-#### Solution
+### Solution
 
 ```java
 boolean matches(String value, String pattern) {

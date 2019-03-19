@@ -1,13 +1,13 @@
-#### Provided Code
+### Provided Code
 
 - [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)
 
-#### Tips
+### Tips
 
 - Read Cracking the Coding Interview's logic, but ignore its code. The code below is much cleaner.
 - Notice there are 2 distinct cases: `leftMostChild()`, and `properParent()`
 
-#### Solution
+### Solution
 
 ```java
 TreeNode inOrderSucc(TreeNode node) {

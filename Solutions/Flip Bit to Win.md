@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 int flipBit(int n) {
@@ -36,7 +36,7 @@ private boolean getBit(int num, int bit) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(b) where b is number of bits in int.
 - Space Complexity: O(1)

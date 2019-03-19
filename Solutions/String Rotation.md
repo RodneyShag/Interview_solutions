@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 boolean isRotation(String s1, String s2) {
@@ -10,6 +10,6 @@ boolean isRotation(String s1, String s2) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Same complexity as .contains() function

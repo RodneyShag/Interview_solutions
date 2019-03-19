@@ -7,7 +7,7 @@
 
 Not coded.
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Let `t1` have `n` nodes and `t2` have m nodes
 - Time Complexity: `O(n + m)` since `.isSubstring()` is linear time complexity
@@ -54,7 +54,7 @@ public static boolean matchTree(TreeNode p, TreeNode q) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Let `t1` have `n` nodes and `t2` have m nodes
 - Time Complexity

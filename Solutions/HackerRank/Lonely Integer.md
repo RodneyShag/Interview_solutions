@@ -1,4 +1,4 @@
-#### Notes
+### Notes
 
 uses XOR. Keep in mind:
 
@@ -6,7 +6,7 @@ uses XOR. Keep in mind:
 1. x ^ 0 = x
 1. XOR is commutative and associative
 
-#### Solution
+### Solution
 
 ```java
 int findLonely(List<Integer> array) {
@@ -18,7 +18,7 @@ int findLonely(List<Integer> array) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

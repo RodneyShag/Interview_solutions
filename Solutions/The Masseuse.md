@@ -1,4 +1,4 @@
-#### Tips
+### Tips
 
 There are 2 ways to view this problem:
   1. Left to Right: This is where cache[i] depends on cache[i+1] and cache[i+2]
@@ -11,7 +11,7 @@ In both solutions below, I view it as Method #2 above
 | 1 | Recursive Solution - with Cache  |      O(n)       |       O(n)       |
 | 2 | Iterative Solution               |      O(n)       |       O(1)       |
 
-#### Solution 1
+### Solution 1
 
 ```java
 int maxMinutes1(int[] massages) {
@@ -33,7 +33,7 @@ private static int maxMinutes1(int[] massages, int index, int[] cache) {
 }
 ```
 
-#### Solution 2
+### Solution 2
 
 ```java
 int maxMinutes2(int[] massages) {

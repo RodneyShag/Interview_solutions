@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 void minMax(int[] array) {

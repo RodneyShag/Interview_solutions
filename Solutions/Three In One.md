@@ -1,8 +1,8 @@
-#### Implementation Tip
+### Implementation Tip
 
 - Use `int[] heads = {-1,-1,-1}` and simply implement `arrayOffset(int stackNum)`, push/pop/peek
 
-#### Solution
+### Solution
 
 ```java
 class ThreeInOne {

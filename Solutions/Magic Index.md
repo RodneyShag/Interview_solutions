@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 Use standard Binary Search: Only works if no duplicate numbers.
 
@@ -25,7 +25,7 @@ private static Integer magicFast(int[] sortedArray, int start, int end) {
 
 - Time complexity: O(log n) time on sorted array
 
-#### Follow-up Solution
+### Follow-up Solution
 
 If integers in sorted array are NOT UNIQUE:
 

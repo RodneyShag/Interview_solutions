@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 boolean palPerm(String str) {
@@ -28,7 +28,7 @@ boolean palPerm(String str) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

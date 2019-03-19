@@ -1,12 +1,12 @@
-#### Provided Code
+### Provided Code
 
 - [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)
 
-#### The Big Trick
+### The Big Trick
 
 - Instead of checking if a node starts a path that sums to "value", we check if it ENDS a path summing to "value".
 
-#### Solution
+### Solution
 
 ```java
 
@@ -47,7 +47,7 @@ public class PathWithSums {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - We are assuming a BALANCED binary tree
 - __Time complexity__: O(n log(n)) since we touch all "n" nodes, and `findSum` is O(log n)) in AVERAGE case. `findSum` worst case is O((log n)<sup>2</sup>) since it may call print every single time, making overall time complexity worst case O(n (log n)<sup>2</sup>)

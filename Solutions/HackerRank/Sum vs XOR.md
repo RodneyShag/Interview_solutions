@@ -1,4 +1,4 @@
-#### Notes
+### Notes
 
 XOR represents binary addition without the "carry" for each digit.
 
@@ -13,7 +13,7 @@ For each digit in "n" that is a 0, we can have the corresponding digit in "x" be
 Now we calculate the number of possibilities for "x" by  counting the number of 0s in "n" (up to the most significant 1 in n), and doing 2^(number of 0s) (where ^ is exponentiation in this case) to count all combinations.
 
 
-#### Solution
+### Solution
 
 ```java
 long sumXor(long n) {

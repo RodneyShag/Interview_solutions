@@ -1,6 +1,6 @@
 From "Cracking the Coding Interview" book solution.
 
-#### Solution
+### Solution
 
 By applying the word synchronized to a method, we ensure that two threads cannot execute synchronized methods on the same object instance at the same time.
 

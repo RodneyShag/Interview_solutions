@@ -1,10 +1,10 @@
-#### Tricks
+### Tricks
 
 1. Overridden .equals(Object o) and .hashCode() methods (so HashMap will work).
 2. Use 2 nested loops to loop through pairs of points, creating lines, inserting them into a HashMap<Line, Integer>
 3. Loop through HashMap to see which line was most popular.
 
-#### Solution
+### Solution
 
 ```java
 Line findBestLine(Point[] points) {

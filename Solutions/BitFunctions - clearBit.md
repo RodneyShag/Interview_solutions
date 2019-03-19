@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 int clearBit(int num, int bit) {

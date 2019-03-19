@@ -1,8 +1,8 @@
-#### Provided Code
+### Provided Code
 
 - [GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20GraphNode.md)
 
-#### Solution
+### Solution
 
 ```java
 DFS(GraphNode node, int data) {
@@ -24,6 +24,6 @@ DFS(GraphNode node, int data) {
 }
 ```
 
-#### Alternate Solution
+### Alternate Solution
 
 The above solution is recursive. Can alternatively code DFS iteratively like in our [BFS solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Breadth-First%20Search.md), by using a Stack instead of a Queue.

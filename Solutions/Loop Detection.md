@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
 ```java
@@ -8,7 +8,7 @@ class Node {
 }
 ```
 
-#### Algorithm
+### Algorithm
 
 1. `k` = # of nodes from beginning of list to beginning of loop
 1. `n` = loop size
@@ -16,7 +16,7 @@ class Node {
 1. That means they will meet in `n - k` steps (Since they get 1 step closer each time).
 1. When they meet, `slow` is `n - k` steps into the loop, so `slow` will be at beginning of loop in `k` single steps.
 
-#### Solution
+### Solution
 
 ```java
 Node findBeginning(Node head) {

@@ -1,10 +1,10 @@
-#### Tricks
+### Tricks
 
 1. Preprocess the grid
 1. Have `Cell` and `Subsquare` classes
 1. Search largest squares first
 
-#### Solution
+### Solution
 
 ```java
 class Cell {
@@ -78,7 +78,7 @@ private boolean isValidSquare(Cell[][] cellMatrix, int row, int col, int length)
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n<sup>3</sup>)
 - Space Complexity: O(n<sup>2</sup>)

@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 int multiply(int a, int b) {

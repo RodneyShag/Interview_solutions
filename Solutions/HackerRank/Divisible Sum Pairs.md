@@ -1,4 +1,4 @@
-#### Algorithm
+### Algorithm
 
 We keep track of the mod values in buckets for each number we read. We can do this
 by creating `k` buckets where bucket `i` counts each number `n` where `n % k = i`.
@@ -22,7 +22,7 @@ Bucket   Complement Bucket
 As we come across each number, we find its corresponding complement bucket. Each number in
 this complement bucket can be paired with our original number to create a sum divisible by `k`
 
-#### Solution
+### Solution
 
 ```java
 int divisibleSumPairs(int n, int k, int[] ar) {
@@ -37,7 +37,7 @@ int divisibleSumPairs(int n, int k, int[] ar) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n + k)
 - Space Complexity: O(k)

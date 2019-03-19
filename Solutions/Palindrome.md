@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
 
@@ -9,7 +9,7 @@ class Node {
 }
 ```
 
-#### Solution 1
+### Solution 1
 
 ```java
 boolean palindrome(Node head) {
@@ -39,7 +39,7 @@ boolean palindrome(Node head) {
 - Time Complexity: O(n)
 - Space Complexity: O(n)
 
-#### Solution 2
+### Solution 2
 
 1. Deep copy list.
 1. Reverse it.

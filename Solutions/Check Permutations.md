@@ -1,9 +1,9 @@
-#### Tips
+### Tips
 
 - Should ask interviewer if String is ASCII or Unicode (We assume ASCII)
 - Algorithm: Count the different characters using an array (as shown below) or a HashMap. For each String, we can save the count of each character in an array, then compare these 2 arrays. However, instead of using 2 arrays, we can do it with 1, as shown below.
 
-#### Solution
+### Solution
 
 ```java
 class CheckPermutations {
@@ -28,7 +28,7 @@ class CheckPermutations {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

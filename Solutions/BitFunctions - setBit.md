@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 int setBit(int num, int bit) {

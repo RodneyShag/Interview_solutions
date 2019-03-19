@@ -1,4 +1,4 @@
-#### List of Solutions
+### List of Solutions
 
 | # |      Solutions      | Runtime |   Space   |  Preference  |
 |:-:|:-------------------:|:--------|----------:|:------------:|
@@ -9,7 +9,7 @@
 - Only downside to solution 3 is that results aren't cached, so each call to function takes O(n) time
 
 
-#### Solution 1
+### Solution 1
 
 ```java
 public class Fibonacci {
@@ -36,12 +36,12 @@ public class Fibonacci {
 }
 ```
 
-#### Solution 2
+### Solution 2
 
 - Solution omitted, but very similar to solution 3.
 
 
-#### Solution 3
+### Solution 3
 
 ```java
 int fibIterative(int n) { // assumes 1st and 2nd Fibonacci numbers are defined as value 1.

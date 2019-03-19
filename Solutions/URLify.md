@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 void replaceWhitespace(char[] sentence, int trueLength) {

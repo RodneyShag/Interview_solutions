@@ -1,9 +1,9 @@
-#### Tricks
+### Tricks
 
 - put all the non-hit characters into a `HashMap<Character, Integer>`
 - create a `Result` class since we have to return 2 things.
 
-#### Solution
+### Solution
 
 ```java
 class Result {

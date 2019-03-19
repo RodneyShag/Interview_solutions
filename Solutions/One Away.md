@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 boolean oneAway(String s1, String s2) {
@@ -53,7 +53,7 @@ private Boolean oneEditInsert(String s1, String s2) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n+m)
 - Space Complexity: O(1)

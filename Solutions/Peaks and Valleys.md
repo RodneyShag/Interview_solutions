@@ -1,9 +1,9 @@
-#### Algorithm
+### Algorithm
 
 Look at groups of 3 and put the "valleys" in the right place. This will also make the "peaks" fall in the right place.
 
 
-#### Solution
+### Solution
 
 ```java
 void sortValleyPeak(int[] array) {

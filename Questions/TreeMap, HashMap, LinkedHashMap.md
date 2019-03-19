@@ -1,4 +1,4 @@
-#### Question
+### Question
 
 (This is a Java-specific question)
 

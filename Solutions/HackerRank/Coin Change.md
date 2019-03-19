@@ -1,9 +1,9 @@
-#### Notes
+### Notes
 
 - Use a HashMap as a cache to speed up runtime
 - Must use `long` instead of `int` to avoid integer overflow
 
-#### Solution
+### Solution
 
 ```java
 long ways(int n, int[] coins) {

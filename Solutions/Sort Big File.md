@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 - External Sort
   1. We will assume that 20 gigabytes of data is too big to bring into memory.

@@ -1,4 +1,4 @@
-#### Provided Code
+### Provided Code
 
 ```java
 String superReducedString(String str) {
@@ -26,11 +26,11 @@ String superReducedString(String str) {
 }
 ```
 
-#### Notes
+### Notes
 
 Can alternatively use an ArrayDeque instead of a Stack. Just make sure to iterate through it properly since iteration order is opposite that of a Stack.
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)

@@ -1,4 +1,4 @@
-#### Notes
+### Notes
 
 To maximize A xor B, we want A and B to differ as much as possible at every bit index.
 
@@ -17,7 +17,7 @@ Example:
 
   Notice that we never directly calculate the values of A and B
 ```
-#### Solution
+### Solution
 
 ```java
 int maximizingXor(int L, int R) {

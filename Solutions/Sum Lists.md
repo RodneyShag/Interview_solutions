@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 - Reverse Order: Iterative solution
 
@@ -39,7 +39,7 @@ Node addReverseOrder(Node n, Node m) {
 - Time Complexity: O(n + m)
 - Space Complexity: O(n + m)
 
-#### Follow-up Solution
+### Follow-up Solution
 
 - Forward Order: Recursive solution
 

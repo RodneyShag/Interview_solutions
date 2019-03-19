@@ -1,8 +1,8 @@
-#### Algorithm
+### Algorithm
 
 - Run Breadth-First Search (BFS) from start node and see if we arrive at end node
 
-#### Solution
+### Solution
 
 We are provided 2  [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)s.
 
@@ -32,6 +32,6 @@ boolean routeExists(GraphNode start, GraphNode end) {
 }
 ```
 
-#### Improvement
+### Improvement
 
 - Do bi-directional BFS to improve runtime

@@ -1,4 +1,4 @@
-#### Algorithm
+### Algorithm
 
 1. Notice there is a special restriction on the range of values in the array: values are between 0 and 100.
 1. Since the order of elements in our array does not matter, we can just keep the counts of each number.
@@ -6,7 +6,7 @@
 1. In our "counts" array, the adjacent pair with the largest sum is our final solution.
 1. This is because the original numbers represented by the 2 adjacent slots in counts[] can be used to create a maximal solution
 
-#### Solution
+### Solution
 
 ```java
 int pickingNumbers(List<Integer> array) {

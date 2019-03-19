@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 First, create a `Tower` which is just a `Stack` with:
 1. Error Checking

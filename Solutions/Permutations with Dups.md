@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 public ArrayList<String> getPermutations(String str) {

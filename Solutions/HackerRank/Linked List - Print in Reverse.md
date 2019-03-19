@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 ```java
 class SinglyLinkedListNode {
@@ -7,7 +7,7 @@ class SinglyLinkedListNode {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 void reversePrint(SinglyLinkedListNode n) {

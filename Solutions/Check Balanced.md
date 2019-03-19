@@ -1,12 +1,12 @@
-#### Provided Code
+### Provided Code
 
 - [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)
 
-#### Algorithm
+### Algorithm
 
 If subtree at Node is imbalanced, return -1. Otherwise, return height of subtree.
 
-#### Solution
+### Solution
 
 ```java
 boolean isBalanced(TreeNode root) {
@@ -35,7 +35,7 @@ private int isBalancedHelper(TreeNode root) {
 }
 ```
 
-#### Time Complexity
+### Time Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)

@@ -1,8 +1,8 @@
-#### Provided Code
+### Provided Code
 
 - [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)
 
-#### Solution
+### Solution
 
 ```java
 isBST(TreeNode root) {
@@ -20,7 +20,7 @@ private boolean isBST_Helper(TreeNode node, int min, int max) {
 }
 ```
 
-#### Time Complexity
+### Time Complexity
 
 -  Time Complexity: O(n)     - since we visit every node
 - Space Complexity: O(log n) - that's the depth of the recursion

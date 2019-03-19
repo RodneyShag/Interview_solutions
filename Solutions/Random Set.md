@@ -1,4 +1,4 @@
-#### Algorithm
+### Algorithm
 
 Recursive explanation from "Cracking the Coding Interview" book
 
@@ -6,7 +6,7 @@ Suppose we have an algorithm that can pull a random set of `m` elements from an 
 
 We can first pull a random set of size m from the first `n - 1` elements. Then, we just need to decide if `array[n]` should be inserted into our subset (which would require pulling out a random element from it). An easy way to do this is to pick a random number `k` from `0` through `n`. If `k < m`, then insert `array[n]` into `subset [k]`.This will both "fairly" (i.e., with proportional probability) insert `array[n]` into the subset and "fairly" remove a random element from the subset.
 
-#### Solution
+### Solution
 
 This is an iterative solution of the above recursive explanation
 

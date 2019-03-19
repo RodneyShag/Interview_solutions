@@ -1,8 +1,8 @@
-#### Main trick
+### Main trick
 
 Using `n % 10` and `n /= 10` to loop through digits of a number.
 
-#### Solution
+### Solution
 
 ```java
 int findDigits(int num) {

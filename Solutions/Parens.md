@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 ArrayList<String> generateParentheses(int count) {

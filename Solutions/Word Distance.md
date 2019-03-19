@@ -1,4 +1,4 @@
-#### Solution 1
+### Solution 1
 
 Linear Search
 
@@ -27,7 +27,7 @@ Integer shortest(String[] words, String word1, String word2) {
 }
 ```
 
-#### Solution 2
+### Solution 2
 
 Preprocess with HashMap
 

@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 ```java
 void zero(int[][] array) {
     int M = array.length;

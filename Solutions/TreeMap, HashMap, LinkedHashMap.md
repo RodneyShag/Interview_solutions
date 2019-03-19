@@ -1,18 +1,18 @@
-#### HashMap
+### HashMap
 
 - O(1) add and remove.
 - Iterating over it will return elements in an arbitrary order
 
-#### TreeMap
+### TreeMap
 
 - O(log n) add and remove
 - Iterating over it will return elements in sorted order
 
-#### LinkedHashMap
+### LinkedHashMap
 
 - O(1) add and remove
 - Iterating over it will return elements in the same order they were inserted
 
-#### Links
+### Links
 
 - [StackOverflow Answer](https://stackoverflow.com/a/17708526)

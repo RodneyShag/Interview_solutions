@@ -1,4 +1,4 @@
-#### Provided code
+### Provided code
 
 ```java
 class DoublyLinkedListNode {
@@ -8,7 +8,7 @@ class DoublyLinkedListNode {
 }
 ```
 
-#### Solution
+### Solution
 
 ```java
 DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
@@ -44,7 +44,7 @@ DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
 }
 ```
 
-#### Time/Space complexity
+### Time/Space complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

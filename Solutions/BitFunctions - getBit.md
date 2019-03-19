@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 boolean getBit(int num, int bit) {

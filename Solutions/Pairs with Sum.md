@@ -1,11 +1,11 @@
-#### Good question to ask interviewer
+### Good question to ask interviewer
 
 - Given { 1, 5, 1, 5 }, what do you want our output be?
   1. {1,5}
   2. {1,5}, {5,1}
   3. {1,5}, {1,5}, {5,1}, {5,1}
 
-#### Solution
+### Solution
 
 ```java
 void twoSum_NoDuplicatesExist(int[] array, int sum) {

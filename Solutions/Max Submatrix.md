@@ -1,4 +1,4 @@
-#### Solution Comparisons
+### Solution Comparisons
 
 | # |     Solution      |                 Runtime                 |    Preference    |
 |:-:|:-----------------:|:---------------------------------------:|:----------------:|
@@ -6,7 +6,7 @@
 | 2 | Pre-process       | O(n<sup>4</sup>)                        | Worth Mentioning |
 | 3 | maxSubarray trick | O(R<sup>2</sup>*C) (R = rows, C = cols) |     Favorite     |
 
-#### Solution 1
+### Solution 1
 
 ```java
 int findLargestSubmatrix(int[][] grid) {
@@ -37,7 +37,7 @@ public int getSum(int[][] grid, int rowStart, int rowEnd, int colStart, int colE
 }
 ```
 
-#### Solution 2
+### Solution 2
 
 ```java
 int findLargestSubmatrix2(int[][] grid) {
@@ -93,7 +93,7 @@ private static int getSum2(int[][] processed, int rowStart, int rowEnd, int colS
 }
 ```
 
-#### Solution 3
+### Solution 3
 
 ```java
 int findLargestSubmatrix3(int[][] grid) {

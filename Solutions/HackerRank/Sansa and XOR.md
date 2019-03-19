@@ -1,4 +1,4 @@
-#### Notes
+### Notes
 
 ```
 We know that a number XORed with itself is 0. Instead of calculating the subarrays directly,
@@ -20,7 +20,7 @@ throughout the subarrays. We can go ahead and XOR the values of the even-indexed
 in the original array to get our final answer.
 ```
 
-#### Solution
+### Solution
 
 ```java
 int sansaXor(int[] array) {
@@ -38,7 +38,7 @@ int sansaXor(int[] array) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

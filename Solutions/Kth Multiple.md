@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 int getKthMagicNumber(int k) { // assuming "k" counts from 1...
@@ -39,7 +39,7 @@ int getKthMagicNumber(int k) { // assuming "k" counts from 1...
 ```
 
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)

@@ -1,6 +1,6 @@
 From "Cracking the Coding Interview" book solution.
 
-#### Solution
+### Solution
 
 Processes and threads are related to each other but are fundamentally different.
 

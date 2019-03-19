@@ -1,11 +1,11 @@
-#### Tricks
+### Tricks
 
 - Compare the 2 String lengths right at the beginning
 - Use [BFS](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Breadth-First%20Search.md)
 - Have a `getNeighbors(String str)` function
 - Use `HashMap<String, String> backtrackMap` to save solution
 
-#### Solution
+### Solution
 ```java
 class WordTransformer {
 

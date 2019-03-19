@@ -1,9 +1,9 @@
-#### Clever Trick
+### Clever Trick
 
 1. Preprocess all possible boards to create a 1-1 mapping from boards to integers: 0 to maxNumBoards
 1. Use an array of booleans to indicate which boards are winning boards.
 
-#### Solution
+### Solution
 
 ```java
 class TicTacWin {

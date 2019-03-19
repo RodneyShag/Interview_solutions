@@ -1,4 +1,4 @@
-#### Algorithm
+### Algorithm
 
 1. For each integer in smaller array, create a list of its positions in larger list (using `HashMap`). Our implementation takes `O(S+B)` time (`S` is length of smaller array, `B` is length of longer array)
 1. We put the head of each list into a `minHeap`. The [min, max] range in the `minHeap` is always a solution range (although it may be too large).
@@ -8,7 +8,7 @@
 - Tricky implementation: Update `min` when removing from minHeap. Update `max` when placing into minHeap
 - Time Complexity: `O(S + B log S)`
 
-#### Solution
+### Solution
 ```java
 void shortest(int[] arrayA, int[] arrayB) {
     HashMap<Integer, ArrayDeque<HeapNode>> map = makeLists(arrayA, arrayB);

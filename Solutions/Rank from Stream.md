@@ -1,4 +1,4 @@
-#### Analysis of Data Structures we can use
+### Analysis of Data Structures we can use
 
 |   Data Structure   | Insert (into sorted structure) |                              getRank()                                    |
 |:------------------:|:------------------------------:|:-------------------------------------------------------------------------:|
@@ -6,7 +6,7 @@
 | Linked List        | O(n)                           | O(n) since we can't do binary search on linked list                       |
 | HashMap            | O(1)                           | O(n) since HashMap doesn't help us find rank in any way (it's not sorted) |
 | Binary Search Tree | O(log n)                       | O(log n) (assuming it's balanced)                                         |
-#### Solution
+### Solution
 
 ```java
 class RankNode {

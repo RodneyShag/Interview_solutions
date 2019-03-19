@@ -1,9 +1,9 @@
-#### Tips
+### Tips
 
 - same concept as `merge()` from [MergeSort](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Merge%20Sort.md)
 - Additional Trick: copy to end of array since that's where our empty buffer is.
 
-#### Solution
+### Solution
 
 ```java
 void merge(int[] a, int[] b, int lastA, int lastB) { // lastA is index of last element in array. Same with lastB

@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 - Simple Answer: Use HashMap to detect duplicates
   - 10 billion URLS at 100 characters each at 4 bytes each = 4 terabytes of information. Can't save this all in 1 file.

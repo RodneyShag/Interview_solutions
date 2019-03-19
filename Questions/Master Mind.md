@@ -1,4 +1,4 @@
-#### Question
+### Question
 
 The Game of Master Mind is played as follows:
 

@@ -1,4 +1,4 @@
-#### Question
+### Question
 
 Suppose we have the following code:
 

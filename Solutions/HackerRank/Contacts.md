@@ -1,4 +1,4 @@
-#### Provided Code
+### Provided Code
 
 ```java
 /* Based loosely on tutorial video in this problem */

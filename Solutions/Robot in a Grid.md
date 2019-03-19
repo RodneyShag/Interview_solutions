@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 There are `x+y` moves total. Choose `x` of them to go right. So it's `x+y` choose `x` (The combinations formula), giving:
 ```
@@ -29,7 +29,7 @@ int numPaths(int cols, int rows) {
 }
 ```
 
-#### Follow-up Solution
+### Follow-up Solution
 
 - I search from end to start (makes code simpler to write)
 - The reason we use a HashMap as a cache instead of an int[][] is because HashMap can give us 3 pieces of information:

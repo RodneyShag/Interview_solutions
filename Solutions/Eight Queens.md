@@ -1,10 +1,10 @@
-#### Tricks
+### Tricks
 
 1. Represent a solution ChessBoard as an Integer[] with 8 elements (since there is a queen on each row)
 1. Represent all solutions as ArrayList<Integer[]>.
 1. We don't cache previous results since we are looking for ALL possible solutions
 
-#### Solution
+### Solution
 
 ```java
 class EightQueens {

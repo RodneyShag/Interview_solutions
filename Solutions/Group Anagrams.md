@@ -1,10 +1,10 @@
-#### Tips
+### Tips
 
 - HashMap:
   - key -   the sorted version of the String.
   - value - all the unsorted Strings that sort to the key.
 
-#### Solution
+### Solution
 
 ```java
 void groupAnagrams(String[] array) {

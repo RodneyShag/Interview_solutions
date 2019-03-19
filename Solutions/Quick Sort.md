@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 void quickSort(int[] array) {
@@ -49,7 +49,7 @@ private void swap(int[] array, int i, int j) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity
   - Worst Case - O(n<sup>2</sup>)

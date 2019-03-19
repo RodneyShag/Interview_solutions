@@ -1,8 +1,8 @@
-#### Notes
+### Notes
 
 ArrayDeque is "likely to be faster than Stack when used as a stack" - Java documentation
 
-#### Solution
+### Solution
 
 ```java
 String isBalanced(String expression) {

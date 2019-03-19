@@ -1,4 +1,4 @@
-#### Solution
+### Solution
 
 ```java
 ArrayList<Integer> allLengths(int k, int shorter, int longer) {

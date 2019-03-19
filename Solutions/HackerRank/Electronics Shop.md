@@ -1,11 +1,11 @@
-#### Algorithm
+### Algorithm
 
 1. Sort both arrays.
 1. Linearly walk through both arrays (at the same time).
     - If the combined price is unaffordable, find a cheaper harddrive `j--`
     - If the combined price is too low, update "max", and find a more expensive keyboard `i++`
 
-#### Solution
+### Solution
 
 ```java
 int getMoneySpent(int[] keyboards, int[] drives, int b) {
@@ -29,7 +29,7 @@ int getMoneySpent(int[] keyboards, int[] drives, int b) {
 }
 ```
 
-#### Time/Space Complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n log n + m log m)
 - Space complexity: Depends on space complexity of `Arrays.sort()`

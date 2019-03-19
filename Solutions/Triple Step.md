@@ -1,4 +1,4 @@
-#### List of Solutions
+### List of Solutions
 
 | # |      Solutions      | Runtime |   Space   |  Preference  |
 |:-:|:-------------------:|:--------|----------:|:------------:|
@@ -6,7 +6,7 @@
 | 2 | Iterative           |   O(n)  |   O(n)    |       -      |
 | 3 | Iterative, no array |   O(n)  |   O(1)    |   Favorite   |
 
-#### Solution 1
+### Solution 1
 
 ```java
 class TripleStep {
@@ -37,7 +37,7 @@ class TripleStep {
 }
 ```
 
-#### Solution 2
+### Solution 2
 
 ```java
 public static int numPathsIterative(int staircaseSize) {
@@ -52,6 +52,6 @@ public static int numPathsIterative(int staircaseSize) {
 }
 ```
 
-#### Solution 3
+### Solution 3
 
 - Can be done in O(1) space by saving just the last 3 elements of array, like in [Fibonacci solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Fibonacci.md)
