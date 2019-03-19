@@ -7,6 +7,9 @@ Rotate array (in place) using 3 reverse operations
 ```java
 class Solution {
     public void rotate(int[] nums, int k) {
+        if (nums == null) {
+            return;
+        }
         k %= nums.length; // to account for k > length of array
         reverse(nums, 0, nums.length - 1);
         reverse(nums, 0, k - 1);
@@ -14,14 +17,11 @@ class Solution {
     }
 
     private void reverse(int[] array, int start, int end) {
-        if (array == null || start < 0 || start >= array.length ||
-            end < 0 || end >= array.length || start >= end) {
+        if (array == null || start < 0 || start >= array.length || end < 0 || end >= array.length) {
             return;
         }
-        int mid = (start + end) / 2;
-        for (int i = start; i <= mid; i++) {
-            int offset = i - start;
-            swap(array, start + offset, end - offset);
+        while (start < end) {
+            swap(array, start++, end--);
         }
     }
 
@@ -31,6 +31,7 @@ class Solution {
         array[j] = temp;
     }
 }
+
 ```
 
 #### Time/Space Complexity

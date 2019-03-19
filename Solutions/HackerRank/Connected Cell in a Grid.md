@@ -23,7 +23,7 @@ int maxRegion(int[][] grid) {
     return maxRegion;
 }
 
-private int findLargestRegion(int [][] grid, int row, int col, int rows, int cols) {
+private int findLargestRegion(int[][] grid, int row, int col, int rows, int cols) {
     /* Put boundary checks here (at top of recursive call), instead of before doing recursive call */
     if (row < 0 || row >= rows || col < 0 || col >= cols || grid == null || grid[row][col] == 0) {
         return 0;
