@@ -1,7 +1,7 @@
 
 # High Priority
 
-From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
+#### From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
 |              Topic              |   Section  |                                                                             Question                                                                            |                                                           Solution  (Java)                                                           | Difficulty |
 |:-------------------------------:|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
@@ -102,16 +102,17 @@ From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Inte
 |          More Questions         |    17.23   | [Max Black Square](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Max%20Black%20Square.md)                                             | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Max%20Black%20Square.md)                          |    Hard    |
 |          More Questions         |    17.24   | [Max Submatrix](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Max%20Submatrix.md)                                                     | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Max%20Submatrix.md)                               |    Hard    |
 
-From [LeetCode](https://www.leetcode.com)
+#### From [LeetCode](https://www.leetcode.com)
 
 |  ﻿#  |                                          Question                                          |                                                            Solution (Java)                                                           | Difficulty |
 |:---:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
 |  15 | [3sum](https://leetcode.com/problems/3sum)                                                 | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/3sum.md)                                 |   Medium   |
+|  23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)                 | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Merge%20k%20Sorted%Lists.md)             |    Hard    |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Maximum%20depth%20of%20binary%20tree.md) |    Easy    |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)       | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Reverse%20Words%20in%20a%20String.md)    |   Medium   |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array)                                 | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Rotate%20Array.md)                       |    Easy    |
 
-From [HackerRank](https://www.hackerrank.com)
+#### From [HackerRank](https://www.hackerrank.com)
 
 |                                                               Question                                                               |                                                                    Solution (Java)                                                                   | Difficulty |
 |:------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
@@ -139,7 +140,7 @@ From [HackerRank](https://www.hackerrank.com)
 
 # Medium Priority
 
-From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
+#### From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850?ie=UTF8&keywords=Cracking%20the%20Coding%20Interview&portal-device-attributes=desktop&qid=1497056550&ref_=sr_1_1&s=books&sr=1-1)
 
 |              Topic              |  Section  |                                                               Question                                                              |                                                    Solution (Java)                                                   | Difficulty |
 |:-------------------------------:|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|:----------:|
@@ -173,7 +174,7 @@ From [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Inte
 |          More Questions         |   16.01   | [Number Swapper](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Number%20Swapper.md)                       | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Number%20Swapper.md)              |   Medium   |
 |          More Questions         |   16.15   | [Master Mind](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Master%20Mind.md)                             | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Master%20Mind.md)                 |   Medium   |
 
-From [HackerRank](https://www.hackerrank.com)
+#### From [HackerRank](https://www.hackerrank.com)
 
 |                                                                  Question                                                                 |                                                                           Solution (Java)                                                                           | Difficulty |
 |:-----------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------:|

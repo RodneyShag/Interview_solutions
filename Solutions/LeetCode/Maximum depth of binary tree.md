@@ -1,6 +1,17 @@
 ### Notes
 
-- This problem defines a 1-Node tree to have height of 1
+- This problem defines a 1-TreeNode tree to have height of 1.
+
+### Provided code
+
+```java
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
+```
 
 ### Solution
 
