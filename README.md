@@ -117,7 +117,7 @@
 |  189 | [Rotate Array](https://leetcode.com/problems/rotate-array)                                                                               | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Rotate%20Array.md)                                                    |    Easy    |
 |  206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                                                 | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Reverse%20Linked%20List.md)                                           |    Easy    |
 |  560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)                                                             | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Subarray%20Sum%20Equals%20K.md)                                       |   Medium   |
-| 1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution]((https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060) |    Easy    |
+| 1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060) |    Easy    |
 
 #### From [HackerRank](https://www.hackerrank.com)
 
