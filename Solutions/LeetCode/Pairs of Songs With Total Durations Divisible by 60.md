@@ -20,18 +20,18 @@ Bucket   Complement Bucket
 ```
 
 As we come across each number, we find its corresponding complement bucket. Each number in
-this complement bucket can be paired with our original number to create a sum divisible by `k`
+this complement bucket can be paired with our original number to create a sum divisible by `k`.
 
 ### Solution
 
 ```java
-int divisibleSumPairs(int n, int k, int[] ar) {
-    int [] bucket = new int[k];
+int numPairsDivisibleBy60(int[] time) {
+    int [] bucket = new int[60];
     int count = 0;
-    for (int value : ar) {
-        int modValue = value % k;
-        count += bucket[(k - modValue) % k]; // adds # of elements in complement bucket.
-        bucket[modValue]++;                  // saves in bucket.
+    for (int value : time) {
+        int modValue = value % 60;
+        count += bucket[(60 - modValue) % 60]; // adds # of elements in complement bucket.
+        bucket[modValue]++;                    // saves in bucket.
     }
     return count;
 }

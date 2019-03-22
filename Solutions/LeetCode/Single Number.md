@@ -9,7 +9,7 @@ uses XOR. Keep in mind:
 ### Solution
 
 ```java
-int findLonely(List<Integer> array) {
+int singleNumber(int[] array) {
     int val = 0;
     for (int num : array) {
         val = val ^ num; // ^ is XOR operator

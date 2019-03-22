@@ -49,7 +49,3 @@ class Solution {
 
 - Time Complexity: O(n)
 - Space Complexity: O(n) - but would be O(1) if we were given a char[] (instead of a String) as input.
-
-### Alternative Solution
-
-[3-line solution in O(n) time, O(n) space](https://leetcode.com/problems/reverse-words-in-a-string/discuss/47781/Java-3-line-builtin-solution)

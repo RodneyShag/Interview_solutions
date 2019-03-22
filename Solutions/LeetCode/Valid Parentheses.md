@@ -1,25 +1,23 @@
 ### Notes
 
-ArrayDeque is "likely to be faster than Stack when used as a stack" - Java documentation
+- Create `HashMap` to match opening brackets with closing bracket.
+- `ArrayDeque` is "likely to be faster than Stack when used as a stack" - [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html)
 
 ### Solution
 
 ```java
-String isBalanced(String expression) {
+boolean isValid(String str) {
     HashMap<Character, Character> map = new HashMap<>();
     map.put('(', ')');
     map.put('[', ']');
     map.put('{', '}');
-    return isBalanced(expression, map) ? "YES" : "NO";
-}
 
-private boolean isBalanced(String expression, HashMap<Character, Character> map) {
-    if ((expression.length() % 2) != 0) {
+    if ((str.length() % 2) != 0) {
         return false; // odd length Strings are not balanced
     }        
     ArrayDeque<Character> deque = new ArrayDeque<>(); // use deque as a stack
-    for (int i = 0; i < expression.length(); i++) {
-        Character ch = expression.charAt(i);
+    for (int i = 0; i < str.length(); i++) {
+        Character ch = str.charAt(i);
         if (map.containsKey(ch)) {
             deque.push(ch);
         } else if (deque.isEmpty() || ch != map.get(deque.pop())) {
@@ -29,3 +27,8 @@ private boolean isBalanced(String expression, HashMap<Character, Character> map)
     return deque.isEmpty();
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(n)
+- Space Complexity: O(n)

@@ -1,16 +1,17 @@
 ### Provided code
 
 ```java
-class Node {
-    int data;
-    Node next;
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
 }
 ```
 
 ### Solution
 
 ```java
-SinglyLinkedListNode mergeLists(SinglyLinkedListNode currA, SinglyLinkedListNode currB) {
+ListNode mergeTwoLists(ListNode currA, ListNode currB) {
     if (currA == null) {
         return currB;
     } else if (currB == null) {
@@ -18,8 +19,8 @@ SinglyLinkedListNode mergeLists(SinglyLinkedListNode currA, SinglyLinkedListNode
     }
 
     /* Find new head pointer */
-    SinglyLinkedListNode head = null;
-    if (currA.data < currB.data) {
+    ListNode head = null;
+    if (currA.val < currB.val) {
         head = currA;
         currA = currA.next;
     } else {
@@ -28,9 +29,9 @@ SinglyLinkedListNode mergeLists(SinglyLinkedListNode currA, SinglyLinkedListNode
     }
 
     /* Build rest of list */
-    SinglyLinkedListNode n = head;
+    ListNode n = head;
     while (currA != null && currB != null) {
-        if (currA.data < currB.data) {
+        if (currA.val < currB.val) {
             n.next = currA;
             currA = currA.next;
         } else {
@@ -51,7 +52,7 @@ SinglyLinkedListNode mergeLists(SinglyLinkedListNode currA, SinglyLinkedListNode
 }
 ```
 
-### Time/Space complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n + m)
 - Space Complexity: O(1)
