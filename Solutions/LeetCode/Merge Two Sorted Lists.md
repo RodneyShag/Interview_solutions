@@ -18,18 +18,8 @@ ListNode mergeTwoLists(ListNode currA, ListNode currB) {
         return currA;
     }
 
-    /* Find new head pointer */
-    ListNode head = null;
-    if (currA.val < currB.val) {
-        head = currA;
-        currA = currA.next;
-    } else {
-        head = currB;
-        currB = currB.next;
-    }
-
-    /* Build rest of list */
-    ListNode n = head;
+    ListNode result = new ListNode(0); // dummy/placeholder ListNode
+    ListNode n = result;
     while (currA != null && currB != null) {
         if (currA.val < currB.val) {
             n.next = currA;
@@ -41,14 +31,14 @@ ListNode mergeTwoLists(ListNode currA, ListNode currB) {
         n = n.next;
     }
 
-    /* Attach the remaining elements */
+    // Attach the remaining elements
     if (currA == null) {
         n.next = currB;
     } else {
         n.next = currA;
     }
 
-    return head;
+    return result.next;
 }
 ```
 

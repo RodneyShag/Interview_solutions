@@ -10,11 +10,11 @@ uses XOR. Keep in mind:
 
 ```java
 int singleNumber(int[] array) {
-    int val = 0;
+    int result = 0;
     for (int num : array) {
-        val = val ^ num; // ^ is XOR operator
+        result = result ^ num; // ^ is XOR operator
     }
-    return val;
+    return result;
 }
 ```
 
