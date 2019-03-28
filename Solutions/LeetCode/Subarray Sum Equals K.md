@@ -1,26 +1,28 @@
-### Notes
+### Algorithm
 
-A subarray must be contiguous. There are O(n<sup>2</sup>) contiguous subarrays.
+1. Use Dynamic Programming. For each element in array, save the sum from beginning of array until that element.
+  - key: sum
+  - value: number of contiguous arrays, starting at beginning of array, that sum to "key: sum"
+1. Our `HashMap` tells us `SUM[0...i]`. Our current `sum` gives us `SUM[0...j]`. So subtraction gives us `SUM[0...j] - SUM[0...i] = SUM[i...j]`. Each `SUM[i...j] == k` gives us 1 solution.
 
 ### Solution
 
 ```java
-int subarraySum(int[] num, int k) {
-    int count = 0;
-    for (int i = 0; i < num.length; i++) {
-        int sum = 0;
-        for (int j = i; j < num.length; j++) {
-            sum += num[j];
-            if (sum == k) {
-                count++;
-            }
-        }
+int subarraySum(int[] nums, int k) {
+    HashMap<Integer, Integer> savedSum = new HashMap<>();
+    savedSum.put(0, 1);
+    int sum = 0;
+    int result = 0;        
+    for (int num : nums) {
+        sum += num;
+        result += savedSum.getOrDefault(sum - k, 0);
+        savedSum.merge(sum, 1, Integer::sum);
     }
-    return count;
+    return result;
 }
 ```
 
 ### Time/Space Complexity
 
-- Time Complexity: O(n<sup>2</sup>)
-- Space Complexity: O(1)
+- Time Complexity: O(n)
+- Space Complexity: O(n)
