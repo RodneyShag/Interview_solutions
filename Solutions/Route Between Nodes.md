@@ -4,7 +4,7 @@
 
 ### Solution
 
-We are provided 2  [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)s.
+We are provided 2 [GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20GraphNode.md)s.
 
 ```java
 boolean routeExists(GraphNode start, GraphNode end) {
@@ -34,4 +34,4 @@ boolean routeExists(GraphNode start, GraphNode end) {
 
 ### Improvement
 
-- Do bi-directional BFS to improve runtime
+- If this was an _undirected_ graph, we could do bi-directional BFS to improve runtime.
