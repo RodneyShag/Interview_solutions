@@ -18,7 +18,7 @@ class Solution {
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
                 if (grid[row][col] == '1') {
-                    markLandDFS(grid, row, col, rows, cols);
+                    explore(grid, row, col, rows, cols);
                     count++;
                 }
             }
@@ -26,7 +26,7 @@ class Solution {
         return count;
     }
 
-    private void markLandDFS(char[][] grid, int row, int col, int rows, int cols) {
+    private void explore(char[][] grid, int row, int col, int rows, int cols) {
         if (row < 0 || row >= rows || col < 0 || col >= cols || grid == null || grid[row][col] == '0') {
             return;
         }
@@ -34,15 +34,15 @@ class Solution {
         grid[row][col] = '0'; // we alter the original matrix here
 
         // Recursively search neighbors
-        markLandDFS(grid, row - 1, col, rows, cols);
-        markLandDFS(grid, row + 1, col, rows, cols);
-        markLandDFS(grid, row, col - 1, rows, cols);
-        markLandDFS(grid, row, col + 1, rows, cols);
+        explore(grid, row - 1, col, rows, cols);
+        explore(grid, row + 1, col, rows, cols);
+        explore(grid, row, col - 1, rows, cols);
+        explore(grid, row, col + 1, rows, cols);
     }
 }
 ```
 
 ### Time/Space Complexity
 
-- Time Complexity: O(m*n)
+- Time Complexity: O(rows * cols)
 - Space Complexity: O(1)

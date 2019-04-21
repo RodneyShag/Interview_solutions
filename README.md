@@ -123,6 +123,13 @@
 |  695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island)                                                                   | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Max%20Area%20of%20Island.md)                                            |   Medium   |
 | 1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060.md) |    Easy    |
 
+#### From [LeetFree](https://www.leetfree.com)
+
+|  ﻿#  |                                             Question                                            |                                                             Solution                                                             | Difficulty |
+|:---:|:-----------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+| 694 | [Number of Distinct Islands](https://www.leetfree.com/problems/number-of-distinct-islands.html) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetFree/Number%20of%20Distinct%20Islands.md) |   Medium   |
+
+
 #### From [HackerRank](https://www.hackerrank.com)
 
 |                                                               Question                                                               |                                                                  Solution                                                                  | Difficulty |
@@ -175,6 +182,13 @@
 |         Threads & Locks         |    15.6   | [Synchronized Methods](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Synchronized%20Methods.md)           | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Synchronized%20Methods.md)        |    Easy    |
 |          More Questions         |   16.01   | [Number Swapper](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Number%20Swapper.md)                       | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Number%20Swapper.md)              |   Medium   |
 |          More Questions         |   16.15   | [Master Mind](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Master%20Mind.md)                             | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Master%20Mind.md)                 |   Medium   |
+
+#### From [LeetFree](https://www.leetfree.com)
+
+|  ﻿#  |                                              Question                                              |                                                               Solution                                                               | Difficulty |
+|:---:|:--------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+| 711 | [Number of Distinct Islands](https://www.leetfree.com/problems/number-of-distinct-islands-ii.html) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetFree/Number%20of%20Distinct%20Islands%202.md) |    Hard    |
+
 
 #### From [HackerRank](https://www.hackerrank.com)
 
