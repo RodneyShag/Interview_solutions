@@ -17,8 +17,7 @@
 
 ```java
 class Point implements Comparable<Point> {
-    // public access for simplicity
-    public int x;
+    public int x; // public access for simplicity
     public int y;
 
     public Point(int x, int y) {
@@ -123,5 +122,5 @@ public class Solution {
 
 ### Time/Space Complexity
 
-- Time Complexity: O(n log n) which is due to sorting, where max value of `n` is (number of columns) * (number of rows)
+- Time Complexity: O(n log n) which is due to sorting `Collections.sort(shape)`, where max value of `n` is `rows * cols`
 - Space Complexity: O(rows * cols)

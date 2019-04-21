@@ -187,7 +187,7 @@
 
 |  ﻿#  |                                              Question                                              |                                                               Solution                                                               | Difficulty |
 |:---:|:--------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
-| 711 | [Number of Distinct Islands](https://www.leetfree.com/problems/number-of-distinct-islands-ii.html) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetFree/Number%20of%20Distinct%20Islands%202.md) |    Hard    |
+| 711 | [Number of Distinct Islands II](https://www.leetfree.com/problems/number-of-distinct-islands-ii.html) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetFree/Number%20of%20Distinct%20Islands%202.md) |    Hard    |
 
 
 #### From [HackerRank](https://www.hackerrank.com)
