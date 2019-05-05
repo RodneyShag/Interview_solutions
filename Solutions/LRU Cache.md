@@ -96,9 +96,9 @@ class LRUCache {
     }
 
     public void remove(int key) {
-      Node n = map.get(key);
-      dll.remove(n);
-      map.remove(key);
+        Node n = map.get(key);
+        dll.remove(n);
+        map.remove(key);
     }
 
     public String getValue(int key) {
