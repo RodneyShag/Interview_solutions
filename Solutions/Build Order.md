@@ -31,13 +31,8 @@ class Node { // public variables for convenience
 
 ```java
 class Graph {
-    public List<Node> nodes;
-    public Map<String, Node> map;
-
-    public Graph() {
-        nodes = new ArrayList<>();
-        map = new HashMap<>();
-    }
+    public List<Node> nodes = new ArrayList<>();
+    public Map<String, Node> map = new HashMap<>();
 
     public void addDirectedEdge(String s1, String s2) {
         Node source = map.get(s1);
@@ -56,7 +51,7 @@ class Graph {
 ```java
 class BuildOrder {
     // Converts our inconveniently formatted input into a graph
-    public ArrayDeque<Node> topologicalSort(String[] projects, String[][] dependencies) throws Exception {
+    public ArrayDeque<Node> topoSort(String[] projects, String[][] dependencies) throws Exception {
         Graph graph = new Graph();
         for (String project : projects) {
             graph.addNode(project);
@@ -66,10 +61,10 @@ class BuildOrder {
             String destination = dependency[1];
             graph.addDirectedEdge(source, destination);
         }
-        return topologicalSort(graph);
+        return topoSort(graph);
     }
 
-    private ArrayDeque<Node> topologicalSort(Graph graph) throws Exception {
+    private ArrayDeque<Node> topoSort(Graph graph) throws Exception {
         Node source = new Node("Source");
         for (Node node : graph.nodes) {
             source.addDirectedNeighbor(node);
