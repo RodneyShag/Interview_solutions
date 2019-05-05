@@ -40,7 +40,7 @@ class Solution {
 
   int strStr(String haystack, String needle) {
       if (haystack == null || needle == null || haystack.length() < needle.length()) {
-          return 0;
+          return -1;
       } else if (needle.isEmpty()) {
           return 0;
       }
