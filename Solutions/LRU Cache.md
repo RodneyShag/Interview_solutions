@@ -8,13 +8,13 @@
 
 ```java
 class Node {
-	  int key;
+    int key;
     String value;
     Node next;
     Node prev;
 
     public Node(int k, String v) {
-    	key = k;
+        key = k;
         value = v;
         next = null;
         prev = null;
@@ -33,7 +33,7 @@ class DoublyLinkedList {
             head = n;
             tail = n;
         } else {
-        	n.prev = null;
+            n.prev = null;
             n.next = head;
             head.prev = n;
             head = n;
@@ -41,34 +41,34 @@ class DoublyLinkedList {
     }
 
     public void remove(Node n) { // Assumes "Node n" is in this list
-    	if (n == null) {
-    		return;
-    	}
-    	if (n.prev != null) {
-    		n.prev.next = n.next;
-    	}
-    	if (n.next != null) {
-    		n.next.prev = n.prev;
-    	}
-    	if (n == head) {
-    		head = n.next;
-    	}
-    	if (n == tail) {
-    		tail = n.prev;
-    	}
+        if (n == null) {
+          return;
+        }
+        if (n.prev != null) {
+           n.prev.next = n.next;
+        }
+        if (n.next != null) {
+           n.next.prev = n.prev;
+        }
+        if (n == head) {
+           head = n.next;
+        }
+        if (n == tail) {
+           tail = n.prev;
+        }
     }
 
     public void updateFreshness(Node n) { // Assumes "Node n" is in this list
-    	remove(n);
+        remove(n);
         addFirst(n);
     }
 
     public Node getHead() {
-    	return head;
+        return head;
     }
 
     public Node getTail() {
-    	return tail;
+        return tail;
     }
 }
 ```
@@ -86,29 +86,29 @@ class LRUCache {
     }
 
     public void add(int key, String value) {
-    	remove(key); // If key already exists, we will overwrite it.
-    	if (map.size() == maxSize) {
-    		remove(dll.getTail().key);
+        remove(key); // If key already exists, we will overwrite it.
+        if (map.size() == maxSize) {
+          remove(dll.getTail().key);
         }
-    	Node n = new Node(key, value);
+        Node n = new Node(key, value);
         dll.addFirst(n);
         map.put(key, n);
     }
 
     public void remove(int key) {
-    	Node n = map.get(key);
-        dll.remove(n);
-        map.remove(key);
+      Node n = map.get(key);
+      dll.remove(n);
+      map.remove(key);
     }
 
     public String getValue(int key) {
-    	Node n = map.get(key);
-    	if (n == null) {
-    		return null;
-    	}
-    	if (n != dll.getHead()) {
-    	    dll.updateFreshness(n);
-    	}
+        Node n = map.get(key);
+        if (n == null) {
+            return null;
+        }
+        if (n != dll.getHead()) {
+            dll.updateFreshness(n);
+        }
         return n.value;
     }
 }
