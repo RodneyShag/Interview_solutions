@@ -1,7 +1,8 @@
-### Provided Code
+### Solution
+
+Code below is based loosely on tutorial video in this problem
 
 ```java
-/* Based loosely on tutorial video in this problem */
 class TrieNode {
     private HashMap<Character, TrieNode> children = new HashMap<>();
     public int size = 0; // this was the main trick to decrease runtime to pass tests.
@@ -14,7 +15,9 @@ class TrieNode {
         return children.get(ch);
     }
 }
+```
 
+```java
 class Trie {
     TrieNode root = new TrieNode();
 
