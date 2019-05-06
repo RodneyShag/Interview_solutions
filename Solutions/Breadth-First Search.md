@@ -36,3 +36,9 @@ void BFS(GraphNode node, int data) {
     }
 }
 ```
+### Time Complexity
+
+There are 2 ways to represent the time complexity
+
+- `O(n + m)` On a graph with `n` nodes and `m` edges, since we may have to search the entire graph to find what we're looking for.
+- `O(b ^ d)` for a graph with branching factor `b` and location of data at depth `d`
