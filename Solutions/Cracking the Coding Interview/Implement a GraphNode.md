@@ -7,7 +7,6 @@ class GraphNode {
     private boolean visited; // needed for BFS, DFS
     private ArrayList<GraphNode> neighbors; // can alternatively use a HashSet (and give nodes unique IDs)
 
-    /* Constructor */
     public GraphNode(int data) {
         this.data = data;
         visited = false;
