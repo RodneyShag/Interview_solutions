@@ -4,7 +4,7 @@
 - [HackerRank](#hackerrank)
 - [More Questions](#more-questions)
 
-## Cracking the Coding Interview
+# Cracking the Coding Interview
 
 |   ﻿Section  |                                                                                               Question                                                                                              |                                                                                 Solution                                                                                 | Difficulty | Great Problem |
 |:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------:|:-------------:|
@@ -136,7 +136,7 @@
 |    17.24   | [Max Submatrix](https://github.com/RodneyShag/Interview_solutions/blob/master/Questions/Cracking%20the%20Coding%20Interview/Max%20Submatrix.md)                                                     | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Max%20Submatrix.md)                               |    Hard    |       *       |
 
 
-## LeetCode
+# LeetCode
 
 |   ﻿#  |                                                                 Question                                                                 |                                                                               Solution                                                                              | Difficulty | Great Problem |
 |:----:|:----------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------:|:-------------:|
@@ -163,7 +163,7 @@
 | 1013 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetCode/Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060.md) |    Easy    |       *       |
 
 
-## From LeetFree
+# LeetFree
 
 |  ﻿#  |                                                Question                                               |                                                               Solution                                                               | Difficulty | Great Problem |
 |:---:|:-----------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------:|:-------------:|
@@ -171,7 +171,7 @@
 | 711 | [Number of Distinct Islands II](https://www.leetfree.com/problems/number-of-distinct-islands-ii.html) | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/LeetFree/Number%20of%20Distinct%20Islands%202.md) |    Hard    |               |
 
 
-## HackerRank
+# HackerRank
 
 | ﻿Question                                                                                                                                  | Solution                                                                                                                                                            | Difficulty | Great Problem |
 |-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:-------------:|
@@ -200,7 +200,7 @@
 | [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor)                                                                    | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Maximizing%20XOR.md)                                                  |   Medium   |               |
 | [Sum vs XOR](https://www.hackerrank.com/challenges/sum-vs-xor)                                                                            | [Solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/HackerRank/Sum%20vs%20XOR.md)                                                    |    Hard    |               |
 
-## More Questions
+# More Questions
 
 |                                                                   ﻿Question                                                                   |                                                             Solution                                                             | Difficulty | Great Problem |
 |:--------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|:----------:|---------------|
