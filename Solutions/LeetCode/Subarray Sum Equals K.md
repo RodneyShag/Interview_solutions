@@ -8,17 +8,19 @@
 ### Solution
 
 ```java
-int subarraySum(int[] nums, int k) {
-    HashMap<Integer, Integer> savedSum = new HashMap<>();
-    savedSum.put(0, 1);
-    int sum = 0;
-    int result = 0;        
-    for (int num : nums) {
-        sum += num;
-        result += savedSum.getOrDefault(sum - k, 0);
-        savedSum.merge(sum, 1, Integer::sum);
+class Solution {
+    public int subarraySum(int[] nums, int k) {
+        HashMap<Integer, Integer> savedSum = new HashMap<>();
+        savedSum.put(0, 1);
+        int sum = 0;
+        int result = 0;        
+        for (int num : nums) {
+            sum += num;
+            result += savedSum.getOrDefault(sum - k, 0);
+            savedSum.merge(sum, 1, Integer::sum);
+        }
+        return result;
     }
-    return result;
 }
 ```
 

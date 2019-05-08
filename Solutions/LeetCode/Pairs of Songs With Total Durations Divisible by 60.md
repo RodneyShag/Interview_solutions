@@ -25,15 +25,17 @@ this complement bucket can be paired with our original number to create a sum di
 ### Solution
 
 ```java
-int numPairsDivisibleBy60(int[] time) {
-    int [] bucket = new int[60];
-    int count = 0;
-    for (int t : time) {
-        int modValue = t % 60;
-        count += bucket[(60 - modValue) % 60]; // adds # of elements in complement bucket.
-        bucket[modValue]++;                    // saves in bucket.
+class Solution {
+    public int numPairsDivisibleBy60(int[] time) {
+        int [] bucket = new int[60];
+        int count = 0;
+        for (int t : time) {
+            int modValue = t % 60;
+            count += bucket[(60 - modValue) % 60]; // adds # of elements in complement bucket.
+            bucket[modValue]++;                    // saves in bucket.
+        }
+        return count;
     }
-    return count;
 }
 ```
 

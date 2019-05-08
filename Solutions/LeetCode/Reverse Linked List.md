@@ -12,22 +12,25 @@ class ListNode {
 }
 ```
 
- ### Solution
+### Solution
+
 ```java
-ListNode reverseList(ListNode head) {
-    if (head == null || head.next == null) {
-        return head;
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode prev = null;
+        ListNode curr = head;
+        ListNode next = null;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev; // changes arrow direction
+            prev = curr;
+            curr = next;
+        }
+        return prev;
     }
-    ListNode prev = null;
-    ListNode curr = head;
-    ListNode next = null;
-    while (curr != null) {
-        next = curr.next;
-        curr.next = prev; // changes arrow direction
-        prev = curr;
-        curr = next;
-    }
-    return prev;
 }
 ```
 

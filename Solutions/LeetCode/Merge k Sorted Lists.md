@@ -24,7 +24,10 @@ class Solution {
             return null;
         }
 
-        Queue<ListNode> minHeap = new PriorityQueue<ListNode>(lists.length, new ListNodeComparator());
+        Queue<ListNode> minHeap = new PriorityQueue<ListNode>(
+            lists.length,
+            (node1, node2) -> Integer.compare(node1.val, node2.val)
+        );
 
         ListNode dummy = new ListNode(0);
         ListNode tail = dummy;
@@ -45,13 +48,6 @@ class Solution {
         }
 
         return dummy.next;
-    }
-}
-
-class ListNodeComparator implements Comparator<ListNode> {
-    @Override
-    public int compare(ListNode node1, ListNode node2) {
-        return Integer.compare(node1.val, node2.val);
     }
 }
 ```

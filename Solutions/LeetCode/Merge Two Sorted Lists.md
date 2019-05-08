@@ -11,34 +11,36 @@ class ListNode {
 ### Solution
 
 ```java
-ListNode mergeTwoLists(ListNode currA, ListNode currB) {
-    if (currA == null) {
-        return currB;
-    } else if (currB == null) {
-        return currA;
-    }
-
-    ListNode result = new ListNode(0); // dummy/placeholder ListNode
-    ListNode n = result;
-    while (currA != null && currB != null) {
-        if (currA.val < currB.val) {
-            n.next = currA;
-            currA = currA.next;
-        } else {
-            n.next = currB;
-            currB = currB.next;
+class Solution {
+    public ListNode mergeTwoLists(ListNode currA, ListNode currB) {
+        if (currA == null) {
+            return currB;
+        } else if (currB == null) {
+            return currA;
         }
-        n = n.next;
-    }
 
-    // Attach the remaining elements
-    if (currA == null) {
-        n.next = currB;
-    } else {
-        n.next = currA;
-    }
+        ListNode result = new ListNode(0); // dummy/placeholder ListNode
+        ListNode n = result;
+        while (currA != null && currB != null) {
+            if (currA.val < currB.val) {
+                n.next = currA;
+                currA = currA.next;
+            } else {
+                n.next = currB;
+                currB = currB.next;
+            }
+            n = n.next;
+        }
 
-    return result.next;
+        // Attach the remaining elements
+        if (currA == null) {
+            n.next = currB;
+        } else {
+            n.next = currA;
+        }
+
+        return result.next;
+    }
 }
 ```
 

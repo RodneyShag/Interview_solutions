@@ -20,22 +20,24 @@ class ListNode {
 ### Solution
 
 ```java
-boolean hasCycle(ListNode head) {
-    if (head == null) {
+class Solution {
+    public boolean hasCycle(ListNode head) {
+        if (head == null) {
+            return false;
+        }
+
+        ListNode slow = head; // moves 1 ListNode  at a time
+        ListNode fast = head; // moves 2 ListNodes at a time
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return true; // "slow" and "fast" collided, so we must have a cycle.
+            }
+        }
         return false;
     }
-
-    ListNode slow = head; // moves 1 ListNode  at a time
-    ListNode fast = head; // moves 2 ListNodes at a time
-
-    while (fast != null && fast.next != null) {
-        slow = slow.next;
-        fast = fast.next.next;
-        if (slow == fast) {
-            return true; // "slow" and "fast" collided, so we must have a cycle.
-        }
-    }
-    return false;
 }
 ```
 ### Time/Space Complexity

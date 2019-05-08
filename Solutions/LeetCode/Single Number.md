@@ -9,12 +9,14 @@ uses XOR. Keep in mind:
 ### Solution
 
 ```java
-int singleNumber(int[] array) {
-    int result = 0;
-    for (int num : array) {
-        result = result ^ num; // ^ is XOR operator
+class Solution {
+    public int singleNumber(int[] array) {
+        int result = 0;
+        for (int num : array) {
+            result = result ^ num; // ^ is XOR operator
+        }
+        return result;
     }
-    return result;
 }
 ```
 

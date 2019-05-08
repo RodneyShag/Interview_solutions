@@ -7,33 +7,35 @@
 ### Solution
 
 ```java
-public List<Integer> topKFrequent(int[] nums, int k) {
-    if (nums == null || nums.length == 0) {
-        return Collections.<Integer>emptyList();
-    }
+class Solution {
+    public List<Integer> topKFrequent(int[] nums, int k) {
+        if (nums == null || nums.length == 0) {
+            return Collections.<Integer>emptyList();
+        }
 
-    HashMap<Integer, Integer> map = new HashMap<>();
-    for (int num : nums) {
-        map.merge(num, 1, Integer::sum);
-    }
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.merge(num, 1, Integer::sum);
+        }
 
-    List<List<Integer>> buckets = new ArrayList<>(nums.length + 1); // wont use 0th bucket
-    for (int i = 0; i < nums.length + 1; i++) {
-        buckets.add(new ArrayList<Integer>());
-    }
+        List<List<Integer>> buckets = new ArrayList<>(nums.length + 1); // wont use 0th bucket
+        for (int i = 0; i < nums.length + 1; i++) {
+            buckets.add(new ArrayList<Integer>());
+        }
 
-    for (Integer num : map.keySet()) {
-        int frequency = map.get(num);
-        List<Integer> bucket = buckets.get(frequency);
-        bucket.add(num);
-    }
+        for (Integer num : map.keySet()) {
+            int frequency = map.get(num);
+            List<Integer> bucket = buckets.get(frequency);
+            bucket.add(num);
+        }
 
-    List<Integer> solution = new ArrayList<>();
-    for (int i = buckets.size() - 1; i >= 0 && solution.size() < k; i--) {
-        List<Integer> bucket = buckets.get(i);
-        solution.addAll(bucket);
+        List<Integer> solution = new ArrayList<>();
+        for (int i = buckets.size() - 1; i >= 0 && solution.size() < k; i--) {
+            List<Integer> bucket = buckets.get(i);
+            solution.addAll(bucket);
+        }
+        return solution;
     }
-    return solution;
 }
 ```
 
