@@ -1,7 +1,7 @@
 ### Notes
 
-- To execute this code, just copy paste it to [this online Java compiler](https://www.tutorialspoint.com/compile_java_online.php)
-- I came up with this representation of the graph (using parallel arrays to make representing edges easy). There may be better ways to organize this data.
+I came up with this representation of the graph (using parallel arrays to make representing edges easy). There may be better ways to organize this data.
+
 
 ### Sample Graph we will use
 
@@ -15,6 +15,8 @@ Letters are Nodes. Numbers are edge weights.
          e ----- g ------------- h
              2           12
 ```
+
+
 ### Solution
 
 ```java
@@ -111,3 +113,7 @@ public class Dijkstra {
      }
 }
 ```
+
+### Compiler
+
+- To execute this code, just copy paste it to [this online Java compiler](https://www.tutorialspoint.com/compile_java_online.php)

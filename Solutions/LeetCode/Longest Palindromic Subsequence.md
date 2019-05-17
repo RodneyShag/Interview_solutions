@@ -6,7 +6,7 @@ We can represent the Longest Palindromic Subsequence (LPS) as
 ```
 LPS(i,j) =
 
-0                                  if i < j
+0                                  if i > j
 1                                  if i == j
 2 + LPS(i + 1, j - 1)              if A[i] == A[j]
 max(LPS(i + 1, j), LPS(i, j - 1))  otherwise
