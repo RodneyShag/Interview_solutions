@@ -13,13 +13,58 @@ j                                      if i == 0
 
 - __Fact 1, 2__ - If either i or j is 0, then we are asking for the SCS of a string and the empty string, so the SCS is the length of the nonempty string itself (depicted in first 2 rules above).
 - __Fact 3__ - Otherwise, if the last characters match (X[i] == Y[j]), then the SCS is the SCS of X[1 ... i − 1] and Y [1 ... j − 1] with the last character appended.
-- __Fact 4___ - If the last characters do not match, then the SCS is obtained by either adding X[i] to the SCS of X[1 ... i − 1] and Y [1 ... j], or by adding Y[j] to the SCS of X[1 ... i] and Y [1 ... j − 1].
+- __Fact 4__ - If the last characters do not match, then the SCS is obtained by either adding X[i] to the SCS of X[1 ... i − 1] and Y [1 ... j], or by adding Y[j] to the SCS of X[1 ... i] and Y [1 ... j − 1].
 
 
+
+# Solution 1 - Recursive
+
+```java
+public class Solution {
+    public static int shortestCommonSubsequence(char[] X, char[] Y) {
+        // pass in X.length instead of X.length - 1, since X, Y are 1-indexed in our definition, 0-indexed in code
+        return scs(X, Y, X.length, Y.length, new HashMap<String, Integer>());
+    }
+
+    private static int scs(char[] X, char[] Y, int i, int j, HashMap<String, Integer> cache) {
+        String key = i + " " + j;
+        if (cache.containsKey(key)) {
+            return cache.get(key);
+        }
+        int result;
+        if (i == 0) {
+            result = j;
+        } else if (j == 0) {
+            result = i;
+        } else if (X[i - 1] == Y[j - 1]) { // X, Y are 1-indexed in our definition, 0-indexed in code
+            result = 1 + scs(X, Y, i - 1, j - 1, cache);
+        } else {
+            result = 1 + Math.min(scs(X, Y, i - 1, j, cache), scs(X, Y, i, j - 1, cache));
+        }
+        cache.put(key, result);
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(SCS(new char[]{'a', 'b', 'd', 'c'}, new char[]{'b', 'a', 'b', 'e', 'd'}));
+        // Shortest Common Supersequence is babedc, which is of length 6.
+    }
+}
+```
+
+### Time/Space Complexity
+
+- Time Complexity: O(m * n)
+- Space Complexity: O(m * n)
+
+
+# Solution 2 - Iterative
+
+### Algorithm
+
+- Use same recursive definition as above.
 - We can use Dynamic Programming to fill a 2-D array for every `i`, `j`.
 - Instead of creating an array of size `m` by `n`, we will make an array of size `m+1` by `n+1`. This trick helps us write more concise code. scs[1][1] will represent X[0], Y[0].
-
-### Solution
 
 ```java
 public class Solution {
@@ -48,14 +93,9 @@ public class Solution {
         // Shortest Common Supersequence is babedc, which is of length 6.
     }
 }
-
 ```
 
 ### Time/Space Complexity
 
 - Time Complexity: O(m * n)
 - Space Complexity: O(m * n)
-
-### Compiler
-
-- To execute this code, just copy paste it to [this online Java compiler](https://www.tutorialspoint.com/compile_java_online.php)
