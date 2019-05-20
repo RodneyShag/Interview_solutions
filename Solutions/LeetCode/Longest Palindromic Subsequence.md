@@ -121,10 +121,10 @@ The above solution is definitely satisfactory in an interview. This next solutio
 
 ### Algorithm
 
-- We can reduce the space complexity to `O(n)`, by noticing that `dp[i][j]` only depends on the current row `(dp[i][j-1]`), and the row below it (`dp[i+1][j-1]` and `dp[i+1][j]`). So instead of storing an entire 2-D array of data, a 1-D array of data will be enough. Mentioning this will score bonus points in an interview.
+- We can reduce the space complexity to `O(n)`, by noticing that `dp[i][j]` only depends on the current row `dp[i][j-1]`, and the row below it (`dp[i+1][j-1]` and `dp[i+1][j]`). So instead of storing an entire 2-D array of data, a 1-D array of data will be enough. Mentioning this will score bonus points in an interview.
 - Coding it is tricky. Now, from `dp[j]`, to get the value:
   - `dp[i+1][j]` is "down". It becomes`dp[j]`
-  - `(dp[i][j-1]` is "left". It becomes `dp[j-1]`
+  - `dp[i][j-1]` is "left". It becomes `dp[j-1]`
   - `dp[i+1][j-1]` is "down-left". It becomes `dp[j-1]` __before__ we overwrite it, so we preserve that value across iterations of the inner for loop. This is done using 2 variables: `pre` and `tmp` (see code below)
 
 ### Code
