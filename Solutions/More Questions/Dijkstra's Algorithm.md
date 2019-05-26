@@ -117,3 +117,8 @@ public class Dijkstra {
 ### Compiler
 
 - To execute this code, just copy paste it to [this online Java compiler](https://www.tutorialspoint.com/compile_java_online.php)
+
+### Time/Space Complexity
+
+-  Time Complexity: O(m + n log n)
+- Space Complexity: O(n)

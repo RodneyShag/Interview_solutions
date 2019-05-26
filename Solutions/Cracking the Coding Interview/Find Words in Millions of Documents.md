@@ -1,4 +1,0 @@
-### Solution
-
-- preprocess the data with a HashMap<String, ArrayList<Document>>
-- Somehow divide the HashMap across machines. Can do it alphabetically by keywords.

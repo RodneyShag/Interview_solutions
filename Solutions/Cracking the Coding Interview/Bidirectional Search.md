@@ -7,4 +7,4 @@
 - For BFS, if `d` is the distance between the 2 nodes, and `b` is the branching factor, 1 way to represent the runtime is `O(b^d)`.
 - For Bidirectional search, the runtime is `O(b^(d/2))` since each search only has to search halfway before meeting the other search.
 
-![Bidirectional Search](./images/BidirectionalSearch.png)
+![Bidirectional Search](./../images/BidirectionalSearch.png)
