@@ -2,6 +2,7 @@
 
 I came up with this representation of the graph (using parallel arrays to make representing edges easy). There may be better ways to organize this data.
 
+Dijkstra's algorithm will actually calculate the shortest path from a source node to _every_ other node in the graph.
 
 ### Sample Graph we will use
 
@@ -20,13 +21,13 @@ Letters are Nodes. Numbers are edge weights.
 ### Solution
 
 ```java
-class GraphNode {
-    char data;
-    boolean visited = false;
-    List<GraphNode> neighbors = new ArrayList<>(); // parallel arrays
-    List<Integer> edgeWeights = new ArrayList<>(); // parallel arrays
-    int distance = Integer.MAX_VALUE;
-    GraphNode parent = null;
+class GraphNode { // using public variables for simplicity
+    public char data;
+    public boolean visited = false;
+    public List<GraphNode> neighbors = new ArrayList<>(); // parallel arrays
+    public List<Integer> edgeWeights = new ArrayList<>(); // parallel arrays
+    public int distance = Integer.MAX_VALUE;
+    public GraphNode parent = null;
 
     public GraphNode(char data) {
         this.data = data;
@@ -50,6 +51,8 @@ class GraphNode {
 ```
 
 ```java
+import java.util.*;
+
 public class Dijkstra {
      public static void main(String[] args) {
          // Create Graph
@@ -66,7 +69,7 @@ public class Dijkstra {
          c.addNeighbor(d, 4);
          d.addNeighbor(f, 6);
          b.addNeighbor(e, 7);
-         e.addNeighbor(g, 2);         
+         e.addNeighbor(g, 2);
          c.addNeighbor(g, 9);
          g.addNeighbor(h, 12);
          h.addNeighbor(f, 5);
