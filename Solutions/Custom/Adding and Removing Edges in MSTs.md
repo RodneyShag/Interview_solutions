@@ -1,14 +1,14 @@
-# Solution to Part 1
+## Solution to Part 1
 
 Do nothing, it's still a Minimum Spanning Tree (MST).
 
 
-# Solution to Part 2
+## Solution to Part 2
 
 Do nothing, it's still a Minimum Spanning Tree (MST).
 
 
-# Solution to Part 3
+## Solution to Part 3
 
 Main idea: Removing `e` creates 2 subtrees. Search all `m` edges for smallest edge that reconnects the 2 subtrees.
 
@@ -22,7 +22,7 @@ Main idea: Removing `e` creates 2 subtrees. Search all `m` edges for smallest ed
 - Space Complexity: `O(1)` since we're not saving anything.
 
 
-# Solution to Part 4
+## Solution to Part 4
 
 1. Let e = (u, v). Add e to T, which will create a unique cycle.
 1. Find this cycle by doing [BFS](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Breadth-First%20Search.md) on our updated tree, ignoring weights.

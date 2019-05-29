@@ -11,8 +11,8 @@
 ### Time/Space Complexity
 
 - Time Complexity: Dijkstra's algorithm is generally O(m + n log n), but since we have `mh` edges and `nh` nodes, our complexity becomes `O(mh + nh log (nh))`
-- Space Complexity: `O(mh + nh)` to create G'
+- Space Complexity: `O(mh + nh)` to create `G'`
 
 # Follow-up Solution
 
-Use the same algorithm as above, but instead of creating `h + 1` copies of `G'`, extend it to create h<sub>i</sub>h<sub>j</sub> + 1 copies of G', where the h<sub>i</sub>h<sub>j</sub> copy represents having traversed `i` blue edges and `j` red edges.
+Use the same algorithm as above, but instead of creating `h + 1` copies of `G'`, extend it to create h<sub>i</sub>h<sub>j</sub> + 1 copies of `G'`, where the h<sub>i</sub>h<sub>j</sub> copy represents having traversed `i` blue edges and `j` red edges.
