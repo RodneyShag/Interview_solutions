@@ -1,7 +1,6 @@
 ### Notes
 
 - Solution is from Jeff Erickson's Algorithms.pdf, Section 19.5 Topological Sort
-- Code uses classes with public variables for simplicity
 
 ### Solution
 
@@ -12,10 +11,10 @@ enum Visited {
 ```
 
 ```java
-class Node { // public variables for convenience
-    public String data;
-    public Visited status;
-    public ArrayList<Node> neighbors; // could alternatively use a HashSet (if I give nodes unique IDs)
+class Node {
+    String data;
+    Visited status;
+    ArrayList<Node> neighbors; // could alternatively use a HashSet (if I give nodes unique IDs)
 
     public Node(String data) {
         this.data = data;
@@ -31,8 +30,8 @@ class Node { // public variables for convenience
 
 ```java
 class Graph {
-    public List<Node> nodes = new ArrayList<>();
-    public Map<String, Node> map = new HashMap<>();
+    List<Node> nodes = new ArrayList<>();
+    Map<String, Node> map = new HashMap<>();
 
     public void addDirectedEdge(String s1, String s2) {
         Node source = map.get(s1);
@@ -82,7 +81,7 @@ class BuildOrder {
             if (neighbor.status == Visited.NEW) {
                 topoSortDFS(neighbor, result);
             } else if (neighbor.status == Visited.ACTIVE) {
-                throw new Exception("Not a DAG. Graph has a cycle.");
+                throw new Exception("Not a Directed Acyclic Graph (DAG). Graph has a cycle.");
             }
         }
         n.status = Visited.DONE;
@@ -90,3 +89,8 @@ class BuildOrder {
     }
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n)
+- Space Complexity: O(n) due to recursion
