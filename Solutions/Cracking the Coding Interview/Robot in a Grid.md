@@ -1,35 +1,4 @@
-### Solution
-
-There are `x+y` moves total. Choose `x` of them to go right. So it's `x+y` choose `x` (The combinations formula), giving:
-```
- (x+y)!  
---------
-(x!)(y!)
-```
-
-```java
-int numPaths(int cols, int rows) {
-    int[][] paths = new int[rows][cols];
-
-    /* Base cases */
-    for (int row = 0; row < rows; row++) {
-        paths[row][0] = 1;
-    }
-    for (int col = 0; col < cols; col++) {
-        paths[0][col] = 1;
-    }
-
-    /* Memoize 2-D array */
-    for (int row = 1; row < rows; row++) {
-        for (int col = 1; col < cols; col++) {
-            paths[row][col] = paths[row - 1][col] + paths[row][col - 1];
-        }
-    }
-    return paths[rows - 1][cols - 1];
-}
-```
-
-### Follow-up Solution
+### Algorithm
 
 - I search from end to start (makes code simpler to write)
 - The reason we use a HashMap as a cache instead of an int[][] is because HashMap can give us 3 pieces of information:
@@ -37,22 +6,62 @@ int numPaths(int cols, int rows) {
   1. cached, false -> path doesn't exist
   1. cached, true  -> path exists
 
-```java
+### Solution
 
+- [How to write equals method in java](http://javarevisited.blogspot.com/2011/02/how-to-write-equals-method-in-java.html)
+- [override hashcode in java example](http://javarevisited.blogspot.com/2011/10/override-hashcode-in-java-example.html)
+
+```java
+public class Point {
+    public int x;
+    public int y;
+
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    /* Here for 9.2 to work with hashing Points */
+    @Override
+    public boolean equals(Object other) { // must take an "Object" as a
+                                          // parameter, not a "Point", so that
+                                          // it overrides the .equals method
+        if (other == this) {
+            return true;
+        } else if (other == null || !(other instanceof Point)) {
+            return false;
+        }
+        Point otherPoint = (Point) other;
+        return this.x == otherPoint.x && this.y == otherPoint.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return 13 * x + 7 * y;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + x + "," + y + ")";
+    }
+}
+```
+
+```java
 public ArrayList<Point> findPath(final boolean[][] maze, int row, int col) {
     if (maze == null || row < 0 || row >= maze.length || col < 0 || col >= maze[0].length) {
         return null;
     }
 
-    /* Create path to save solution into */
+    // Create path to save solution into
     ArrayList<Point> path = new ArrayList<>();
     path.add(new Point(0, 0));
 
-    /* Create cache to save solutions to subproblems */
+    // Create cache to save solutions to subproblems
     HashMap<Point, Boolean> cache = new HashMap<>(); // requires overriding .equals() and .hashCode for Point, for HashMap to work properly
     cache.put(new Point(0, 0), true); // base case
 
-    /* Recursively calculate answer */
+    // Recursively calculate answer
     boolean foundResult = findPath(maze, row, col, path, cache);
     if (foundResult) {
         return path;
@@ -71,7 +80,7 @@ private boolean findPath(final boolean[][] maze, int row, int col, ArrayList<Poi
         return false;
     }
 
-    /* Find paths recursively. Tricky to remember to only search the 2nd path if necessary */
+    // Find paths recursively. Tricky to remember to only search the 2nd path if necessary
     boolean success = findPath(maze, row, col - 1, path, cache);
     if (!success) {
         success = findPath(maze, row - 1, col, path, cache); // if no success, we try moving vertically
@@ -79,7 +88,7 @@ private boolean findPath(final boolean[][] maze, int row, int col, ArrayList<Poi
 
     cache.put(p, success); // update cache
 
-    /* Update path if we found a solution */
+    // Update path if we found a solution
     if (success) {
         path.add(p);
     }
@@ -87,7 +96,7 @@ private boolean findPath(final boolean[][] maze, int row, int col, ArrayList<Poi
     return success;
 }
 
-/* A spot is free if it's within maze bounds and is not a wall */
+// A spot is free if it's within maze bounds and is not a wall
 private boolean isFree(boolean[][] maze, int row, int col) {
     if (row < 0 || row >= maze.length || col < 0 || col >= maze[0].length) {
         return false;
@@ -95,3 +104,8 @@ private boolean isFree(boolean[][] maze, int row, int col) {
     return maze[row][col];
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(rows * cols)
+- Space Complexity: O(rows * cols)
