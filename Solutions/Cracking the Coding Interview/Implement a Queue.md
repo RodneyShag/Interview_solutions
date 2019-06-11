@@ -1,11 +1,9 @@
-### Provided code
-
-Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
+### Solution
 
 ```java
-class Node {
-    public Node next;
-    public int data ;
+class Node { // public variables for simplicity
+    Node next;
+    int data ;
     public Node(int d) {
       next = null;
       data = d;
@@ -13,14 +11,12 @@ class Node {
 }
 ```
 
-### Solution
-
 ```java
 class Queue {
     private Node head = null;
     private Node tail = null;
 
-    public void enqueue(int data) {
+    public void add(int data) {
         Node n = new Node(data);
         if (head == null) {
             head = n;
@@ -31,9 +27,9 @@ class Queue {
         }
     }
 
-    public Node dequeue() {
+    public Node remove() {
         if (head == null) {
-            return null;
+            return null; // list is empty
         }
         Node front = head;
         head = head.next;
