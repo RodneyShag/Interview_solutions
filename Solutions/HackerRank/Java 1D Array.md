@@ -6,7 +6,7 @@ boolean canWin(int leap, int[] game) {
 }
 
 private boolean isSolvable(int leap, int[] game, int i) {
-    /* Base Cases */
+    // Base Cases
     if (i < 0 || game[i] == 1) {
         return false;
     } else if (i + 1 >= game.length || i + leap >= game.length) {
@@ -15,7 +15,7 @@ private boolean isSolvable(int leap, int[] game, int i) {
 
     game[i] = 1; // marks as visited
 
-    /* Recursive Cases (Tries +m first to try to finish game quickly) */
+    // Recursive Cases (Tries +leap first to try to finish game quickly)
     return isSolvable(leap, game, i + leap)
         || isSolvable(leap, game, i + 1)
         || isSolvable(leap, game, i - 1);
