@@ -11,13 +11,13 @@
 ```java
 int pickingNumbers(List<Integer> array) {
     final int MAX_VALUE = 100;
-    /* Save counts of each number */
+    // Save counts of each number
     int[] counts = new int[MAX_VALUE];
     for (int num : array) {
         counts[num]++;
     }
 
-    /* Find adjacent pair with largest sum */
+    // Find adjacent pair with largest sum
     int max = 2;
     for (int i = 1; i < 100; i++) {
         int adjacentSum = counts[i] + counts[i-1];

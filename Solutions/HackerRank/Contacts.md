@@ -42,7 +42,7 @@ class Trie {
     public int find(String prefix) {
         TrieNode curr = root;
 
-        /* Traverse down tree to end of our prefix */
+        // Traverse down tree to end of our prefix
         for (int i = 0; i < prefix.length(); i++) {
             Character ch = prefix.charAt(i);
             curr = curr.getChild(ch);

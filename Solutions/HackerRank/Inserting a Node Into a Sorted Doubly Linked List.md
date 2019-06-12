@@ -12,7 +12,7 @@ class DoublyLinkedListNode {
 
 ```java
 DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
-    /* Create Node to insert */
+    // Create Node to insert
     DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
 
     if (head == null) { // insert in empty list
@@ -22,7 +22,7 @@ DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
         head.prev = newNode;
         return newNode;
     } else {        
-        /* Walk list with 2 pointers (code is cleaner than using just 1 pointer) */
+        // Walk list with 2 pointers (code is cleaner than using just 1 pointer)
         DoublyLinkedListNode n1 = null;
         DoublyLinkedListNode n2 = head;
         while (n2 != null && n2.data < data) {

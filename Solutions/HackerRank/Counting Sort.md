@@ -2,14 +2,14 @@
 
 ```java
 int[] countingSort(int[] givenArray) {
-    /* Save into buckets */
+    // Save into buckets
     final int maxValue = 100;
     int[] bucket = new int[maxValue];
     for (int value : givenArray) {
         bucket[value]++;
     }
 
-    /* Create sorted array */
+    // Create sorted array
     int[] sortedArray = new int[givenArray.length];
     int position = 0;
     for (int i = 0; i < bucket.length; i++) {

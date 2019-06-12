@@ -17,7 +17,7 @@ Now we calculate the number of possibilities for "x" by  counting the number of 
 
 ```java
 long sumXor(long n) {
-    /* Calculate number of "x" values that will satisfy n+x = n^x */
+    // Calculate number of "x" values that will satisfy n+x = n^x
     int zeroes = numZeroes(n);
     return 1L << zeroes; // same as (long) Math.pow(2, zeroes);
 }

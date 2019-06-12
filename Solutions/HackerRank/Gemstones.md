@@ -6,7 +6,7 @@ int gemstones(String[] array) {
     BitSet bitset = new BitSet(NUM_ELEMENTS);
     bitset.set(0, NUM_ELEMENTS);
 
-    /* Create a BitSet for each rock. "AND" it with our original BitSet */
+    // Create a BitSet for each rock. "AND" it with our original BitSet
     for (String rock : array) {
         BitSet currBitSet = new BitSet(NUM_ELEMENTS);
         for (int i = 0; i < rock.length(); i++) {

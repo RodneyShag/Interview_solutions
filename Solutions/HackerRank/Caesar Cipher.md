@@ -11,7 +11,7 @@ String caesarCipher(String str, int k) {
     return sb.toString();
 }
 
-/* Encrypts a character using Caesar Cipher */
+// Encrypts a character using Caesar Cipher
 private char encrypt(char ch, int k) {
     if (!Character.isLetter(ch)) {
         return ch;
