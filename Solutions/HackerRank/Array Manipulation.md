@@ -19,7 +19,7 @@ public static void main(String[] args) {
         int b = scan.nextInt();
         int k = scan.nextInt();
         array[a-1] += k;
-        array[b]   -= k; // see comment at end of code
+        array[b]   -= k; // see comment below the code
     }
     scan.close();
 

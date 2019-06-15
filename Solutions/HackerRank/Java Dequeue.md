@@ -1,12 +1,11 @@
-### Problem Re-statement
-
-Given `n` integers, find the maximum number of unique integers among all the possible contiguous subarrays of size `m`.
-
 ### Algorithm
 
 - A `HashMap` will let us keep track of the count of each number.
 - An `ArrayDeque` will let us keep track of the "contiguous subarray" (sliding window) of size `m`
 
+### Notes
+
+HackerRank has a strange input format where we have to read the input from standard input. Ignore that part of the code.
 ### Solution
 
 ```java

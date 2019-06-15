@@ -20,3 +20,8 @@ private char encrypt(char ch, int k) {
     return (char) ((ch - base + k) % 26 + base);
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n)
+- Space Complexity: O(n)

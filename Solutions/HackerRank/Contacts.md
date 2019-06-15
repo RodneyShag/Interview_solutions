@@ -54,3 +54,10 @@ class Trie {
     }
 }
 ```
+
+### Time/Space Complexity
+
+Let `n` be the length of a word. For the storage of 1 word, we have:
+
+-  Time Complexity: O(n)
+- Space Complexity: O(n)

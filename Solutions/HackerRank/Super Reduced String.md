@@ -1,4 +1,4 @@
-### Provided Code
+### Solution
 
 ```java
 String superReducedString(String str) {
@@ -28,7 +28,7 @@ String superReducedString(String str) {
 
 ### Notes
 
-Can alternatively use an ArrayDeque instead of a Stack. Just make sure to iterate through it properly since iteration order is opposite that of a Stack.
+Can alternatively use an `ArrayDeque` instead of a `Stack`. Just make sure to iterate through it properly since iteration order is opposite that of a Stack.
 
 ### Time/Space Complexity
 

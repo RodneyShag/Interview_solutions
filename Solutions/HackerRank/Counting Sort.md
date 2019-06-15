@@ -20,3 +20,8 @@ int[] countingSort(int[] givenArray) {
     return sortedArray;
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n)
+- Space Complexity: O(1), since there is a `maxValue` is constant regardless of length of `givenArray`

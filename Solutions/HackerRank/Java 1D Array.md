@@ -21,3 +21,8 @@ private boolean isSolvable(int leap, int[] game, int i) {
         || isSolvable(leap, game, i - 1);
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: `O(n)`. We will only try each position in the game once since we mark spots as "visited".
+- Space Complexity: `O(n)` due to recursion

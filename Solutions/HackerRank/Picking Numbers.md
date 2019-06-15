@@ -26,3 +26,8 @@ int pickingNumbers(List<Integer> array) {
     return max;
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(n)
+- Space Complexity: O(1)

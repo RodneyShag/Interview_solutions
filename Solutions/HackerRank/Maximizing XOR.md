@@ -27,3 +27,8 @@ int maximizingXor(int L, int R) {
     return result;
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)

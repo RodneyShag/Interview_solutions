@@ -18,3 +18,8 @@ int gemstones(String[] array) {
     return bitset.cardinality();
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: `O(m * n)` since we have 2 nested 'for' loops. `m` is the number of rocks, and `n` is the longest rock length.
+- Space Complexity: `O(1)`

@@ -33,3 +33,8 @@ private int numZeroes(long n) {
     return count;
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(1)
+- Space Complexity: O(1)

@@ -16,3 +16,7 @@
 # Follow-up Solution
 
 Use the same algorithm as above, but instead of creating `h + 1` copies of `G'`, extend it to create h<sub>i</sub>h<sub>j</sub> + 1 copies of `G'`, where the h<sub>i</sub>h<sub>j</sub> copy represents having traversed `i` blue edges and `j` red edges.
+
+### Time/Space Complexity
+
+Same as above, but replace each `h` with h<sub>i</sub>h<sub>j</sub>

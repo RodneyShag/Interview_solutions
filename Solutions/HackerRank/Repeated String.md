@@ -24,3 +24,8 @@ long repeatedString(String str, long n) {
     return totalAs;
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(n)
+- Space Complexity: O(1)

@@ -44,7 +44,7 @@ DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
 }
 ```
 
-### Time/Space complexity
+### Time/Space Complexity
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)

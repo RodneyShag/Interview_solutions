@@ -18,3 +18,10 @@ int findDigits(int num) {
     return count;
 }
 ```
+
+### Time/Space Complexity
+
+Regardless of how big our `int` is, the while loop will end in about ~10 iterations.
+
+-  Time Complexity: O(1)
+- Space Complexity: O(1)
