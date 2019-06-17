@@ -1,3 +1,0 @@
-### Question
-
-Implement Binary Search.
