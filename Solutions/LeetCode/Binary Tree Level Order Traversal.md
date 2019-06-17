@@ -16,10 +16,10 @@ public class TreeNode {
 ```java
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> lists = new ArrayList<>();
         if (root == null) {
-            return lists;
+            return new ArrayList<>();
         }
+        List<List<Integer>> lists = new ArrayList<>();
         ArrayDeque<TreeNode> deque = new ArrayDeque<>(); // use deque as a queue
         deque.add(root);
         while (!deque.isEmpty()) {

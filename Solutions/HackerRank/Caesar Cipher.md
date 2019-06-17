@@ -3,7 +3,7 @@
 
 ```java
 String caesarCipher(String str, int k) {
-    StringBuilder sb = new StringBuilder();
+    StringBuffer sb = new StringBuffer();
     for (int i = 0; i < str.length(); i++) {
         char ch = str.charAt(i);
         sb.append(encrypt(ch, k));
