@@ -43,3 +43,7 @@ private TreeNode properParent(TreeNode node) {
     return parent;
 }
 ```
+
+### Additional Notes
+
+Finding Successor of a Node is useful when deleting a node in a binary *search* tree, since that's a node we can put in place of the deleted node
