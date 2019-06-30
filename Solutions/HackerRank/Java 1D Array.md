@@ -2,15 +2,18 @@
 
 ```java
 boolean canWin(int leap, int[] game) {
+    if (game == null) {
+        return false;
+    }
     return isSolvable(leap, game, 0);
 }
 
 private boolean isSolvable(int leap, int[] game, int i) {
     // Base Cases
-    if (i < 0 || game[i] == 1) {
-        return false;
-    } else if (i + 1 >= game.length || i + leap >= game.length) {
+    if (i >= game.length) {
         return true;
+    } else if (i < 0 || game[i] == 1) {
+        return false;
     }
 
     game[i] = 1; // marks as visited
