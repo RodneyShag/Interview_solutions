@@ -1,6 +1,8 @@
+This problem is similar to [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) in LeetCode. The difference is that this question asks: "Given a prefix, return the __number__ of words that match that prefix."
+
 ### Solution
 
-Code below is based loosely on tutorial video in this problem
+Code below is based loosely on tutorial video in this HackerRank problem
 
 ```java
 class TrieNode {
@@ -21,18 +23,9 @@ class TrieNode {
 class Trie {
     TrieNode root = new TrieNode();
 
-    Trie(){} // default constructor
-
-    Trie(String[] words) {
-        for (String word : words) {
-            add(word);
-        }
-    }
-
     public void add(String str) {
         TrieNode curr = root;
-        for (int i = 0; i < str.length(); i++) {
-            Character ch = str.charAt(i);
+        for (char ch : str.toCharArray()) {
             curr.putChildIfAbsent(ch);
             curr = curr.getChild(ch);
             curr.size++;
@@ -42,9 +35,7 @@ class Trie {
     public int find(String prefix) {
         TrieNode curr = root;
 
-        // Traverse down tree to end of our prefix
-        for (int i = 0; i < prefix.length(); i++) {
-            Character ch = prefix.charAt(i);
+        for (char ch : prefix.toCharArray()) {
             curr = curr.getChild(ch);
             if (curr == null) {
                 return 0;
@@ -57,7 +48,12 @@ class Trie {
 
 ### Time/Space Complexity
 
-Let `n` be the length of a word. For the storage of 1 word, we have:
+Let `n` be the length of a word. For `add()`, we have:
 
 -  Time Complexity: O(n)
 - Space Complexity: O(n)
+
+For `find()` we have:
+
+-  Time Complexity: O(n)
+- Space Complexity: O(1)
