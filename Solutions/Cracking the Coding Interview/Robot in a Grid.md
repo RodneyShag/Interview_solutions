@@ -21,11 +21,9 @@ public class Point {
         this.y = y;
     }
 
-    /* Here for 9.2 to work with hashing Points */
     @Override
-    public boolean equals(Object other) { // must take an "Object" as a
-                                          // parameter, not a "Point", so that
-                                          // it overrides the .equals method
+    public boolean equals(Object other) { // must take an "Object" as a parameter, not a
+                                          // "Point" so that it overrides the .equals method
         if (other == this) {
             return true;
         } else if (other == null || !(other instanceof Point)) {
@@ -38,11 +36,6 @@ public class Point {
     @Override
     public int hashCode() {
         return 13 * x + 7 * y;
-    }
-
-    @Override
-    public String toString() {
-        return "(" + x + "," + y + ")";
     }
 }
 ```
