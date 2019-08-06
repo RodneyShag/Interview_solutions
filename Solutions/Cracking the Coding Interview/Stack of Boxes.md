@@ -1,5 +1,7 @@
 ### Algorithm
 
+We assume rotation of a box is not allowed
+
 1. Create `Box` class with `.canBeAbove(Box other)` function.
 1. Sort `Box`es in descending height order.
     - This problem uses `<` instead of `<=` for `Box` heights. If we have 2 `Box`es of equal height, and `[width, height, depth]` of `[4,4,4]` and `[7,4,7]`, it doesn't matter which `Box` comes first after sorting, since both `Box`es can't be in the final solution. Box 1 cannot be on top of Box 2, and Box 2 cannot be on top of Box 1.
@@ -23,12 +25,6 @@ public class Box {
         width  = w;
         height = h;
         depth  = d;
-    }
-
-    Box(Box other) {
-        width  = other.width;
-        height = other.height;
-        depth  = other.depth;
     }
 
     public boolean canBeAbove(Box other) {
@@ -76,6 +72,8 @@ public class StackOfBoxes {
 -  Time Complexity: Without caching, the recursive part is O(2<sup>n</sup>) since there are `n` boxes, and 2 options for each box (use or don't use). With caching, the recursive part is just O(n). The total time complexity is therefore `O(n log n)` due to sorting.
 - Space Complexity: `O(n)` due to recursion.
 
-### Additional Notes
+### Follow-up Question - What if rotation of boxes is allowed?
 
-A Dynamic Programming __Iterative__ solution (using an array instead of a HashMap) is also possible. It will have the same Time/Space complexity as the above solution.
+1. For each box, rotate it to all 6 possibilities: [w h d], [w d h], [h w d] [h d w], [d w h], [d h w].
+1. Notice it's impossible to stack 2 of these 6 boxes on top of each other, so if we insert all 6 boxes into our list, we're still ensured only 1 of them can be selected for our solution.
+1. Create `List<Box> boxes` that is 6 times as large as the original list of boxes. Solve the problem for this list.
