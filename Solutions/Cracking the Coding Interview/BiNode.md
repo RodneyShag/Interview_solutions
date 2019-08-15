@@ -1,11 +1,9 @@
 ### Solution
 
-We are using `public` variables for simplicity.
-
 ```java
-class BiNode {
-    public BiNode left, right;
-    public int data;
+class BiNode { // public variables for simplicity
+    BiNode left, right;
+    int data;
 
     public BiNode(int d) {
         left  = null;

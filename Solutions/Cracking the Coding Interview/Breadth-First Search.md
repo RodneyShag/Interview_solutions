@@ -1,6 +1,6 @@
 ### Provided Code
 
-- [GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20GraphNode.md)
+[GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Implement%20a%20GraphNode.md)
 
 ### Tips
 
@@ -15,7 +15,7 @@ void BFS(GraphNode node, int data) {
         return;
     }
 
-    ArrayDeque<GraphNode> deque = new ArrayDeque<>(); // use deque as a queue
+    Deque<GraphNode> deque = new ArrayDeque<>(); // use deque as a queue
     node.visit();
     deque.add(node);
 
@@ -36,9 +36,14 @@ void BFS(GraphNode node, int data) {
     }
 }
 ```
+
 ### Time Complexity
 
 There are 2 ways to represent the time complexity
 
-- `O(n + m)` On a graph with `n` nodes and `m` edges, since we may have to search the entire graph to find what we're looking for.
-- `O(b ^ d)` for a graph with branching factor `b` and location of data at depth `d`
+- O(n + m) On a graph with `n` nodes and `m` edges, since we may have to search the entire graph to find what we're looking for.
+- O(b<sup>d</sup>) for a graph with branching factor `b` and location of data at depth `d`
+
+### Space Complexity
+
+O(n) due to `deque` to store our nodes.

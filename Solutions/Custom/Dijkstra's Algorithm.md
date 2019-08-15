@@ -21,13 +21,13 @@ Letters are Nodes. Numbers are edge weights.
 ### Solution
 
 ```java
-class GraphNode { // using public variables for simplicity
-    public char data;
-    public boolean visited = false;
-    public List<GraphNode> neighbors = new ArrayList<>(); // parallel arrays
-    public List<Integer> edgeWeights = new ArrayList<>(); // parallel arrays
-    public int distance = Integer.MAX_VALUE;
-    public GraphNode parent = null;
+class GraphNode { // public variables for simplicity
+    char data;
+    boolean visited = false;
+    List<GraphNode> neighbors = new ArrayList<>(); // parallel arrays
+    List<Integer> edgeWeights = new ArrayList<>(); // parallel arrays
+    int distance = Integer.MAX_VALUE;
+    GraphNode parent = null;
 
     public GraphNode(char data) {
         this.data = data;

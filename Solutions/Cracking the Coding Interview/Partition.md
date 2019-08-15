@@ -1,10 +1,11 @@
 ### Provided code
 
-Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
+Let's assume we're given the following `Node` class:
+
 ```java
-class Node {
-    public Node next = null;
-    public int data = 0;
+class Node { // public variables for simplicity
+    Node next = null;
+    int data = 0;
 }
 ```
 
@@ -18,7 +19,7 @@ Node partition(Node head, int x) {
     Node p = head;
     while (curr != null) {
         if (curr.data < x) {
-            /* Swap DATA values */
+            // Swap DATA values
             int temp = p.data;
             p.data = curr.data;
             curr.data = temp;

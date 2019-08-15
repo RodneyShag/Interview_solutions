@@ -1,10 +1,10 @@
 ### Algorithm
 
-- Run Breadth-First Search (BFS) from start node and see if we arrive at end node
+Run Breadth-First Search (BFS) from start node and see if we arrive at end node
 
 ### Solution
 
-We are provided 2 [GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20GraphNode.md)s.
+We are provided 2 [GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Implement%20a%20GraphNode.md)s.
 
 ```java
 boolean routeExists(GraphNode start, GraphNode end) {
@@ -12,7 +12,7 @@ boolean routeExists(GraphNode start, GraphNode end) {
         return true;
     }
 
-    ArrayDeque<GraphNode> deque = new ArrayDeque<>(); // use deque as a queue
+    Deque<GraphNode> deque = new ArrayDeque<>(); // use deque as a queue
     start.visit();
     deque.add(start);
 
@@ -32,6 +32,8 @@ boolean routeExists(GraphNode start, GraphNode end) {
 }
 ```
 
+Time/Space Complexity same as [BFS](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Breadth-First%20Search.md)
+
 ### Improvement
 
-- If this was an _undirected_ graph, we could do bi-directional BFS to improve runtime.
+If this was an _undirected_ graph, we could do Bidirectional Search to improve runtime.

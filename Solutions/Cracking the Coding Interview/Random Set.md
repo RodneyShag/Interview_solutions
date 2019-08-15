@@ -12,13 +12,13 @@ This is an iterative solution of the above recursive explanation
 
 ```java
 int[] generate(int[] array, int m) {
-    /* Copy first "m" elements into new array */
+    // Copy first "m" elements into new array
     int[] solution = new int[m];
     for (int i = 0; i < m; i++) {
         solution[i] = array[i];
     }
 
-    /* 1 by 1, decide if array[i] (where i >= m) should be in solution[] */
+    // 1 by 1, decide if array[i] (where i >= m) should be in solution[]
     for (int i = m; i < array.length; i++) {
         int rand = (int) (Math.random() * (i + 1)); // random number between 0 and i inclusive
         if (rand < m) {                             // There's "rand / m" percent chance that the new element will be put into array

@@ -1,10 +1,11 @@
 ### Provided code
 
-Let's assume we're given the following `Node` class, with variables marked `public` for simplicity.
+Let's assume we're given the following `Node` class:
+
 ```java
-class Node {
-    public Node next = null;
-    public int data = 0;
+class Node { // public variables for simplicity
+    Node next = null;
+    int data = 0;
 }
 ```
 
@@ -12,7 +13,7 @@ class Node {
 
 ```java
 void removeDuplicates(Node head) {
-    HashSet<Integer> set = new HashSet<>();
+    Set<Integer> set = new HashSet<>();
     set.add(head.data);
     Node n = head;
     while (n.next != null) {
@@ -29,7 +30,7 @@ void removeDuplicates(Node head) {
 
 ### Time/Space Complexity
 
-- Time Complexity: O(n)
+-  Time Complexity: O(n)
 - Space Complexity O(n)
 
 ### Alternate Solution

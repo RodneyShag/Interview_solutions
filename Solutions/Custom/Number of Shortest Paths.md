@@ -20,11 +20,11 @@ Letters are Nodes.
 ### Code
 
 ```java
-class GraphNode { // using public variables for simplicity
-    public char data;
-    public List<GraphNode> neighbors = new ArrayList<>();
-    public int level = Integer.MIN_VALUE;
-    public int numPaths = 0;
+class GraphNode { // public variables for simplicity
+    char data;
+    List<GraphNode> neighbors = new ArrayList<>();
+    int level = Integer.MIN_VALUE;
+    int numPaths = 0;
 
     public GraphNode(char data) {
         this.data = data;

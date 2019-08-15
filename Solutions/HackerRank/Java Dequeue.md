@@ -11,8 +11,8 @@ HackerRank has a strange input format where we have to read the input from stand
 ```java
 public class test {
     public static void main(String[] args) {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        ArrayDeque<Integer> deque = new ArrayDeque<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        Deque<Integer> deque = new ArrayDeque<>();
 
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

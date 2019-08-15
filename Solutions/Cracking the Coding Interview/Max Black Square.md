@@ -34,13 +34,13 @@ Cell[][] preprocessGrid(int[][] grid) { // O(n^2)
     int rows = grid.length;
     int cols = grid[0].length;
 
-    Cell[][] preprocessed = new Cell[grid.length][grid.length];
-    for (int row = rows - 1; row >= 0; row--) {
-        for (int col = cols - 1; col >= 0; col--) {
-            preprocessed[row][col] = new Cell(0, 0);
-            if (grid[row][col] == 1) {
-                preprocessed[row][col].blacksRight = 1 + ((col + 1 < cols) ? preprocessed[row][col + 1].blacksRight : 0);
-                preprocessed[row][col].blacksDown  = 1 + ((row + 1 < rows) ? preprocessed[row + 1][col].blacksDown  : 0);
+    Cell[][] preprocessed = new Cell[rows][cols];
+    for (int r = rows - 1; r >= 0; r--) {
+        for (int c = cols - 1; c >= 0; c--) {
+            preprocessed[r][c] = new Cell(0, 0);
+            if (grid[r][c] == 1) {
+                preprocessed[r][c].blacksRight = 1 + ((c + 1 < cols) ? preprocessed[r][c + 1].blacksRight : 0);
+                preprocessed[r][c].blacksDown  = 1 + ((r + 1 < rows) ? preprocessed[r + 1][c].blacksDown  : 0);
             }
         }
     }

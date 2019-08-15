@@ -1,8 +1,9 @@
 ### Tips
 
 There are 2 ways to view this problem:
-  1. Left to Right: This is where cache[i] depends on cache[i+1] and cache[i+2]
-  1. Right to Left: This is where cache[i] depends on cache[i-1] and cache[i-2]
+
+1. Left to Right: This is where cache[i] depends on cache[i+1] and cache[i+2]
+1. Right to Left: This is where cache[i] depends on cache[i-1] and cache[i-2]
 
 In both solutions below, I view it as Method #2 above
 

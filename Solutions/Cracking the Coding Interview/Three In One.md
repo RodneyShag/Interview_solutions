@@ -1,6 +1,6 @@
 ### Implementation Tip
 
-- Use `int[] heads = {-1,-1,-1}` and simply implement `arrayOffset(int stackNum)`, push/pop/peek
+Use `int[] heads = {-1,-1,-1}` and simply implement `arrayOffset(int stackNum)`, push/pop/peek
 
 ### Solution
 
@@ -47,15 +47,10 @@ class ThreeInOne {
     private int arrayOffset(int stackNum) {
         return stackSize * stackNum;
     }
-
-    /* Added for testing */
-    public void print() {
-        for (int stackNum = 0; stackNum <= 2; stackNum++) {
-            System.out.print("\nStack #" + stackNum + ": ");
-            for (int i = arrayOffset(stackNum); i <= arrayOffset(stackNum) + heads[stackNum]; i++) {
-                System.out.print(array[i] + " ");
-            }
-        }
-    }
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(1) for push(), pop(), peek(), isEmpty(), arrayOffset()
+- Space Complexity: O(1) for push(), pop(), peek(), isEmpty(), arrayOffset(). O(n) permanent storage needed for `array`

@@ -6,16 +6,15 @@ First, create a `Tower` which is just a `Stack` with:
 
 ```java
 class Tower {
-    private ArrayDeque<Integer> disks; // use deque as a stack
+    private Deque<Integer> disks; // use deque as a stack
     public int towerNum;
 
-    /* Constructor */
     public Tower(int towerNum) {
         disks = new ArrayDeque<>();
         this.towerNum = towerNum;
     }
 
-    /* Can only push a disk onto a stack if there isn't already a smaller disk on it */
+    // Can only push a disk onto a stack if there isn't already a smaller disk on it
     public void push(int d) {
         if (!disks.isEmpty() && disks.peek() <= d) {
             System.out.println("Error Placing Disk " + d);
@@ -24,7 +23,7 @@ class Tower {
         }
     }
 
-    /* Can only pop from a non-empty stack */
+    // Can only pop from a non-empty stack
     public Integer pop() {
         if (disks.isEmpty()) {
             return null;
@@ -36,6 +35,7 @@ class Tower {
 ```
 
 Now code the recursive algorithm:
+
 ```java
 void moveDisks(int n, Tower origin, Tower destination, Tower buffer) {
     if (n > 0) {
@@ -45,7 +45,7 @@ void moveDisks(int n, Tower origin, Tower destination, Tower buffer) {
     }
 }
 
-/* We teach it how to move 1 disk. Therefore it can recursively move n disks */
+// We teach it how to move 1 disk. Therefore it can recursively move n disks
 private void moveTop(Tower origin, Tower destination) {
     Integer disk = origin.pop();
     destination.push(disk);

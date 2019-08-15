@@ -49,11 +49,11 @@ public class Solution {
         Set<List<Point>> islands = new HashSet<>();
 
         // save all islands
-        for (int row = 0; row < rows; row++) {
-            for (int col = 0; col < cols; col++) {
-                if (grid[row][col] == '1') {
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (grid[r][c] == '1') {
                     List<Point> island = new ArrayList<>();
-                    explore(grid, row, col, island);
+                    explore(grid, r, c, island);
                     islands.add(island);
                 }
             }
@@ -69,19 +69,19 @@ public class Solution {
         return uniqueIslands.size();
     }
 
-    private void explore(char[][] grid, int row, int col, List<Point> island) {
-        if (row < 0 || row >= rows || col < 0 || col >= cols || grid == null || grid[row][col] == '0') {
+    private void explore(char[][] grid, int r, int c, List<Point> island) {
+        if (r < 0 || r >= rows || c < 0 || c >= cols || grid == null || grid[r][c] == '0') {
             return;
         }
 
-        grid[row][col] = '0'; // we alter the original matrix here
-        island.add(new Point(row, col));
+        grid[r][c] = '0'; // we alter the original matrix here
+        island.add(new Point(r, c));
 
         // Recursively search neighbors
-        explore(grid, row - 1, col, island);
-        explore(grid, row + 1, col, island);
-        explore(grid, row, col - 1, island);
-        explore(grid, row, col + 1, island);
+        explore(grid, r - 1, c, island);
+        explore(grid, r + 1, c, island);
+        explore(grid, r, c - 1, island);
+        explore(grid, r, c + 1, island);
         return;
     }
 

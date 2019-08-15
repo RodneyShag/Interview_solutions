@@ -9,7 +9,7 @@ void toSwap(int[] arrayA, int[] arrayB) {
         return;
     }
     int difference = (sum2 - sum1) / 2;
-    HashSet<Integer> set = buildSet(arrayB);
+    Set<Integer> set = buildSet(arrayB);
     for (int numA : arrayA) {
         int neededNumB = numA + difference;
         if (set.contains(neededNumB)) {
@@ -20,8 +20,8 @@ void toSwap(int[] arrayA, int[] arrayB) {
     System.out.println("no solution");
 }
 
-private HashSet<Integer> buildSet(int[] array) {
-    HashSet<Integer> set = new HashSet<>();
+private Set<Integer> buildSet(int[] array) {
+    Set<Integer> set = new HashSet<>();
     for (int num : array) {
         set.add(num);
     }

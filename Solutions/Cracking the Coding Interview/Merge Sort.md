@@ -22,7 +22,7 @@ private void merge(int[] array, int[] helper, int start, int mid, int end) {
         helper[i] = array[i];
     }
 
-    /* Loop through helper[] left and right halves and continuously copy smaller element to array[] */
+    // Loop through helper[] left and right halves and continuously copy smaller element to array[]
     int curr = start;
     int left = start;
     int right = mid + 1;
@@ -34,7 +34,7 @@ private void merge(int[] array, int[] helper, int start, int mid, int end) {
         }
     }
 
-    /* Copy remaining elements of left half. Right half elements are already in proper place (see book for explanation) */
+    // Copy remaining elements of left half. Right half elements are already in proper place (see book for explanation)
     while (left <= mid) {
         array[curr++] = helper[left++];
     }

@@ -38,7 +38,7 @@ Preprocess with HashMap
 ```java
 public class WordDistance {
 
-    private static HashMap<String, ArrayList<Integer>> map = new HashMap<>();
+    private static Map<String, List<Integer>> map = new HashMap<>();
 
     public static void preProcess(String[] words) {
         for (int i = 0; i < words.length; i++) {
@@ -46,7 +46,7 @@ public class WordDistance {
             if (!map.containsKey(currWord)) {
                 map.put(currWord, new ArrayList<Integer>());
             }
-            ArrayList<Integer> positions = map.get(currWord);
+            List<Integer> positions = map.get(currWord);
             positions.add(i);
         }
     }
@@ -55,13 +55,13 @@ public class WordDistance {
         return findDistance(map.get(word1), map.get(word2));
     }
 
-    /* Merges lists, then uses same algo from Solution 1 to find minimum distance */
-    private static Integer findDistance(ArrayList<Integer> listA, ArrayList<Integer> listB) {
+    // Merges lists, then uses same algo from Solution 1 to find minimum distance
+    private static Integer findDistance(List<Integer> listA, List<Integer> listB) {
         if (listA == null || listB == null || listA.size() == 0 || listB.size() == 0) {
             return null;
         }
 
-        ArrayList<Pair> merged = merge(listA, listB);
+        List<Pair> merged = merge(listA, listB);
 
         int min = Integer.MAX_VALUE;
         int lastPosWord1 = -1;
@@ -83,12 +83,12 @@ public class WordDistance {
         return min;
     }
 
-    private static ArrayList<Pair> merge(ArrayList<Integer> listA, ArrayList<Integer> listB) {
+    private static List<Pair> merge(List<Integer> listA, List<Integer> listB) {
         if (listA == null || listB == null || listA.size() == 0 || listB.size() == 0) {
             return null; // function assumes both lists are non-empty (to make error-checking easier to write)
         }
 
-        ArrayList<Pair> merged = new ArrayList<>();
+        List<Pair> merged = new ArrayList<>();
         int aIndex = 0;
         int bIndex = 0;
         int aValue;
@@ -105,7 +105,7 @@ public class WordDistance {
             }
         }
 
-        /* Only one of these will execute */
+        // Only one of these will execute
 
         while (aIndex < listA.size()) {
             aValue = listA.get(aIndex);

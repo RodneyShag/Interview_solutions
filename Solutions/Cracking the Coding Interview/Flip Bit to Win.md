@@ -11,14 +11,14 @@ int flipBit(int n) {
     int currLength = 0;
     int maxLength = 1;
 
-    /* set "currLength" as # of trailing 1s */
+    // set "currLength" as # of trailing 1s
     int i = 0;
     while (getBit(n, i)) {
         currLength++;
         i++;
     }
 
-    /* Continue iterating through number */
+    // Continue iterating through number
     for (  ; i < numBits; i++) {
         if (getBit(n, i)) {
             currLength++;

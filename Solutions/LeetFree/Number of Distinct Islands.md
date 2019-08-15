@@ -18,11 +18,11 @@ public int numIslands(char[][] grid) {
 
     Set<String> paths = new HashSet<>();
 
-    for (int row = 0; row < rows; row++) {
-        for (int col = 0; col < cols; col++) {
-            if (grid[row][col] == '1') {
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < cols; c++) {
+            if (grid[r][c] == '1') {
                 StringBuffer path = new StringBuffer("S"); // S for Start
-                explore(grid, row, col, rows, cols, path);
+                explore(grid, r, c, rows, cols, path);
                 paths.add(path.toString());
             }
         }
@@ -30,18 +30,18 @@ public int numIslands(char[][] grid) {
     return paths.size();
 }
 
-private void explore(char[][] grid, int row, int col, int rows, int cols, StringBuffer path) {
-    if (row < 0 || row >= rows || col < 0 || col >= cols || grid == null || grid[row][col] == '0') {
+private void explore(char[][] grid, int r, int c, int rows, int cols, StringBuffer path) {
+    if (r < 0 || r >= rows || c < 0 || c >= cols || grid == null || grid[r][c] == '0') {
         return;
     }
 
-    grid[row][col] = '0'; // we alter the original matrix here
+    grid[r][c] = '0'; // we alter the original matrix here
 
     // Recursively search neighbors
-    explore(grid, row - 1, col, rows, cols, path.append("U")); // Up
-    explore(grid, row + 1, col, rows, cols, path.append("D")); // Down
-    explore(grid, row, col - 1, rows, cols, path.append("L")); // Left
-    explore(grid, row, col + 1, rows, cols, path.append("R")); // Right
+    explore(grid, r - 1, c, rows, cols, path.append("U")); // Up
+    explore(grid, r + 1, c, rows, cols, path.append("D")); // Down
+    explore(grid, r, c - 1, rows, cols, path.append("L")); // Left
+    explore(grid, r, c + 1, rows, cols, path.append("R")); // Right
     path.append("_"); // crucial step
     return;
 }

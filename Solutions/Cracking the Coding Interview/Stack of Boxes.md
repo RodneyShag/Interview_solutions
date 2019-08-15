@@ -74,7 +74,7 @@ public class StackOfBoxes {
 
 ### Time/Space Complexity
 
--  Time Complexity: O(n^2)
+-  Time Complexity: O(n<sup>2</sup>)
 - Space Complexity: O(n) due to recursion.
 
 ### Follow-up Question - What if rotation of boxes is allowed?

@@ -28,3 +28,8 @@ public class TreeNode {
     }
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(1) for TreeNode(), addLeftChild(), addRightChild().
+- Space Complexity: O(1) for TreeNode(), addLeftChild(), addRightChild(). Each TreeNode requires O(1) storage for itself.

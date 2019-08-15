@@ -11,7 +11,7 @@ getNext(int num) {
     int c0 = 0; //count of 0's. We never use this, but it would be useful to have in an interview.
     int c1 = 0; // count of 1's
 
-    /* Step 1 - Search from right to left to find first 0 with a 1 anywhere to the right of it, and set it to 1 */
+    // Step 1 - Search from right to left to find first 0 with a 1 anywhere to the right of it, and set it to 1
     for (int i = 0; i < 32; i++) {
         boolean bit = BitFunctions.getBit(num, i);
         if (!bit && c1 > 0) {
@@ -30,10 +30,10 @@ if (indexOfZero == -1) {
     }
     num = BitFunctions.setBit(num, indexOfZero);
 
-    /* Step 2 - Clear bits to the right of the index. */
+    // Step 2 - Clear bits to the right of the index.
     num = BitFunctions.clearBitsIthrough0(num, indexOfZero - 1);
 
-    /* Step 3 - Add in c1 - 1 ones in least significant spots ` */
+    // Step 3 - Add in c1 - 1 ones in least significant spots
     for (int i = 0; i < c1 - 1; i++) {
         num = BitFunctions.setBit(num, i);
     }
@@ -47,7 +47,7 @@ getPrev(int num) {
     int c0 = 0; // count of 0's. We never use this, but it would be useful to have in an interview.
     int c1 = 0; // count of 1's.
 
-    /* Step 1 - Search from right to left to find first 1 with a 0 anywhere to the right of it, and set it to 0 */
+    // Step 1 - Search from right to left to find first 1 with a 0 anywhere to the right of it, and set it to 0
     for (int i = 0; i < 32; i++) {
         boolean bit = BitFunctions.getBit(num, i);
         if (bit && c0 > 0) {
@@ -66,10 +66,10 @@ getPrev(int num) {
     }
     num = BitFunctions.clearBit(num, indexOfOne);
 
-    /* Step 2 - Clear bits to the right of the index. */
+    // Step 2 - Clear bits to the right of the index
     num = BitFunctions.clearBitsIthrough0(num, indexOfOne - 1);
 
-    /* Step 3 - Add in c1 + 1 ones immediately to the right of the cleared bit */
+    // Step 3 - Add in c1 + 1 ones immediately to the right of the cleared bit
     int onesToAdd = c1 + 1;
     int i = indexOfOne - 1;
     while (onesToAdd > 0) {

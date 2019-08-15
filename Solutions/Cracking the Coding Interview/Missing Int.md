@@ -60,12 +60,12 @@ void findNumber(int[] input) {
     // My implementation of BitSet has constructor that takes a long (java.util.BitSet doesn't)
     MyBitSet bitset = new MyBitSet(ONE_GB);
 
-    /* Initialize bitfield to represent numbers we already have */
+    // Initialize bitfield to represent numbers we already have
     for (int num : input) {
         bitset.set(num);
     }
 
-    /* Find first bit that is 0 and print corresponding number */
+    // Find first bit that is 0 and print corresponding number
     for (int i = 0; i < bitset.size(); i++) {
         boolean bit = bitset.get(i);
         if (!bit) {
@@ -85,12 +85,12 @@ void findNumber2(int[] input) {
     MyBitSet bitset = new MyBitSet(partitionSize); // this takes up 2^18 bits
     int[] blocks = new int[numBlocks]; // this takes up 2^12 * (2^5 bits in int) = 2^17 bits
 
-    /* Set up each block to have the count of numbers in that range */
+    // Set up each block to have the count of numbers in that range
     for (int num : input) {
         blocks[num / partitionSize]++;
     }
 
-    /* Find 1st block that's missing a number */
+    // Find 1st block that's missing a number
     int lowerBound = -1;
     for (int i = 0; i < numBlocks; i++) {
         if (blocks[i] < partitionSize) {
@@ -101,7 +101,7 @@ void findNumber2(int[] input) {
 
     // The next 2 parts are very similar to part A of this problem.
 
-    /* Do 2nd pass of file of numbers and record them into bitset */
+    // Do 2nd pass of file of numbers and record them into bitset
     // scan = new Scanner(new FileReader("src/chapter10/numbers"));
     for (int num : input) {
         if (num >= lowerBound && num < lowerBound + partitionSize) {
@@ -109,7 +109,7 @@ void findNumber2(int[] input) {
         }
     }
 
-    /* Loop through bitset and print the 1st missing number */
+    // Loop through bitset and print the 1st missing number
     for (int i = 0; i < bitset.size(); i++) {
         boolean bit = bitset.get(i);
         if (!bit) {

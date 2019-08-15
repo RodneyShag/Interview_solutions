@@ -41,17 +41,17 @@ public class Point {
 ```
 
 ```java
-public ArrayList<Point> findPath(final boolean[][] maze, int row, int col) {
+public List<Point> findPath(final boolean[][] maze, int row, int col) {
     if (maze == null || row < 0 || row >= maze.length || col < 0 || col >= maze[0].length) {
         return null;
     }
 
     // Create path to save solution into
-    ArrayList<Point> path = new ArrayList<>();
+    List<Point> path = new ArrayList<>();
     path.add(new Point(0, 0));
 
     // Create cache to save solutions to subproblems
-    HashMap<Point, Boolean> cache = new HashMap<>(); // requires overriding .equals() and .hashCode for Point, for HashMap to work properly
+    Map<Point, Boolean> cache = new HashMap<>(); // requires overriding .equals() and .hashCode for Point, for HashMap to work properly
     cache.put(new Point(0, 0), true); // base case
 
     // Recursively calculate answer
@@ -63,7 +63,7 @@ public ArrayList<Point> findPath(final boolean[][] maze, int row, int col) {
     }
 }
 
-private boolean findPath(final boolean[][] maze, int row, int col, ArrayList<Point> path, HashMap<Point, Boolean> cache) {
+private boolean findPath(final boolean[][] maze, int row, int col, List<Point> path, Map<Point, Boolean> cache) {
     Point p = new Point(col, row);
     if (cache.containsKey(p)) { // here so that we don't recompute subproblems that we already solved
         return cache.get(p);    // since nobody is going to alter the Point p, no need to do a deep copy before returning cached result

@@ -6,6 +6,7 @@
 | Linked List        | O(n)                           | O(n) since we can't do binary search on linked list                       |
 | HashMap            | O(1)                           | O(n) since HashMap doesn't help us find rank in any way (it's not sorted) |
 | Binary Search Tree | O(log n)                       | O(log n) (assuming it's balanced)                                         |
+
 ### Solution
 
 ```java
@@ -27,10 +28,10 @@ class RankNode {
 ```java
 class RankFromStream {
 
-    private static RankNode root = null;
+    private RankNode root = null;
 
-    /* Called each time a number is generated */
-    public static void track(int x) {
+    // Called each time a number is generated
+    public void track(int x) {
         if (root == null) {
             root = new RankNode(x);
         } else {
@@ -38,7 +39,7 @@ class RankFromStream {
         }
     }
 
-    private static void insert(int x, RankNode node) {
+    private void insert(int x, RankNode node) {
         if (x <= node.data) {
             node.leftSize++;
             if (node.left == null) {
@@ -55,15 +56,15 @@ class RankFromStream {
         }
     }
 
-    /* Returns number of values less than or equal to x (not including x itself) */
-    public static int getRankOfNumber(int x) {
+    // Returns number of values less than or equal to x (not including x itself)
+    public int getRankOfNumber(int x) {
         if (root == null) {
             return 0;
         }
         return getRankOfNumber(x, root);
     }
 
-    private static int getRankOfNumber(int x, RankNode node) {
+    private int getRankOfNumber(int x, RankNode node) {
         if (node == null) {
             return 0;
         } else if (x == node.data) {

@@ -27,3 +27,8 @@ class GraphNode {
     }
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(1) for GraphNode(), visit(), addNeighbor(), addDirectedNeighbor().
+- Space Complexity: O(1) for GraphNode(), visit(), addNeighbor(), addDirectedNeighbor(). Each GraphNode requires O(1) storage for itself, and an additional O(1) storage for each neighbor in `neighbors`.

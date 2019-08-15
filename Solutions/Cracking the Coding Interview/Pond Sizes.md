@@ -1,8 +1,8 @@
 ### Solution
 
 ```java
-findPonds(int[][] grid) {
-    ArrayList<Integer> pondSizes = new ArrayList<>();
+List<Integer> findPonds(int[][] grid) {
+    List<Integer> pondSizes = new ArrayList<>();
     int rows = grid.length;
     int cols = grid[0].length;
     for (int row = 0; row < rows; row++) {

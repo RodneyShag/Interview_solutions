@@ -1,6 +1,6 @@
 ### Provided Code
 
-- [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Implement%20a%20TreeNode.md)
+[TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Implement%20a%20TreeNode.md)
 
 ### Solution
 
@@ -20,7 +20,7 @@ private boolean isBST(TreeNode node, int min, int max) {
 }
 ```
 
-### Time Complexity
+### Time/Space Complexity
 
 -  Time Complexity: O(n) since we visit every node
-- Space Complexity: O(n) if unbalanced tree, O(log n) if it's balanced. That's the depth of the recursion
+- Space Complexity: Space Complexity: O(log n) if tree is balanced, O(n) otherwise, since that's the depth of the recursion.

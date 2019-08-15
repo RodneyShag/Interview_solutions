@@ -1,6 +1,6 @@
 ### Notes
 
-- Solution is from Jeff Erickson's Algorithms.pdf, Section 19.5 Topological Sort
+Solution is from Jeff Erickson's Algorithms.pdf, Section 19.5 Topological Sort
 
 ### Solution
 
@@ -50,7 +50,7 @@ class Graph {
 ```java
 class BuildOrder {
     // Converts our inconveniently formatted input into a graph
-    public ArrayDeque<Node> topoSort(String[] projects, String[][] dependencies) throws Exception {
+    public Deque<Node> topoSort(String[] projects, String[][] dependencies) throws Exception {
         Graph graph = new Graph();
         for (String project : projects) {
             graph.addNode(project);
@@ -63,19 +63,19 @@ class BuildOrder {
         return topoSort(graph);
     }
 
-    private ArrayDeque<Node> topoSort(Graph graph) throws Exception {
+    private Deque<Node> topoSort(Graph graph) throws Exception {
         Node source = new Node("Source");
         for (Node node : graph.nodes) {
             source.addDirectedNeighbor(node);
         }
 
-        ArrayDeque<Node> result = new ArrayDeque<>();
+        Deque<Node> result = new ArrayDeque<>();
         topoSortDFS(source, result);
         result.removeFirst(); // removes the source node we created
         return result;
     }
 
-    private void topoSortDFS(Node n, ArrayDeque<Node> result) throws Exception {
+    private void topoSortDFS(Node n, Deque<Node> result) throws Exception {
         n.status = Visited.ACTIVE;
         for (Node neighbor : n.neighbors) {
             if (neighbor.status == Visited.NEW) {

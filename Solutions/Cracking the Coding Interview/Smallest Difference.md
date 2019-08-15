@@ -1,6 +1,6 @@
 ### Tip
 
-- Kind of like a "2 sum" problem. Can call this a "Closest 2 sum" problem.
+Kind of like a "2 sum" problem. Can call this a "Closest 2 sum" problem.
 
 ### Solution
 
@@ -29,4 +29,4 @@ int smallestDifference(int[] array1, int[] array2) {
 
 ### Time Complexity
 
-- Time Complexity: O(a log a + b log b) where a, b are lengths of the 2 arrays
+Time Complexity: O(a log a + b log b) where a, b are lengths of the 2 arrays

@@ -4,7 +4,7 @@
 |:-:|:-----------------:|:---------------------------------------:|:----------------:|
 | 1 | Brute Force       | O(n<sup>6</sup>)                        | Worth Mentioning |
 | 2 | Pre-process       | O(n<sup>4</sup>)                        | Worth Mentioning |
-| 3 | maxSubarray trick | O(R<sup>2</sup>*C) (R = rows, C = cols) |     Favorite     |
+| 3 | maxSubarray trick | O(R<sup>2</sup>C) (R = rows, C = cols)  |     Favorite     |
 
 ### Solution 1
 
@@ -28,9 +28,9 @@ int findLargestSubmatrix(int[][] grid) {
 
 public int getSum(int[][] grid, int rowStart, int rowEnd, int colStart, int colEnd) { // runs in O(n^2) time
     int sum = 0;
-    for (int row = rowStart; row <= rowEnd; row++) {
-        for (int col = colStart; col <= colEnd; col++) {
-            sum += grid[row][col];
+    for (int r = rowStart; r <= rowEnd; r++) {
+        for (int c = colStart; c <= colEnd; c++) {
+            sum += grid[r][c];
         }
     }
     return sum;
@@ -58,8 +58,8 @@ int findLargestSubmatrix2(int[][] grid) {
     return maxArea;
 }
 
-/* For each element at (x,y), we store the sum of all values from (0,0) to (x,y) */
-private static int[][] preprocess(int[][] grid) {
+// For each element at (x,y), we store the sum of all values from (0,0) to (x,y)
+private int[][] preprocess(int[][] grid) {
     if (grid == null) {
         return null;
     }
@@ -68,11 +68,11 @@ private static int[][] preprocess(int[][] grid) {
 
     int[][] processed = new int[rows][cols];
     processed[0][0] = grid[0][0];
-    for (int row = 1; row < rows; row++) {
-        processed[row][0] = processed[row - 1][0] + grid[row][0];
+    for (int r = 1; r < rows; r++) {
+        processed[r][0] = processed[r - 1][0] + grid[r][0];
     }
-    for (int col = 1; col < cols; col++) {
-        processed[0][col] = processed[0][col - 1] + grid[0][col];
+    for (int c = 1; c < cols; c++) {
+        processed[0][c] = processed[0][c - 1] + grid[0][c];
     }
     for (int row = 1; row < rows; row++) {
         for (int col = 1; col < cols; col++) {
@@ -85,7 +85,7 @@ private static int[][] preprocess(int[][] grid) {
     return processed;
 }
 
-private static int getSum2(int[][] processed, int rowStart, int rowEnd, int colStart, int colEnd) { // runs in O(1) since matrix was preprocessed
+private int getSum2(int[][] processed, int rowStart, int rowEnd, int colStart, int colEnd) { // runs in O(1) since matrix was preprocessed
     return processed[rowEnd][colEnd] -
            processed[rowStart][colEnd] -
            processed[rowEnd][colStart] +
@@ -113,7 +113,7 @@ int findLargestSubmatrix3(int[][] grid) {
     return maxSum;
 }
 
-private static int maxSubArray(int[] array) {
+private int maxSubArray(int[] array) {
     int maxSum = 0;
     int sum = 0;
     for (int i = 0; i < array.length; i++) {

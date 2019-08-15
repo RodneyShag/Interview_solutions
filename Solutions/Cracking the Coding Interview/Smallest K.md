@@ -63,7 +63,7 @@ Integer partition(int[] array, int start, int end) {
 
     swap(array, pivotIndex, end); // puts pivot at end for now.
 
-    /* Linear search, comparing all elements to pivotValue and swapping as necessary */
+    // Linear search, comparing all elements to pivotValue and swapping as necessary
     int indexToReturn = start;	// Notice we set it to "start", not to "0".
     for (int i = start; i < end; i++) {
         if (array[i] < pivotValue) {

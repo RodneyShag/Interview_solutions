@@ -9,8 +9,8 @@ SCS(i,j) =
 
 i                                      if j == 0
 j                                      if i == 0
-1 + SCS(i - 1, j - 1)                  if X[i] == Y[j]
-1 + min(SCS(i - 1, j), SCS(i, j - 1))  otherwise
+SCS(i - 1, j - 1) + 1                  if X[i] == Y[j]
+min(SCS(i - 1, j), SCS(i, j - 1)) + 1  otherwise
 ```
 
 - __Fact 1, 2__ - If either i or j is 0, then we are asking for the SCS of a string and the empty string, so the SCS is the length of the nonempty string itself (depicted in first 2 rules above).
@@ -22,11 +22,11 @@ j                                      if i == 0
 ```java
 public class Solution {
     public static int shortestCommonSubsequence(char[] X, char[] Y) {
-        // pass in X.length instead of X.length - 1, since X, Y are 1-indexed in our definition, 0-indexed in code
+        // use X.length instead of X.length - 1, since X, Y are 1-indexed in our definition, 0-indexed in code
         return scs(X, Y, X.length, Y.length, new HashMap<String, Integer>());
     }
 
-    private static int scs(char[] X, char[] Y, int i, int j, HashMap<String, Integer> cache) {
+    private static int scs(char[] X, char[] Y, int i, int j, Map<String, Integer> cache) {
         String key = i + " " + j;
         if (cache.containsKey(key)) {
             return cache.get(key);
@@ -37,9 +37,9 @@ public class Solution {
         } else if (j == 0) {
             result = i;
         } else if (X[i - 1] == Y[j - 1]) { // X, Y are 1-indexed in our definition, 0-indexed in code
-            result = 1 + scs(X, Y, i - 1, j - 1, cache);
+            result = scs(X, Y, i - 1, j - 1, cache) + 1;
         } else {
-            result = 1 + Math.min(scs(X, Y, i - 1, j, cache), scs(X, Y, i, j - 1, cache));
+            result = Math.min(scs(X, Y, i - 1, j, cache), scs(X, Y, i, j - 1, cache)) + 1;
         }
         cache.put(key, result);
         return result;
@@ -64,7 +64,7 @@ public class Solution {
 
 - Use same recursive definition as above.
 - We can use Dynamic Programming to fill a 2-D array for every `i`, `j`.
-- Instead of creating an array of size `m` by `n`, we will make an array of size `m+1` by `n+1`. This trick helps us write more concise code. scs[1][1] will represent X[0], Y[0].
+- Instead of creating an array of size `m` by `n`, we will make an array of size `m + 1` by `n + 1`. This trick helps us write more concise code. scs[1][1] will represent X[0], Y[0].
 
 ### Code
 
@@ -81,9 +81,9 @@ public class Solution {
                 } else if (j == 0) {
                     scs[i][j] = i;
                 } else if (X[i - 1] == Y[j - 1]) { // X, Y are 1-indexed in our definition, 0-indexed in code
-                    scs[i][j] = 1 + scs[i - 1][j - 1];
+                    scs[i][j] = scs[i - 1][j - 1] + 1;
                 } else {
-                    scs[i][j] = 1 + Math.min(scs[i - 1][j], scs[i][j - 1]);
+                    scs[i][j] = Math.min(scs[i - 1][j], scs[i][j - 1]) + 1;
                 }
             }
         }
@@ -132,9 +132,9 @@ public class Solution {
                 } else if (j == 0) {
                     scs[j] = i;
                 } else if (X[i - 1] == Y[j - 1]) { // X, Y are 1-indexed in our definition, 0-indexed in code
-                    scs[j] = 1 + pre;
+                    scs[j] = pre + 1;
                 } else {
-                    scs[j] = 1 + Math.min(scs[j], scs[j - 1]);
+                    scs[j] = Math.min(scs[j], scs[j - 1]) + 1;
                 }
                 pre = tmp;
             }
