@@ -1,4 +1,4 @@
-### Tips
+# Tips
 
 There are 2 ways to view this problem:
 
@@ -7,12 +7,8 @@ There are 2 ways to view this problem:
 
 In both solutions below, I view it as Method #2 above
 
-| # |            Solution              | Time Complexity | Space Complexity |
-|:-:|:--------------------------------:|:---------------:|:----------------:|
-| 1 | Recursive Solution - with Cache  |      O(n)       |       O(n)       |
-| 2 | Iterative Solution               |      O(n)       |       O(1)       |
 
-### Solution 1
+# Solution 1 - Recursive Solution with Cache
 
 ```java
 int maxMinutes1(int[] massages) {
@@ -34,7 +30,11 @@ private static int maxMinutes1(int[] massages, int index, int[] cache) {
 }
 ```
 
-### Solution 2
+-  Time Complexity: O(n)
+- Space Complexity: O(n)
+
+
+# Solution 2 - Iterative Solution
 
 ```java
 int maxMinutes2(int[] massages) {
@@ -52,3 +52,6 @@ int maxMinutes2(int[] massages) {
     return max;
 }
 ```
+
+-  Time Complexity: O(n)
+- Space Complexity: O(1)

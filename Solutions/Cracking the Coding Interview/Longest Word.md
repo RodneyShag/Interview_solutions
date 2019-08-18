@@ -8,7 +8,7 @@
 
 ```java
 String longestWord(String[] words) {
-    Arrays.sort(words, (s1, s2) -> s2.length() - s1.length()); // sorting backwards to put longer words in front.
+    Arrays.sort(words, (s1, s2) -> s2.length() - s1.length()); // sorting backwards to put longer words in front
     Map<String, Boolean> map = makeMap(words);
 
     for (String word : words) {
@@ -43,3 +43,14 @@ private boolean canBuildWord(String word, boolean isOriginalWord, Map<String, Bo
     return false;
 }
 ```
+
+### Time Complexity
+
+- Sorting `n` words takes `O(n log n)`. If we include String lengths in there, it becomes `O(ns log(ns))`
+- `canBuildWord()` is `O(s)` where `s` is length of longest String.
+- `canBuildWord()` is called `O(n)` where `n` is number of words.
+- Total time complexity is `O(ns log(ns))`. We can optionally omit `s` and just represent the runtime as `O(n log n)`
+
+### Space Complexity
+
+`O(ns)` to store `n` words of max length `s` in our `Map`. We can optionally omit `s` and just represent the space complexity as `O(n)`

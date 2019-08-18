@@ -1,10 +1,15 @@
 ### Solution Comparisons
 
-| # |     Solution      |                 Runtime                 |    Preference    |
-|:-:|:-----------------:|:---------------------------------------:|:----------------:|
-| 1 | Brute Force       | O(n<sup>6</sup>)                        | Worth Mentioning |
-| 2 | Pre-process       | O(n<sup>4</sup>)                        | Worth Mentioning |
-| 3 | maxSubarray trick | O(R<sup>2</sup>C) (R = rows, C = cols)  |     Favorite     |
+- R = number of rows
+- C = number of columns
+
+| # |     Solution      |         Time Complexity        | Space Complexity |    Preference    |
+|:-:|:-----------------:|:------------------------------:|:----------------:|:----------------:|
+| 1 | Brute Force       | O(R<sup>3</sup>C<sup>3</sup>)  |       O(1)       | Worth Mentioning |
+| 2 | Pre-process       | O(R<sup>2</sup>C<sup>2</sup>)  |      O(RC)       | Worth Mentioning |
+| 3 | maxSubarray trick | O(R<sup>2</sup>C)              |       O(1)       |     Favorite     |
+
+We assume `int[][] grid` is valid input for all 3 solutions below
 
 ### Solution 1
 
@@ -60,9 +65,6 @@ int findLargestSubmatrix2(int[][] grid) {
 
 // For each element at (x,y), we store the sum of all values from (0,0) to (x,y)
 private int[][] preprocess(int[][] grid) {
-    if (grid == null) {
-        return null;
-    }
     int rows = grid.length;
     int cols = grid[0].length;
 
@@ -114,14 +116,11 @@ int findLargestSubmatrix3(int[][] grid) {
 }
 
 private int maxSubArray(int[] array) {
-    int maxSum = 0;
-    int sum = 0;
-    for (int i = 0; i < array.length; i++) {
-        sum += array[i];
-        maxSum = Math.max(maxSum, sum);
-        if (sum < 0) {
-            sum = 0;
-        }
+    int maxEndingHere = A[0];
+    int maxSum = A[0];
+    for (int i = 1; i < A.length; i++) {
+        maxEndingHere = Math.max(maxEndingHere + A[i], A[i]);
+        maxSum = Math.max(maxSum, maxEndingHere);
     }
     return maxSum;
 }

@@ -29,4 +29,7 @@ private Set<Integer> buildSet(int[] array) {
 }
 ```
 
-- Time complexity: O(a + b) where a, b are size of arrays
+### Time/Space Complexity
+
+-  Time complexity: O(a + b) where a, b are size of arrays
+- Space Complexity: O(b). We could actually lower this to O(min(a, b)) by switching the arrays if `arrayA` is smaller.

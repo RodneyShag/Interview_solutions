@@ -11,13 +11,30 @@
 ### Solution
 
 ```java
+public class HeapNode {
+    int value; // same as the value that's the key in our HashMap
+    int index;
+
+    HeapNode(int listID, int pos) {
+        this.value = listID;
+        this.index = pos;
+    }
+
+    @Override
+    public String toString() {
+        return "" + index;
+    }
+}
+```
+
+```java
 void shortest(int[] arrayA, int[] arrayB) {
     Map<Integer, Deque<HeapNode>> map = makeLists(arrayA, arrayB);
     Range range = getSmallestRange(map);
     System.out.println("Range: " + range);
 }
 
-private static Map<Integer, Deque<HeapNode>> makeLists(int[] arrayA, int[] arrayB) {
+private Map<Integer, Deque<HeapNode>> makeLists(int[] arrayA, int[] arrayB) {
     Map<Integer, Deque<HeapNode>> map = new HashMap<>();
     for (int num : arrayA) {
         map.put(num, new ArrayDeque<>());
@@ -32,7 +49,7 @@ private static Map<Integer, Deque<HeapNode>> makeLists(int[] arrayA, int[] array
     return map;
 }
 
-private static Range getSmallestRange(Map<Integer, Deque<HeapNode>> map) {
+private Range getSmallestRange(Map<Integer, Deque<HeapNode>> map) {
     Queue<HeapNode> minHeap = new PriorityQueue<>(new NodeComparator());
 
     Range currRange = new Range(Integer.MAX_VALUE, Integer.MIN_VALUE);

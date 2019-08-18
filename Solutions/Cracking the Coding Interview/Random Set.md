@@ -12,7 +12,10 @@ This is an iterative solution of the above recursive explanation
 
 ```java
 int[] generate(int[] array, int m) {
-    // Copy first "m" elements into new array
+    if (array == null || m > array.length) {
+      return null;
+    }
+    // Copy first 'm' elements into new array
     int[] solution = new int[m];
     for (int i = 0; i < m; i++) {
         solution[i] = array[i];
@@ -28,3 +31,8 @@ int[] generate(int[] array, int m) {
     return solution;
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n)
+- Space Complexity: O(n)

@@ -1,6 +1,6 @@
-### Solution 1
+# Solution 1 - Linear Search
 
-Linear Search
+### Code
 
 ```java
 Integer shortest(String[] words, String word1, String word2) {
@@ -27,6 +27,11 @@ Integer shortest(String[] words, String word1, String word2) {
 }
 ```
 
+### Time/Space Complexity
+
+-  Time Complexity: O(n) where `n` is number of words
+- Space Complexity: O(1)
+
 ### Solution 2
 
 Preprocess with HashMap
@@ -43,15 +48,13 @@ public class WordDistance {
     public static void preProcess(String[] words) {
         for (int i = 0; i < words.length; i++) {
             String currWord = words[i];
-            if (!map.containsKey(currWord)) {
-                map.put(currWord, new ArrayList<Integer>());
-            }
+            map.putIfAbsent(currWord, new ArrayList<Integer>());
             List<Integer> positions = map.get(currWord);
             positions.add(i);
         }
     }
 
-    public static Integer shortest2(String word1, String word2) {
+    public static Integer shortest(String word1, String word2) {
         return findDistance(map.get(word1), map.get(word2));
     }
 
@@ -85,7 +88,7 @@ public class WordDistance {
 
     private static List<Pair> merge(List<Integer> listA, List<Integer> listB) {
         if (listA == null || listB == null || listA.size() == 0 || listB.size() == 0) {
-            return null; // function assumes both lists are non-empty (to make error-checking easier to write)
+            return new ArrayList<>();
         }
 
         List<Pair> merged = new ArrayList<>();
@@ -122,3 +125,12 @@ public class WordDistance {
     }
   }
 ```
+
+### Time Complexity
+
+- O(n) to preprocess the data.
+- O(a + b) for `findDistance()` where `a` is number of occurrences of 1st word and `b` is number of occurrences of 2nd word
+
+### Space Complexity
+
+O(n) since we've stored data in a `Map<String, List<Integer>>`

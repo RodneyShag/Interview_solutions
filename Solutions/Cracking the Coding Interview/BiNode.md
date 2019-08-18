@@ -15,10 +15,10 @@ class BiNode { // public variables for simplicity
 
 ```java
 class Converter {
-    public static BiNode head = null;
-    public static BiNode tail = null;
+    BiNode head = null;
+    BiNode tail = null;
 
-    public static void inorderTraverse(BiNode root) {
+    public void inorderTraverse(BiNode root) {
         if (root != null) {
             inorderTraverse(root.left);
             buildList(root);
@@ -26,7 +26,7 @@ class Converter {
         }
     }
 
-    private static void buildList(BiNode n) {
+    private void buildList(BiNode n) {
         if (head == null || tail == null) {
             head = tail = n;
             n.left = n.right = null;
@@ -38,3 +38,8 @@ class Converter {
     }
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n)
+- Space Complexity: O(n)

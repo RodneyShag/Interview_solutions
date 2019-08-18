@@ -1,89 +1,94 @@
-### List of Solutions
+# List of Solutions
 
 - Let `m` be the million numbers and `n` be the billion numbers.
 
 | # |  Solutions  |                    Runtime                       |    Preference    |
 |:-:|:-----------:|:------------------------------------------------:|:----------------:|
-| 0 | Sort        | O(log n)                                         | Worth Mentioning |
+| 0 | Sort        | O(n log n)                                       | Worth Mentioning |
 | 1 | Max Heap    | O(n log m) (Notice it's "m" not "n")             | Worth Mentioning |
 | 2 | QuickSelect | O(n) average case, O(n^2) worst case (bad pivot) |     Favorite     |
 
 
-### Solution 0
+# Solution 0
 
 Sort.
 
-### Solution 1
+
+# Solution 1
 
 Max Heap (Using PriorityQueue in Java, which has O(log m) for add() and remove())
 
-- Algorithm
-  1. O(m) to build a MAX heap of first 1 million elements (using algo from CS 225), largest element at the top.
-  1. For each of the remaining "n" entries, if it's smaller than the heap's max element, we insert it into our heap by replacing the largest element (top of heap) with it. remove(), add() are O(log m), so total runtime O(n log m)
+Algorithm:
 
-### Solution 2
+1. O(m) to build a MAX heap of first 1 million elements (using algo from CS 225), largest element at the top.
+1. For each of the remaining "n" entries, if it's smaller than the heap's max element, we insert it into our heap by replacing the largest element (top of heap) with it. remove(), add() are O(log m), so total runtime O(n log m)
 
-- `Quickselect`
-  - Finds "nth" smallest element in an array. Returns its value (Code from Wikipedia).
-  - Also partially sorts the data. If the value of the nth smallest element is x, all values to the left of it are smaller than x, and all values to the right of it are greater than x.
-  - O(n) average run-time is since we recurse only on 1 side (n + n/2 + n/4 + ...) = n (1 + 1/2 + 1/4 + ...) = O(n). Our formula above is a geometric series with "r = 1/2", which would converge to 1/(1-r) for infinite geometric series.
-  - O(n^2) worst-case run-time is if "partition()" consistently picks a bad pivot.
+
+# Solution 2
+
+### Algorithm
+
+Use "QuickSelect"
+
+- Finds "nth" smallest element in an array. Returns its value (Code from Wikipedia).
+- Also partially sorts the data. If the value of the nth smallest element is x, all values to the left of it are smaller than x, and all values to the right of it are greater than x.
+
+### Code
 
 ```java
-Integer quickselect(int[] array, int n) {
-    int start = 0;
-    int end   = array.length - 1;
-    while (start <= end) {
-        int pivotIndex = partition(array, start, end);
+Integer quickselect(int[] A, int n) {
+    int lo = 0;
+    int hi = A.length - 1;
+    while (lo <= hi) {
+        int pivotIndex = partition(A, lo, hi);
         if (pivotIndex == n) {
-            return array[n];
+            return A[n];
         } else if (pivotIndex < n) {
-            start = pivotIndex + 1;
+            lo = pivotIndex + 1;
         } else {
-            end = pivotIndex - 1;
+            hi = pivotIndex - 1;
         }
     }
     return null;
 }
 ```
 
-- `partition`
-  - Partition array into 2 parts.
-    1. Left side has values smaller than pivotValue
-    1. Right side has values larger than pivotValue
-  - Returns pivotIndex
+- `partition()` partitions array into 2 parts.
+    - Left side has values smaller than pivotValue
+    - Right side has values larger than pivotValue
+- Returns pivotIndex
 
 ```java
-Integer partition(int[] array, int start, int end) {
-    if (start > end) {
+Integer partition(int[] A, int lo, int hi) {
+    if (lo > hi) {
         return null;
     }
-    int pivotIndex = (start + end) / 2; // there are many ways to choose a pivot
-    int pivotValue = array[pivotIndex];
+    int pivotIndex = (lo + hi) / 2; // there are many ways to choose a pivot
+    int pivotValue = A[pivotIndex];
 
-    swap(array, pivotIndex, end); // puts pivot at end for now.
+    swap(A, pivotIndex, hi); // puts pivot at end for now.
 
     // Linear search, comparing all elements to pivotValue and swapping as necessary
-    int indexToReturn = start;	// Notice we set it to "start", not to "0".
-    for (int i = start; i < end; i++) {
-        if (array[i] < pivotValue) {
-            swap(array, i, indexToReturn);
+    int indexToReturn = lo;	// Notice we set it to "lo", not to "0".
+    for (int i = lo; i < hi; i++) {
+        if (A[i] < pivotValue) {
+            swap(A, i, indexToReturn);
             indexToReturn++;
         }
     }
 
-    swap(array, indexToReturn, end); // puts pivot where it belongs
+    swap(A, indexToReturn, hi); // puts pivot where it belongs
     return indexToReturn;
 }
 
-private void swap(int[] array, int i, int j) {
-    int temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+private void swap(int[] A, int i, int j) {
+    int temp = A[i];
+    A[i] = A[j];
+    A[j] = temp;
 }
 ```
 
-Now just use Quickselect to solve the problem.
+Now just use QuickSelect to solve the problem.
 
 ```Java
 void findNthSmallestNums(int[] array, int n) {
@@ -93,3 +98,12 @@ void findNthSmallestNums(int[] array, int n) {
     }
 }
 ```
+
+### Time Complexity
+
+- `O(n)` average run-time since we divide the problem in half and only visit 1 side `n + n/2 + n/4 + ...) = n (1 + 1/2 + 1/4 + ...) = O(n)`. Our formula is a geometric series with `r = 1/2`, which would converge to `1/(1-r)` for infinite geometric series.
+- O(n<sup>2</sup>) worst-case run-time is if "partition()" consistently picks a bad pivot. Can use [Median of Medians (MOM5)](https://en.wikipedia.org/wiki/Median_of_medians) to ensure good pivot choice, turning worst-case to O(n).
+
+### Space Complexity
+
+O(1)
