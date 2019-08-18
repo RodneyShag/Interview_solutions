@@ -7,7 +7,7 @@ Optionally implement your own BitSet:
 ```java
 
 public class MyBitSet {
-    private static final int BITS_IN_INT = Integer.BYTES * 8;
+    private final int BITS_IN_INT = Integer.BYTES * 8;
     private int[] bitset;
 
     public MyBitSet(int size) throws NegativeArraySizeException {

@@ -6,7 +6,7 @@
 ### Solution
 
 ```java
-getNext(int num) {
+int getNext(int num) {
     int indexOfZero = -1;
     int c0 = 0; //count of 0's. We never use this, but it would be useful to have in an interview.
     int c1 = 0; // count of 1's
@@ -24,7 +24,7 @@ getNext(int num) {
             c0++;
         }
     }
-if (indexOfZero == -1) {
+    if (indexOfZero == -1) {
         return -1; // Error. Could happen on a 32-bit binary number like 1111....0000,
                    // or any number which is a bunch of 1's followed by a bunch of zeros
     }
@@ -42,7 +42,7 @@ if (indexOfZero == -1) {
 ```
 
 ```java
-getPrev(int num) {
+int getPrev(int num) {
     int indexOfOne = -1;
     int c0 = 0; // count of 0's. We never use this, but it would be useful to have in an interview.
     int c1 = 0; // count of 1's.

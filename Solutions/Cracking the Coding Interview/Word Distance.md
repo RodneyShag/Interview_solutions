@@ -43,9 +43,9 @@ Preprocess with HashMap
 ```java
 public class WordDistance {
 
-    private static Map<String, List<Integer>> map = new HashMap<>();
+    private Map<String, List<Integer>> map = new HashMap<>();
 
-    public static void preProcess(String[] words) {
+    public void preProcess(String[] words) {
         for (int i = 0; i < words.length; i++) {
             String currWord = words[i];
             map.putIfAbsent(currWord, new ArrayList<Integer>());
@@ -54,12 +54,12 @@ public class WordDistance {
         }
     }
 
-    public static Integer shortest(String word1, String word2) {
+    public Integer shortest(String word1, String word2) {
         return findDistance(map.get(word1), map.get(word2));
     }
 
     // Merges lists, then uses same algo from Solution 1 to find minimum distance
-    private static Integer findDistance(List<Integer> listA, List<Integer> listB) {
+    private Integer findDistance(List<Integer> listA, List<Integer> listB) {
         if (listA == null || listB == null || listA.size() == 0 || listB.size() == 0) {
             return null;
         }
@@ -86,7 +86,7 @@ public class WordDistance {
         return min;
     }
 
-    private static List<Pair> merge(List<Integer> listA, List<Integer> listB) {
+    private List<Pair> merge(List<Integer> listA, List<Integer> listB) {
         if (listA == null || listB == null || listA.size() == 0 || listB.size() == 0) {
             return new ArrayList<>();
         }

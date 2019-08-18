@@ -1,43 +1,103 @@
 ### Algorithm
 
-1. For each integer in smaller array, create a list of its positions in larger list (using `HashMap`). Our implementation takes `O(S + B)` time (`S` is length of smaller array, `B` is length of longer array)
-1. We put the head of each list into a `minHeap`. The [min, max] range in the `minHeap` is always a solution range (although it may be too large).
-1. We keep removing the min element in `minHeap` and replace it with the first element from the list it came from. We stop when any of the lists is empty. This step takes `O(B log S)` time.
+1. For each integer in smaller array, create a list (or `Deque`) of its positions in larger list.
 
+```
+arrayA = [1 5 9]
+arrayB = [7 5 9 9 2 1 3 5 7 9 1 1 5 8 8 9 7]
 
-- Tricky implementation: Update `min` when removing from minHeap. Update `max` when placing into minHeap
-- Time Complexity: `O(S + B log S)`
+create HashMap<Integer, Deque<HeapNode>> of:
 
+ key    [value, index]
+  1 --> [1, 5] [1, 10] [1, 11]
+  5 --> [5, 1] [5, 7] [5, 12]
+  9 --> [9, 2] [9, 3] [9, 9] [9, 15]
+```
+
+2. Put head of each `Deque` into a `minHeap` and save `[min, max] Range`. The `[min, max]` range in the `minHeap` is always a solution range (although it may be too large).
+
+```
+Our minHeap:
+
+[value, index]
+[1, 5]
+[5, 1]
+[9, 2]
+
+min = index 1
+max = index 5
+Range = [index 1, index 5]
+```
+
+3. Keep removing element in `minHeap` with minimum index and replace it with first element from list it came from. Stop when 1 of the lists is empty. After every replacement, we have a valid solution range (although it may be too large).
+
+```
+Our minHeap:
+
+[value, index]
+[1 5] --> [1 5] --> [1 5] --> [1 5] ==> [1 10]
+[5 1] ==> [5 7] --> [5 7] --> [5 7] --> [5 7] ... and so on
+[9 2] --> [9 2] ==> [9 3] ==> [9 9] --> [9 9]
+Range     Range     Range     Range     Range
+[1 5]     [2 7]     [3 7]     [5 9]     [7 10]
+```
+
+where [7, 10] is the best range
 ### Solution
 
 ```java
-public class HeapNode {
-    int value; // same as the value that's the key in our HashMap
-    int index;
+class HeapNode {
+    int value; // saved so we know which deque this HeapNode came from
+    int index; // index in arrayB
 
     HeapNode(int listID, int pos) {
         this.value = listID;
         this.index = pos;
     }
+}
+```
 
-    @Override
-    public String toString() {
-        return "" + index;
+```java
+class Range {
+    Integer min;
+    Integer max;
+
+    Range(int min, int max) {
+        this.min = min;
+        this.max = max;
+    }
+
+    Range(Range other) {
+        min = other.min;
+        max = other.max;
+    }
+
+    void setRange(Range other) {
+        min = other.min;
+        max = other.max;
+    }
+
+    boolean isShorterThan(Range other) {
+        return size() < other.size();
+    }
+
+    int size() {
+        return max - min + 1;
     }
 }
 ```
 
 ```java
-void shortest(int[] arrayA, int[] arrayB) {
+Range shortest(int[] arrayA, int[] arrayB) {
     Map<Integer, Deque<HeapNode>> map = makeLists(arrayA, arrayB);
-    Range range = getSmallestRange(map);
-    System.out.println("Range: " + range);
+    return getSmallestRange(map);
 }
 
+// For each integer in smaller array, create a list of its positions in larger list
 private Map<Integer, Deque<HeapNode>> makeLists(int[] arrayA, int[] arrayB) {
     Map<Integer, Deque<HeapNode>> map = new HashMap<>();
     for (int num : arrayA) {
-        map.put(num, new ArrayDeque<>());
+        map.putIfAbsent(num, new ArrayDeque<>());
     }
     for (int i = 0; i < arrayB.length; i++) {
         if (map.containsKey(arrayB[i])) {
@@ -50,11 +110,15 @@ private Map<Integer, Deque<HeapNode>> makeLists(int[] arrayA, int[] arrayB) {
 }
 
 private Range getSmallestRange(Map<Integer, Deque<HeapNode>> map) {
-    Queue<HeapNode> minHeap = new PriorityQueue<>(new NodeComparator());
+    Queue<HeapNode> minHeap = new PriorityQueue<>((hn1, hn2) -> hn1.index - hn2.index);
 
     Range currRange = new Range(Integer.MAX_VALUE, Integer.MIN_VALUE);
 
-    // Add 1st element in each list to our minHeap
+    // - Put head of each list into a `minHeap`, and save [min, max] Range.
+    // - The [min, max] range in the `minHeap` is always a
+    //   solution range (although it may be too large).
+    // - Tricky implementation: Update `max` when placing into minHeap.
+    //   Update `min` when removing from minHeap.
     for (Deque<HeapNode> deque : map.values()) {
         HeapNode node = deque.removeFirst();
         currRange.max = Math.max(currRange.max, node.index);
@@ -63,7 +127,10 @@ private Range getSmallestRange(Map<Integer, Deque<HeapNode>> map) {
     currRange.min = minHeap.peek().index;
     Range bestRange = new Range(currRange);
 
-    // Keep replacing elements in minHeap until 1 of the lists is empty
+    // - Keep removing element in `minHeap` with minimum index and replace it
+    //   with first element from list it came from. Stop when 1 of the lists is empty.
+    // - After every replacement, we have a valid solution range (although it
+    //   may be too large).
     while (true) {
         // Replace element
         HeapNode node = minHeap.remove();
@@ -84,3 +151,18 @@ private Range getSmallestRange(Map<Integer, Deque<HeapNode>> map) {
     return bestRange;
 }
 ```
+
+### Time Complexity
+
+- let S be length of shorter array
+- let B be length of longer array
+
+
+- `makeLists()` takes `O(S + B)`
+- `getSmallestRange()` takes `O(B log S)` time.
+-  Summing these 2 values, we get total time complexity becomes `O(S + B log S)`
+
+
+### Space Complexity
+
+`O(S)` for storage of our `PriorityQueue`

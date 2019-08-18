@@ -16,7 +16,7 @@ int maxMinutes1(int[] massages) {
     return maxMinutes1(massages, massages.length - 1, cache);
 }
 
-private static int maxMinutes1(int[] massages, int index, int[] cache) {
+private int maxMinutes1(int[] massages, int index, int[] cache) {
     if (index < 0 || index >= massages.length) {
         return 0;
     }

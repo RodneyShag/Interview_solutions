@@ -62,7 +62,7 @@ private int countOf(String str, char ch) {
     return count;
 }
 
-private static boolean checkMatch(String value, String pattern, int aLength, int bLength) {
+private boolean checkMatch(String value, String pattern, int aLength, int bLength) {
     // Grab the 2 words matching "a" and "b"
     int firstBinPattern = pattern.indexOf('b');
     int firstBinValue = firstBinPattern * aLength;
