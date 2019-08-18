@@ -11,3 +11,8 @@ List<Integer> allLengths(int k, int shorter, int longer) {
     return lengths;
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(k)
+- Space Complexity: O(k)

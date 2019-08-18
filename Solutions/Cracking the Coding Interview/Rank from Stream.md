@@ -5,7 +5,7 @@
 | Array              | O(n) due to shifting           | O(log n) using binary search                                              |
 | Linked List        | O(n)                           | O(n) since we can't do binary search on linked list                       |
 | HashMap            | O(1)                           | O(n) since HashMap doesn't help us find rank in any way (it's not sorted) |
-| Binary Search Tree | O(log n)                       | O(log n) (assuming it's balanced)                                         |
+| Binary Search Tree | O(log n) (if balanced tree)    | O(log n) (if balanced tree)                                               |
 
 ### Solution
 
@@ -39,19 +39,24 @@ class RankFromStream {
         }
     }
 
-    private void insert(int x, RankNode node) {
-        if (x <= node.data) {
-            node.leftSize++;
-            if (node.left == null) {
-                node.left = new RankNode(x);
+    private void insert(int x, RankNode root) {
+        RankNode curr = root;
+        while (true) {
+            if (x <= curr.data) {
+                curr.leftSize++;
+                if (curr.left == null) {
+                    curr.left = new RankNode(x);
+                    return;
+                } else {
+                    curr = curr.left;
+                }
             } else {
-                insert(x, node.left);
-            }
-        } else {
-            if (node.right == null) {
-                node.right = new RankNode(x);
-            } else {
-                insert(x, node.right);
+                if (curr.right == null) {
+                    curr.right = new RankNode(x);
+                    return;
+                } else {
+                    curr = curr.right;
+                }
             }
         }
     }
@@ -61,19 +66,24 @@ class RankFromStream {
         if (root == null) {
             return 0;
         }
-        return getRankOfNumber(x, root);
-    }
-
-    private int getRankOfNumber(int x, RankNode node) {
-        if (node == null) {
-            return 0;
-        } else if (x == node.data) {
-            return node.leftSize;
-        } else if (x > node.data) {
-            return 1 + node.leftSize + getRankOfNumber(x, node.right);
-        } else {
-            return getRankOfNumber(x, node.left);
+        RankNode curr = root;
+        int rank = 0;
+        while (curr != null) {
+            if (x == curr.data) {
+                return rank + curr.leftSize;
+            } else if (x > curr.data) {
+                rank += 1 + curr.leftSize;
+                curr = curr.right;
+            } else {
+                curr = curr.left;
+            }
         }
+        return 0;
     }
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: `insert()`, `getRankOfNumber()` are O(log n) if tree is balanced. O(n) otherwise. If we implemented more advanced trees, such as "AVL trees", then we could ensure the tree stays balanced.
+- Space Complexity: `insert()`, `getRankOfNumber()` are O(1) since they're coded iteratively. O(1) space is also required to store each `RankNode`

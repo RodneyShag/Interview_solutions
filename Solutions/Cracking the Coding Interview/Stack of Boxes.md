@@ -82,3 +82,5 @@ public class StackOfBoxes {
 1. For each box, rotate it to all 6 possibilities: [w h d], [w d h], [h w d] [h d w], [d w h], [d h w].
 1. Notice it's impossible to stack 2 of these 6 boxes on top of each other, so if we insert all 6 boxes into our list, we're still ensured only 1 of them can be selected for our solution.
 1. Create `List<Box> boxes` that is 6 times as large as the original list of boxes. Solve the problem for this list.
+
+Time/Space Complexity would remain the same.

@@ -29,4 +29,8 @@ int smallestDifference(int[] array1, int[] array2) {
 
 ### Time Complexity
 
-Time Complexity: O(a log a + b log b) where a, b are lengths of the 2 arrays
+O(a log a + b log b) where a, b are lengths of the 2 arrays
+
+### Space Complexity
+
+Depends on Arrays.sort(). It's probably O(n), but can be as low as O(1) (if implemented using HeapSort)

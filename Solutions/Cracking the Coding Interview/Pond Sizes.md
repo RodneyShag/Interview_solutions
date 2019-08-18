@@ -31,3 +31,8 @@ private int findPondSize(int[][] grid, int row, int col, int rows, int cols) {
     return pondSize;
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(rows * cols)
+- Space Complexity: O(rows * cols) since that's the max size of `List<Integer> pondSizes`, and is also the max depth of our recursion

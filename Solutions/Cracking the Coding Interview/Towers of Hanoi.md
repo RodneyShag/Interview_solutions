@@ -49,6 +49,11 @@ void moveDisks(int n, Tower origin, Tower destination, Tower buffer) {
 private void moveTop(Tower origin, Tower destination) {
     Integer disk = origin.pop();
     destination.push(disk);
-    System.out.println("Move disk " + disk + " from Tower " + origin.towerNum + " to Tower " + destination.towerNum);
+    System.out.println("Move disk " + disk + " from Tower " + origin.towerNum + " to " + destination.towerNum);
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(2<sup>n</sup>)
+- Space Complexity: O(n) due to recursion

@@ -42,3 +42,8 @@ private int findMaxAliveYear(int[] deltas) {
     return maxYear;
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: `O(n + delta)` where `n` is number of people, and `delta = max - min`
+- Space Complexity: `O(delta)`

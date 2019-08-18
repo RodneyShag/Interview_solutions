@@ -8,7 +8,7 @@ int bitsRequired(int A, int B) {
 ```
 
 ```java
-class BitFunctions {
+class BitFunctions { // or use a Java library that has the below function
     public static int numOnes(int num) {
         int count = 0;
         for (int i = 0; i < Integer.SIZE; i++) {
@@ -21,3 +21,8 @@ class BitFunctions {
     }
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(1)
+- Space Complexity: O(1)

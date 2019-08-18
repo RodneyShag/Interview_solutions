@@ -18,3 +18,8 @@ void checkDuplicates(int[] array) {
     }
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n)
+- Space Complexity: O(n)

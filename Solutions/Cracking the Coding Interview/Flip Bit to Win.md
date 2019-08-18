@@ -38,5 +38,5 @@ private boolean getBit(int num, int bit) {
 
 ### Time/Space Complexity
 
-- Time Complexity: O(b) where b is number of bits in int.
+- Time Complexity: O(1)
 - Space Complexity: O(1)

@@ -6,3 +6,8 @@ int clearBit(int num, int bit) {
     return num & mask;
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(1)
+- Space Complexity O(1)

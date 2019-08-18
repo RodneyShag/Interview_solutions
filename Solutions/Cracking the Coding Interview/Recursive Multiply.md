@@ -25,3 +25,8 @@ private int multiplyHelper(int smaller, int bigger) {
     }
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(log s) where s is the smaller of the 2 numbers
+- Space Complexity: O(log s) due to recursion. This problem required us to code this function recursively. If we converted it to an iterative solution, it would be O(1) space.

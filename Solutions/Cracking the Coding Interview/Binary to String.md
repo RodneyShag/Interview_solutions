@@ -4,25 +4,30 @@
 String printBinary(double num) {
     final int MAX_CHARACTERS = 32;
     if (num >= 1 || num <= 0) {
-        return "ERROR";
+        return "Error";
     }
 
-    StringBuffer binary = new StringBuffer();
-    binary.append(".");
+    StringBuffer sb = new StringBuffer();
+    sb.append(".");
 
     while (num > 0) {
         num *= 2;
         if (num >= 1) {
-            binary.append(1); // automatically converts the int to a String
+            sb.append(1); // automatically converts the int to a String
             num = num - 1;
         } else {
-            binary.append(0);
+            sb.append(0);
         }
-        if (binary.length() > MAX_CHARACTERS) {
+        if (sb.length() > MAX_CHARACTERS) {
             return "ERROR";
         }
     }
 
-    return binary.toString();
+    return sb.toString();
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(1)
+- Space Complexity: O(1)

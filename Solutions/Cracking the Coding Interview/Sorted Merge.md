@@ -22,3 +22,8 @@ void merge(int[] a, int[] b, int lastA, int lastB) { // lastA is index of last e
    }
 }
 ```
+
+### Time/Space Complexity
+
+- Time Complexity: O(n)
+- Space Complexit: O(1)

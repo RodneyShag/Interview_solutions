@@ -1,7 +1,8 @@
-### Tricks
+### Algorithm
 
-- put all the non-hit characters into a `HashMap<Character, Integer>`
-- create a `Result` class since we have to return 2 things.
+- count `directHits` first
+- put all non-hit characters into a `Map<Character, Integer>`
+- count `pseudoHits`.
 
 ### Solution
 
@@ -9,11 +10,6 @@
 class Result {
     int directHits = 0;
     int pseudoHits = 0;
-
-    @Override
-    public String toString() {
-        return ("(Direct Hits, Pseudo Hits) = (" + directHits + "," + pseudoHits + ")");
-    }
 }
 ```
 
@@ -28,7 +24,7 @@ Result estimate(String guess, String solution) {
     Result result = new Result();
     Map<Character, Integer> colorMap = new HashMap<>();
 
-    // Count direct hits, while saving non-directHit colors in a HashMap, which will later help us count pseudohits
+    // Count direct hits. Save other colors in HashMap for later.
     for (int i = 0; i < solution.length(); i++) {
         char solChar = solution.charAt(i);
         char guessChar = guess.charAt(i);
@@ -39,12 +35,12 @@ Result estimate(String guess, String solution) {
         }
     }
 
-    // Count pseudohits in HashMap
+    // Count pseudo hits in HashMap
     for (int i = 0; i < guess.length(); i++) {
         char solChar   = solution.charAt(i);
         char guessChar = guess.charAt(i);
         if (solChar == guessChar) {
-            continue;
+            continue; // this was already counted as a direct hit
         }
         if (colorMap.containsKey(guessChar)) {
             int count = colorMap.get(guessChar);
@@ -57,3 +53,8 @@ Result estimate(String guess, String solution) {
     return result;
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n)
+- Space Complexity: O(n)

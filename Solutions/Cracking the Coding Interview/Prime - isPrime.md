@@ -18,3 +18,8 @@ boolean isPrime(int n) {
     return true;
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(n<sup>1/2</sup>)
+- Space Complexity: O(1)

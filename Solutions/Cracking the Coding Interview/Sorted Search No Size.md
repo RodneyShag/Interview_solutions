@@ -43,3 +43,4 @@ int binarySearch(Listy listy, int value, int start, int end) {
 ```
 
 - Time Complexity: O(log n)
+- Space Complexity: O(1)

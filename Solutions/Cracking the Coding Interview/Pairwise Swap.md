@@ -7,3 +7,8 @@ int swapOddEven(int num) {
     return ((num & evenMask) >> 1) | ((num & oddMask) << 1);
 }
 ```
+
+### Time/Space Complexity
+
+-  Time Complexity: O(1)
+- Space Complexity: O(1)

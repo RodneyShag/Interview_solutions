@@ -35,3 +35,13 @@ class CircularArray<T> {
     }
 }
 ```
+
+### Time Complexity
+
+- `O(n)` for `CircularArray()` due to creation of `T[]`
+- `O(1)` for `get()`, `set()`, `convert()`, `rotate()`.
+- If we had an `insert()` function, it would be `O(n)` due to shifting in an array.
+
+### Space Complexity
+
+`O(1)` for all above functions. `T[] items` requires `O(n)` storage.

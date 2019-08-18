@@ -1,4 +1,8 @@
-### Optionally implement your own BitSet
+# Solution
+
+### Code
+
+Optionally implement your own BitSet:
 
 ```java
 
@@ -51,10 +55,8 @@ public class MyBitSet {
 }
 ```
 
-### Solution
-
 ```java
-void findNumber(int[] input) {
+public void findNumber(int[] input) {
     final long ONE_GB = 8000000000L;
 
     // My implementation of BitSet has constructor that takes a long (java.util.BitSet doesn't)
@@ -76,10 +78,16 @@ void findNumber(int[] input) {
 }
 ```
 
-### Follow-up Solution
+### Time/Space Complexity
+
+-  Time Complexity: `O(n)` due to looping through `MyBitSet`
+- Space Complexity: `O(n)` due to creation of `MyBitSet`.
+
+
+# Follow-up Solution
 
 ```java
-void findNumber2(int[] input) {
+public void findNumber2(int[] input) {
     int partitionSize = (int) Math.pow(2, 18);
     int numBlocks = (int) Math.pow(2, 12);
     MyBitSet bitset = new MyBitSet(partitionSize); // this takes up 2^18 bits
@@ -119,3 +127,10 @@ void findNumber2(int[] input) {
     }
 }
 ```
+
+What if, as a follow up question, you are asked to solve the problem with even less memory? In this case, we can do repeated passes using the approach from the first step. We'd first check to see how many integers are found within each sequence of a million elements. Then, in the second pass, we'd check how many integers are found in each sequence of a thousand elements. Finally, in the third pass, we'd apply the bit vector.
+
+### Time/Space Complexity
+
+-  Time Complexity: `O(n)` since, in the worst case, we still have to loop through all the numbers.
+- Space Complexity: Since we used 10 megabytes of memory to process 1000 megabytes of data, we can say our space complexity is O(n/100). We can repeatedly use the trick from Solution 2 to lower our space complexity to `O(1)`.
