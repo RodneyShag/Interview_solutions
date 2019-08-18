@@ -1,6 +1,6 @@
-- [Cracking the Coding Interview](#cracking-the-coding-interview)
 - [LeetCode](#leetcode)
 - [LeetFree](#leetfree)
+- [Cracking the Coding Interview](#cracking-the-coding-interview)
 - [HackerRank](#hackerrank)
 - [Custom](#custom)
 
