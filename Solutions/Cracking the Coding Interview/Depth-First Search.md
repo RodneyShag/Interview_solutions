@@ -1,23 +1,27 @@
-### Provided Code
-
-[GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Implement%20a%20GraphNode.md)
-
 ### Solution
 
 ```java
-DFS(GraphNode node, int data) {
-    if (node == null) {
+class GraphNode {
+    int data;
+    boolean marked;
+    List<GraphNode> neighbors;
+}
+```
+
+```java
+void DFS(GraphNode n, int data) {
+    if (n == null) {
         return;
     }
 
-    if (node.data == data) {
-        System.out.println("DFS found the GraphNode with desired data: " + node.data);
+    if (n.data == data) {
+        System.out.println("Success");
         return; // although we return, the DFS search keeps going in this implementation
     }
 
-    for (GraphNode neighbor : node.getNeighbors()) {
-        if (!neighbor.visited) {
-            neighbor.visit(); // crucial step
+    for (GraphNode neighbor : n.neighbors) {
+        if (neighbor.marked == false) {
+            neighbor.marked = true;
             DFS(neighbor, data);
         }
     }
@@ -36,4 +40,4 @@ O(n) since that's the maximum number of recursive calls existing at the same tim
 
 ### Alternate Solution
 
-The above solution is recursive. Can alternatively code DFS iteratively by using our [BFS solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Breadth-First%20Search.md) and replacing the Queue there with a Stack.
+The above solution is recursive. Can alternatively code DFS iteratively by using our [BFS solution](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Breadth-First%20Search.md) and replacing the `Queue` there with a `Stack`.

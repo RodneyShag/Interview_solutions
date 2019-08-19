@@ -1,6 +1,6 @@
 ### Provided Code
 
-- [TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Implement%20a%20TreeNode.md)
+[TreeNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Implement%20a%20TreeNode.md)
 
 ### Tips
 

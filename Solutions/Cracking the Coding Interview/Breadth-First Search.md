@@ -1,35 +1,39 @@
-### Provided Code
-
-[GraphNode](https://github.com/RodneyShag/Interview_solutions/blob/master/Solutions/Cracking%20the%20Coding%20Interview/Implement%20a%20GraphNode.md)
-
 ### Tips
 
-1. Use a Queue (or `ArrayDeque` as a Queue)
-1. .visit() a node before we add it to deque (to avoid duplicates on deque)
+1. Use a Queue (or `Deque` as a Queue)
+1. "mark" a node before we add it to `Deque` (to avoid duplicates on `Deque`)
 
 ### Solution
 
 ```java
-void BFS(GraphNode node, int data) {
+class GraphNode {
+    int data;
+    boolean marked;
+    List<GraphNode> neighbors;
+}
+```
+
+```java
+void BFS(GraphNode root, int data) {
     if (node == null) {
         return;
     }
 
     Deque<GraphNode> deque = new ArrayDeque<>(); // use deque as a queue
-    node.visit();
-    deque.add(node);
+    root.marked = true;
+    deque.add(root);
 
     while (!deque.isEmpty()) {
         GraphNode curr = deque.removeFirst();
 
         if (curr.data == data) {
-            System.out.println("BFS found the GraphNode with desired data: " + curr.data);
+            System.out.println("Success");
             return;
         }
 
         for (GraphNode neighbor : curr.getNeighbors()) {
-            if (!neighbor.visited) {
-                neighbor.visit();
+            if (neighbor.marked == false) {
+                neighbor.marked = true;
                 deque.addLast(neighbor);
             }
         }
@@ -46,4 +50,4 @@ There are 2 ways to represent the time complexity
 
 ### Space Complexity
 
-O(n) due to `deque` to store our nodes.
+`O(n)` to store nodes in our `deque`.
