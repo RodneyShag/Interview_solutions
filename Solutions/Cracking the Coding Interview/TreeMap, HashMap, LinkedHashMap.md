@@ -1,14 +1,14 @@
-### HashMap
+### HashMap / HashSet
 
 - O(1) add and remove.
 - Iterating over it will return elements in an arbitrary order
 
-### TreeMap
+### TreeMap / TreeSet
 
 - O(log n) add and remove
 - Iterating over it will return elements in sorted order
 
-### LinkedHashMap
+### LinkedHashMap / LinkedHashSet
 
 - O(1) add and remove
 - Iterating over it will return elements in the same order they were inserted
