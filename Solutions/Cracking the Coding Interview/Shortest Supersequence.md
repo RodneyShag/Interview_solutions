@@ -95,9 +95,9 @@ Range shortest(int[] arrayA, int[] arrayB) {
 
 // For each integer in smaller array, create a list of its positions in larger list
 private Map<Integer, Deque<HeapNode>> makeLists(int[] arrayA, int[] arrayB) {
-    Map<Integer, Deque<HeapNode>> map = new HashMap<>();
+    Map<Integer, Deque<HeapNode>> map = new HashMap();
     for (int num : arrayA) {
-        map.putIfAbsent(num, new ArrayDeque<>());
+        map.putIfAbsent(num, new ArrayDeque());
     }
     for (int i = 0; i < arrayB.length; i++) {
         if (map.containsKey(arrayB[i])) {

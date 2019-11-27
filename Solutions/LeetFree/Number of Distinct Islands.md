@@ -16,7 +16,7 @@ public int numIslands(char[][] grid) {
     final int rows = grid.length;
     final int cols = grid[0].length;
 
-    Set<String> paths = new HashSet<>();
+    Set<String> paths = new HashSet();
 
     for (int r = 0; r < rows; r++) {
         for (int c = 0; c < cols; c++) {

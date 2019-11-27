@@ -22,7 +22,7 @@ Letters are Nodes.
 ```java
 class GraphNode { // public variables for simplicity
     char data;
-    List<GraphNode> neighbors = new ArrayList<>();
+    List<GraphNode> neighbors = new ArrayList();
     int level = Integer.MIN_VALUE;
     int numPaths = 0;
 
@@ -65,7 +65,7 @@ public class NumberOfShortestPaths {
         g.addNeighbor(h);
         h.addNeighbor(f);
 
-        Queue<GraphNode> queue = new LinkedList<>();
+        Queue<GraphNode> queue = new LinkedList();
         a.level = 0;
         a.numPaths = 1;
         queue.add(a);

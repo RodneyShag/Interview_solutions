@@ -43,7 +43,7 @@ Preprocess with HashMap
 ```java
 public class WordDistance {
 
-    private Map<String, List<Integer>> map = new HashMap<>();
+    private Map<String, List<Integer>> map = new HashMap();
 
     public void preProcess(String[] words) {
         for (int i = 0; i < words.length; i++) {
@@ -88,10 +88,10 @@ public class WordDistance {
 
     private List<Pair> merge(List<Integer> listA, List<Integer> listB) {
         if (listA == null || listB == null || listA.size() == 0 || listB.size() == 0) {
-            return new ArrayList<>();
+            return new ArrayList();
         }
 
-        List<Pair> merged = new ArrayList<>();
+        List<Pair> merged = new ArrayList();
         int aIndex = 0;
         int bIndex = 0;
         int aValue;

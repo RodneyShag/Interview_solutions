@@ -22,7 +22,7 @@ Result estimate(String guess, String solution) {
     solution = solution.toLowerCase();
 
     Result result = new Result();
-    Map<Character, Integer> colorMap = new HashMap<>();
+    Map<Character, Integer> colorMap = new HashMap();
 
     // Count direct hits. Save other colors in HashMap for later.
     for (int i = 0; i < solution.length(); i++) {

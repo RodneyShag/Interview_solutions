@@ -47,11 +47,11 @@ public List<Point> findPath(final boolean[][] maze, int row, int col) {
     }
 
     // Create path to save solution into
-    List<Point> path = new ArrayList<>();
+    List<Point> path = new ArrayList();
     path.add(new Point(0, 0));
 
     // Create cache to save solutions to subproblems
-    Map<Point, Boolean> cache = new HashMap<>(); // requires overriding .equals() and .hashCode for Point, for HashMap to work properly
+    Map<Point, Boolean> cache = new HashMap(); // requires overriding .equals() and .hashCode for Point, for HashMap to work properly
     cache.put(new Point(0, 0), true); // base case
 
     // Recursively calculate answer

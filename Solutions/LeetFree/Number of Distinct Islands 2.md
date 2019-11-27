@@ -46,20 +46,20 @@ public class Solution {
         rows = grid.length;
         cols = grid[0].length;
 
-        Set<List<Point>> islands = new HashSet<>();
+        Set<List<Point>> islands = new HashSet();
 
         // save all islands
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (grid[r][c] == '1') {
-                    List<Point> island = new ArrayList<>();
+                    List<Point> island = new ArrayList();
                     explore(grid, r, c, island);
                     islands.add(island);
                 }
             }
         }
 
-        Set<String> uniqueIslands = new HashSet<>();
+        Set<String> uniqueIslands = new HashSet();
         for (List<Point> island : islands) {
             Set<List<Point>> eightShapes = rotateAndReflect(island);
             String key = generateKey(eightShapes);
@@ -87,9 +87,9 @@ public class Solution {
 
     // Rotate and reflect a given shape to 8 possible shapes
     private Set<List<Point>> rotateAndReflect(List<Point> shape) {
-        Map<Integer, List<Point>> map = new HashMap<>();
+        Map<Integer, List<Point>> map = new HashMap();
         for (int i = 0; i < 8; i ++) {
-            map.put(i, new ArrayList<>());
+            map.put(i, new ArrayList());
         }
         for (Point point : shape) {
             map.get(0).add(new Point(point.x, point.y));
@@ -105,7 +105,7 @@ public class Solution {
     }
 
     private String generateKey(Set<List<Point>> eightShapes) {
-        List<String> keys = new ArrayList<>();
+        List<String> keys = new ArrayList();
         for (List<Point> shape : eightShapes) {
             Collections.sort(shape);
             Point first = shape.get(0);

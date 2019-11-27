@@ -1,7 +1,7 @@
 ### Notes
 
-- Remember, the input array is _sorted_.
 - First solve [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array), then apply the same concepts here.
+- Remember, the input array is _sorted_.
 
 ### Solution
 

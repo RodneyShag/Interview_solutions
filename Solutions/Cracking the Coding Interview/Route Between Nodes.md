@@ -12,7 +12,7 @@ boolean routeExists(GraphNode start, GraphNode end) {
         return true;
     }
 
-    Deque<GraphNode> deque = new ArrayDeque<>(); // use deque as a queue
+    Deque<GraphNode> deque = new ArrayDeque(); // use deque as a queue
     start.visit();
     deque.add(start);
 

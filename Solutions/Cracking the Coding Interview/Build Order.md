@@ -19,7 +19,7 @@ class Node {
     public Node(String data) {
         this.data = data;
         status = Visited.NEW;
-        neighbors = new ArrayList<>();
+        neighbors = new ArrayList();
     }
 
     public void addDirectedNeighbor(Node neighbor) {
@@ -30,8 +30,8 @@ class Node {
 
 ```java
 class Graph {
-    List<Node> nodes = new ArrayList<>();
-    Map<String, Node> map = new HashMap<>();
+    List<Node> nodes = new ArrayList();
+    Map<String, Node> map = new HashMap();
 
     public void addDirectedEdge(String s1, String s2) {
         Node source = map.get(s1);
@@ -69,7 +69,7 @@ class BuildOrder {
             source.addDirectedNeighbor(node);
         }
 
-        Deque<Node> result = new ArrayDeque<>();
+        Deque<Node> result = new ArrayDeque();
         topoSortDFS(source, result);
         result.removeFirst(); // removes the source node we created
         return result;

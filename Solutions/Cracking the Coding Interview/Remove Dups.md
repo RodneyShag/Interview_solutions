@@ -13,7 +13,7 @@ class Node { // public variables for simplicity
 
 ```java
 void removeDuplicates(Node head) {
-    Set<Integer> set = new HashSet<>();
+    Set<Integer> set = new HashSet();
     set.add(head.data);
     Node n = head;
     while (n.next != null) {

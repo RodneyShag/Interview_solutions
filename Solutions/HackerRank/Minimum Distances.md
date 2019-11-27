@@ -7,7 +7,7 @@ of the largest index for each value we've seen so far as we loop through array
 
 ```java
 int minimumDistances(int[] array) {
-    Map<Integer, Integer> map = new HashMap<>();
+    Map<Integer, Integer> map = new HashMap();
     int minDistance = Integer.MAX_VALUE;
     for (int i = 0; i < array.length; i++) {
         if (map.containsKey(array[i])) {

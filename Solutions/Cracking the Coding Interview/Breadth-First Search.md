@@ -19,7 +19,7 @@ void BFS(GraphNode root, int data) {
         return;
     }
 
-    Deque<GraphNode> deque = new ArrayDeque<>(); // use deque as a queue
+    Deque<GraphNode> deque = new ArrayDeque(); // use deque as a queue
     root.marked = true;
     deque.add(root);
 

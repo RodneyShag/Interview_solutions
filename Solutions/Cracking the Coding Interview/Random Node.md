@@ -47,13 +47,13 @@ class Node {
 ```java
 public class RandomizedCollection<T> {
     Random rand = new Random();
-    List<T> list = new ArrayList<>();
-    Map<T, Set<Integer>> valToIndices = new HashMap<>();
+    List<T> list = new ArrayList();
+    Map<T, Set<Integer>> valToIndices = new HashMap();
 
     public void add(T item) {
         // update Map
         if (!valToIndices.containsKey(item)) {
-            valToIndices.put(item, new HashSet<>());
+            valToIndices.put(item, new HashSet());
         }
         valToIndices.get(item).add(list.size());
 
@@ -102,7 +102,7 @@ public class RandomizedCollection<T> {
 ```java
 class BST {
     Node root = null;
-    RandomizedCollection<Node> collection = new RandomizedCollection<>();
+    RandomizedCollection<Node> collection = new RandomizedCollection();
 
     public void insert(int value) {
         Node item = new Node(value);

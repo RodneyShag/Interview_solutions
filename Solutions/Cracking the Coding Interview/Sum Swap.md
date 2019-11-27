@@ -21,7 +21,7 @@ void toSwap(int[] arrayA, int[] arrayB) {
 }
 
 private Set<Integer> buildSet(int[] array) {
-    Set<Integer> set = new HashSet<>();
+    Set<Integer> set = new HashSet();
     for (int num : array) {
         set.add(num);
     }

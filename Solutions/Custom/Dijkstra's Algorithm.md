@@ -24,8 +24,8 @@ Letters are Nodes. Numbers are edge weights.
 class GraphNode { // public variables for simplicity
     char data;
     boolean visited = false;
-    List<GraphNode> neighbors = new ArrayList<>(); // parallel arrays
-    List<Integer> edgeWeights = new ArrayList<>(); // parallel arrays
+    List<GraphNode> neighbors = new ArrayList(); // parallel arrays
+    List<Integer> edgeWeights = new ArrayList(); // parallel arrays
     int distance = Integer.MAX_VALUE;
     GraphNode parent = null;
 

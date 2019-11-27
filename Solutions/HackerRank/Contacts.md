@@ -6,7 +6,7 @@ Code below is based loosely on tutorial video in this HackerRank problem
 
 ```java
 class TrieNode {
-    private Map<Character, TrieNode> children = new HashMap<>();
+    private Map<Character, TrieNode> children = new HashMap();
     public int size = 0; // this was the main trick to decrease runtime to pass tests.
 
     public void putChildIfAbsent(char ch) {
