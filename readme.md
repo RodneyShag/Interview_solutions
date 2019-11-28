@@ -5,7 +5,7 @@
 - [Custom](#custom)
 
 
-Most interviewers select their questions from LeetCode nowadays, so do the LeetCode questions first. The remaining questions in this repo are either not on LeetCode for free, or are a better version of a LeetCode question
+Most interviewers select their questions from LeetCode, so do the LeetCode questions first. The remaining questions below are either not on LeetCode for free, or are a better version of a LeetCode question.
 
 ## LeetCode
 
