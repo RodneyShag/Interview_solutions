@@ -1,8 +1,8 @@
 ### Solution
 
 ```java
-boolean getBit(int num, int bit) {
-    return (num & (1 << bit)) != 0;
+boolean getBit(int n, int bit) {
+    return (n & (1 << bit)) != 0;
 }
 ```
 
