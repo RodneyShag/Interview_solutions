@@ -10,7 +10,7 @@ boolean uniqueCharacters(String str) {
     if (str.length() > NUM_ASCII_CHARS) {
         return false;
     }
-    HashSet<Character> mySet = new HashSet<>(NUM_ASCII_CHARS);
+    HashSet<Character> mySet = new HashSet(NUM_ASCII_CHARS);
     for (int i = 0; i < str.length(); i++) {
         if (mySet.contains(str.charAt(i))) {
             return false;

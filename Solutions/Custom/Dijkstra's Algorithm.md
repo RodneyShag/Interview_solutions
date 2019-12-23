@@ -75,7 +75,7 @@ public class Dijkstra {
          h.addNeighbor(f, 5);
 
          // Initialize Start Node and insert into PriorityQueue
-         PriorityQueue<GraphNode> distances = new PriorityQueue<>((n1, n2) -> n1.distance - n2.distance);
+         PriorityQueue<GraphNode> distances = new PriorityQueue((n1, n2) -> n1.distance - n2.distance);
          e.distance = 0;
          e.visited = true;
          distances.add(e);

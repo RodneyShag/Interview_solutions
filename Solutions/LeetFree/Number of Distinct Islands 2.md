@@ -101,7 +101,7 @@ public class Solution {
             map.get(6).add(new Point(point.y, -point.x));
             map.get(7).add(new Point(-point.y, -point.x));
         }
-        return new HashSet<>(map.values());
+        return new HashSet(map.values());
     }
 
     private String generateKey(Set<List<Point>> eightShapes) {
